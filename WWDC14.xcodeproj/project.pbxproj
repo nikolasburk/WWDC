@@ -14,7 +14,6 @@
 		555F5D7418EF02D2000950CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5D7318EF02D2000950CA /* main.m */; };
 		555F5D7818EF02D2000950CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5D7718EF02D2000950CA /* AppDelegate.m */; };
 		555F5D7B18EF02D2000950CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555F5D7918EF02D2000950CA /* Main.storyboard */; };
-		555F5D7E18EF02D2000950CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5D7D18EF02D2000950CA /* ViewController.m */; };
 		555F5D8018EF02D2000950CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555F5D7F18EF02D2000950CA /* Images.xcassets */; };
 		555F5D8718EF02D2000950CA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5D8618EF02D2000950CA /* XCTest.framework */; };
 		555F5D8818EF02D2000950CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5D6718EF02D2000950CA /* Foundation.framework */; };
@@ -45,9 +44,18 @@
 		55E00A8D18F458F0007E97A6 /* UIViewController+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E00A8C18F458F0007E97A6 /* UIViewController+Alerts.m */; };
 		55E00A9218F4628D007E97A6 /* ImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E00A9118F4628D007E97A6 /* ImageProvider.m */; };
 		55E00A9518F46704007E97A6 /* UIImage+Split.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E00A9418F46704007E97A6 /* UIImage+Split.m */; };
-		55E00A9B18F46E6A007E97A6 /* Memes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E00A9A18F46E6A007E97A6 /* Memes.xcassets */; };
+		55E00A9B18F46E6A007E97A6 /* PuzzleBackgrounds.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E00A9A18F46E6A007E97A6 /* PuzzleBackgrounds.xcassets */; };
 		55E00A9E18F485F3007E97A6 /* PuzzlePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E00A9D18F485F3007E97A6 /* PuzzlePiece.m */; };
 		55E00AA118F49E8C007E97A6 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E00AA018F49E8C007E97A6 /* MapAnnotation.m */; };
+		55EE1BF318F581CF00B8A737 /* TimeLineCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EE1BF218F581CF00B8A737 /* TimeLineCanvasViewController.m */; };
+		55EE1BF618F582FB00B8A737 /* TimeLineCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EE1BF518F582FB00B8A737 /* TimeLineCanvas.m */; };
+		55EE1BFB18F583C900B8A737 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EE1BFA18F583C900B8A737 /* Story.m */; };
+		55EE1BFE18F585D000B8A737 /* TimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EE1BFD18F585D000B8A737 /* TimeLineView.m */; };
+		55EE1C0418F5970B00B8A737 /* StoryThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EE1C0318F5970B00B8A737 /* StoryThumbnail.m */; };
+		55EE1C0818F5A07A00B8A737 /* UIView+FrameModification.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EE1C0718F5A07A00B8A737 /* UIView+FrameModification.m */; };
+		55EE1C0A18F5A9C600B8A737 /* Stories.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EE1C0918F5A9C600B8A737 /* Stories.xcassets */; };
+		55EE1C0C18F5AC6A00B8A737 /* Stories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55EE1C0B18F5AC6A00B8A737 /* Stories.plist */; };
+		55EE1C0F18F5AEAE00B8A737 /* StoryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EE1C0E18F5AEAE00B8A737 /* StoryBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +80,6 @@
 		555F5D7618EF02D2000950CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		555F5D7718EF02D2000950CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		555F5D7A18EF02D2000950CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		555F5D7C18EF02D2000950CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		555F5D7D18EF02D2000950CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		555F5D7F18EF02D2000950CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		555F5D8518EF02D2000950CA /* WWDC14Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDC14Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		555F5D8618EF02D2000950CA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -124,11 +130,28 @@
 		55E00A9118F4628D007E97A6 /* ImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageProvider.m; sourceTree = "<group>"; };
 		55E00A9318F46704007E97A6 /* UIImage+Split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Split.h"; sourceTree = "<group>"; };
 		55E00A9418F46704007E97A6 /* UIImage+Split.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Split.m"; sourceTree = "<group>"; };
-		55E00A9A18F46E6A007E97A6 /* Memes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Memes.xcassets; sourceTree = "<group>"; };
+		55E00A9A18F46E6A007E97A6 /* PuzzleBackgrounds.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PuzzleBackgrounds.xcassets; sourceTree = "<group>"; };
 		55E00A9C18F485F3007E97A6 /* PuzzlePiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzlePiece.h; sourceTree = "<group>"; };
 		55E00A9D18F485F3007E97A6 /* PuzzlePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzlePiece.m; sourceTree = "<group>"; };
 		55E00A9F18F49E8C007E97A6 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
 		55E00AA018F49E8C007E97A6 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		55EE1BF118F581CF00B8A737 /* TimeLineCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineCanvasViewController.h; sourceTree = "<group>"; };
+		55EE1BF218F581CF00B8A737 /* TimeLineCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineCanvasViewController.m; sourceTree = "<group>"; };
+		55EE1BF418F582FB00B8A737 /* TimeLineCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineCanvas.h; sourceTree = "<group>"; };
+		55EE1BF518F582FB00B8A737 /* TimeLineCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineCanvas.m; sourceTree = "<group>"; };
+		55EE1BF918F583C900B8A737 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		55EE1BFA18F583C900B8A737 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
+		55EE1BFC18F585D000B8A737 /* TimeLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineView.h; sourceTree = "<group>"; };
+		55EE1BFD18F585D000B8A737 /* TimeLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineView.m; sourceTree = "<group>"; };
+		55EE1C0218F5970B00B8A737 /* StoryThumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryThumbnail.h; sourceTree = "<group>"; };
+		55EE1C0318F5970B00B8A737 /* StoryThumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryThumbnail.m; sourceTree = "<group>"; };
+		55EE1C0518F5974500B8A737 /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		55EE1C0618F5A07A00B8A737 /* UIView+FrameModification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameModification.h"; sourceTree = "<group>"; };
+		55EE1C0718F5A07A00B8A737 /* UIView+FrameModification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameModification.m"; sourceTree = "<group>"; };
+		55EE1C0918F5A9C600B8A737 /* Stories.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stories.xcassets; sourceTree = "<group>"; };
+		55EE1C0B18F5AC6A00B8A737 /* Stories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stories.plist; sourceTree = "<group>"; };
+		55EE1C0D18F5AEAE00B8A737 /* StoryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryBuilder.h; sourceTree = "<group>"; };
+		55EE1C0E18F5AEAE00B8A737 /* StoryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,10 +219,11 @@
 				555F5DAB18EF1C9D000950CA /* View Controllers */,
 				555F5DAC18EF1CBF000950CA /* UI */,
 				555F5DAD18EF1CCE000950CA /* Model */,
-				555F5DCF18EFF8E8000950CA /* Helpers */,
+				555F5DCF18EFF8E8000950CA /* Content provider */,
 				555F5DD418F33CAB000950CA /* Util */,
 				555F5D7F18EF02D2000950CA /* Images.xcassets */,
-				55E00A9A18F46E6A007E97A6 /* Memes.xcassets */,
+				55E00A9A18F46E6A007E97A6 /* PuzzleBackgrounds.xcassets */,
+				55EE1C0918F5A9C600B8A737 /* Stories.xcassets */,
 				555F5D6E18EF02D2000950CA /* Supporting Files */,
 				555F5DA918EF1A33000950CA /* multiViewHolder.png */,
 			);
@@ -216,6 +240,7 @@
 				555F5DCD18EFF78B000950CA /* Questions.plist */,
 				55E00A8418F44095007E97A6 /* NegativeReplies.plist */,
 				55E00A8618F4449A007E97A6 /* PositiveReplies.plist */,
+				55EE1C0B18F5AC6A00B8A737 /* Stories.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,11 +266,8 @@
 		555F5DAB18EF1C9D000950CA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				555F5D7C18EF02D2000950CA /* ViewController.h */,
-				555F5D7D18EF02D2000950CA /* ViewController.m */,
-				555F5DBD18EFE7EC000950CA /* GameViewController.h */,
-				555F5DBE18EFE7EC000950CA /* GameViewController.m */,
-				555F5DDD18F3C986000950CA /* QuestionViewControllers */,
+				55EE1C0018F596CC00B8A737 /* Game */,
+				55EE1BFF18F596AF00B8A737 /* Time line canvas */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -253,6 +275,7 @@
 		555F5DAC18EF1CBF000950CA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				55EE1C0118F596F400B8A737 /* Time line */,
 				555F5DD918F35698000950CA /* QuestionView */,
 				555F5DD818F3568B000950CA /* Grid */,
 			);
@@ -262,20 +285,13 @@
 		555F5DAD18EF1CCE000950CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				555F5DAE18EF1CE4000950CA /* Game.h */,
-				555F5DAF18EF1CE4000950CA /* Game.m */,
-				555F5DB118EF1D11000950CA /* Question.h */,
-				555F5DB218EF1D11000950CA /* Question.m */,
-				555F5DB418EF1E6C000950CA /* MultipleChoiceQuestion.h */,
-				555F5DB518EF1E6C000950CA /* MultipleChoiceQuestion.m */,
-				555F5DBA18EFE6A2000950CA /* LocationQuestion.h */,
-				555F5DBB18EFE6A2000950CA /* LocationQuestion.m */,
-				555F5DD318F1A192000950CA /* QuestionTypes.h */,
+				55EE1BF818F583B600B8A737 /* Time line */,
+				55EE1BF718F583A200B8A737 /* Game */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		555F5DCF18EFF8E8000950CA /* Helpers */ = {
+		555F5DCF18EFF8E8000950CA /* Content provider */ = {
 			isa = PBXGroup;
 			children = (
 				555F5DD018EFF8FF000950CA /* QuestionReader.h */,
@@ -284,19 +300,24 @@
 				55E00A8918F44727007E97A6 /* ReplyReader.m */,
 				55E00A9018F4628D007E97A6 /* ImageProvider.h */,
 				55E00A9118F4628D007E97A6 /* ImageProvider.m */,
+				55EE1C0D18F5AEAE00B8A737 /* StoryBuilder.h */,
+				55EE1C0E18F5AEAE00B8A737 /* StoryBuilder.m */,
 			);
-			name = Helpers;
+			name = "Content provider";
 			sourceTree = "<group>";
 		};
 		555F5DD418F33CAB000950CA /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				55EE1C0618F5A07A00B8A737 /* UIView+FrameModification.h */,
+				55EE1C0718F5A07A00B8A737 /* UIView+FrameModification.m */,
 				55E00A8B18F458F0007E97A6 /* UIViewController+Alerts.h */,
 				55E00A8C18F458F0007E97A6 /* UIViewController+Alerts.m */,
 				555F5DD518F33CD2000950CA /* NSArray+Util.h */,
 				555F5DD618F33CD2000950CA /* NSArray+Util.m */,
 				55E00A9318F46704007E97A6 /* UIImage+Split.h */,
 				55E00A9418F46704007E97A6 /* UIImage+Split.m */,
+				55EE1C0518F5974500B8A737 /* Colors.h */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -340,6 +361,63 @@
 				55E00AA018F49E8C007E97A6 /* MapAnnotation.m */,
 			);
 			name = QuestionViewControllers;
+			sourceTree = "<group>";
+		};
+		55EE1BF718F583A200B8A737 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				555F5DAE18EF1CE4000950CA /* Game.h */,
+				555F5DAF18EF1CE4000950CA /* Game.m */,
+				555F5DB118EF1D11000950CA /* Question.h */,
+				555F5DB218EF1D11000950CA /* Question.m */,
+				555F5DB418EF1E6C000950CA /* MultipleChoiceQuestion.h */,
+				555F5DB518EF1E6C000950CA /* MultipleChoiceQuestion.m */,
+				555F5DBA18EFE6A2000950CA /* LocationQuestion.h */,
+				555F5DBB18EFE6A2000950CA /* LocationQuestion.m */,
+				555F5DD318F1A192000950CA /* QuestionTypes.h */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		55EE1BF818F583B600B8A737 /* Time line */ = {
+			isa = PBXGroup;
+			children = (
+				55EE1BF918F583C900B8A737 /* Story.h */,
+				55EE1BFA18F583C900B8A737 /* Story.m */,
+			);
+			name = "Time line";
+			sourceTree = "<group>";
+		};
+		55EE1BFF18F596AF00B8A737 /* Time line canvas */ = {
+			isa = PBXGroup;
+			children = (
+				55EE1BF118F581CF00B8A737 /* TimeLineCanvasViewController.h */,
+				55EE1BF218F581CF00B8A737 /* TimeLineCanvasViewController.m */,
+				55EE1BF418F582FB00B8A737 /* TimeLineCanvas.h */,
+				55EE1BF518F582FB00B8A737 /* TimeLineCanvas.m */,
+			);
+			name = "Time line canvas";
+			sourceTree = "<group>";
+		};
+		55EE1C0018F596CC00B8A737 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				555F5DBD18EFE7EC000950CA /* GameViewController.h */,
+				555F5DBE18EFE7EC000950CA /* GameViewController.m */,
+				555F5DDD18F3C986000950CA /* QuestionViewControllers */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		55EE1C0118F596F400B8A737 /* Time line */ = {
+			isa = PBXGroup;
+			children = (
+				55EE1BFC18F585D000B8A737 /* TimeLineView.h */,
+				55EE1BFD18F585D000B8A737 /* TimeLineView.m */,
+				55EE1C0218F5970B00B8A737 /* StoryThumbnail.h */,
+				55EE1C0318F5970B00B8A737 /* StoryThumbnail.m */,
+			);
+			name = "Time line";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,12 +496,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55EE1C0C18F5AC6A00B8A737 /* Stories.plist in Resources */,
 				555F5D8018EF02D2000950CA /* Images.xcassets in Resources */,
 				555F5DCC18EFF3D5000950CA /* MultipleChoiceQuestionViewController.xib in Resources */,
 				555F5D7218EF02D2000950CA /* InfoPlist.strings in Resources */,
 				55E00A8718F4449A007E97A6 /* PositiveReplies.plist in Resources */,
+				55EE1C0A18F5A9C600B8A737 /* Stories.xcassets in Resources */,
 				55E00A8518F44095007E97A6 /* NegativeReplies.plist in Resources */,
-				55E00A9B18F46E6A007E97A6 /* Memes.xcassets in Resources */,
+				55E00A9B18F46E6A007E97A6 /* PuzzleBackgrounds.xcassets in Resources */,
 				555F5DCE18EFF78B000950CA /* Questions.plist in Resources */,
 				555F5DAA18EF1A33000950CA /* multiViewHolder.png in Resources */,
 				555F5D7B18EF02D2000950CA /* Main.storyboard in Resources */,
@@ -447,27 +527,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				555F5DD218EFF8FF000950CA /* QuestionReader.m in Sources */,
+				55EE1C0418F5970B00B8A737 /* StoryThumbnail.m in Sources */,
 				55E00A8A18F44727007E97A6 /* ReplyReader.m in Sources */,
 				555F5DBF18EFE7EC000950CA /* GameViewController.m in Sources */,
+				55EE1BFB18F583C900B8A737 /* Story.m in Sources */,
 				555F5DA818EF172A000950CA /* GridView.m in Sources */,
 				555F5DB618EF1E6C000950CA /* MultipleChoiceQuestion.m in Sources */,
-				555F5D7E18EF02D2000950CA /* ViewController.m in Sources */,
 				555F5DB018EF1CE4000950CA /* Game.m in Sources */,
+				55EE1BF618F582FB00B8A737 /* TimeLineCanvas.m in Sources */,
 				55E00AA118F49E8C007E97A6 /* MapAnnotation.m in Sources */,
 				555F5DB318EF1D11000950CA /* Question.m in Sources */,
 				555F5DC218EFEC40000950CA /* QuestionViewController.m in Sources */,
 				55E00A9E18F485F3007E97A6 /* PuzzlePiece.m in Sources */,
+				55EE1C0F18F5AEAE00B8A737 /* StoryBuilder.m in Sources */,
 				55E00A9218F4628D007E97A6 /* ImageProvider.m in Sources */,
 				555F5DCA18EFF06D000950CA /* LocationQuestionViewController.m in Sources */,
 				555F5DC718EFF044000950CA /* MultipleChoiceQuestionViewController.m in Sources */,
 				555F5DB918EFE097000950CA /* PuzzleGameGridView.m in Sources */,
 				555F5DD718F33CD2000950CA /* NSArray+Util.m in Sources */,
+				55EE1C0818F5A07A00B8A737 /* UIView+FrameModification.m in Sources */,
 				555F5DDC18F356B3000950CA /* QuestionView.m in Sources */,
 				555F5D7818EF02D2000950CA /* AppDelegate.m in Sources */,
 				55E00A8D18F458F0007E97A6 /* UIViewController+Alerts.m in Sources */,
+				55EE1BFE18F585D000B8A737 /* TimeLineView.m in Sources */,
 				555F5DBC18EFE6A2000950CA /* LocationQuestion.m in Sources */,
 				55E00A9518F46704007E97A6 /* UIImage+Split.m in Sources */,
 				555F5D7418EF02D2000950CA /* main.m in Sources */,
+				55EE1BF318F581CF00B8A737 /* TimeLineCanvasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

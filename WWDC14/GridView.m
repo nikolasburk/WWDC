@@ -41,7 +41,7 @@
     self = [super initWithCoder:aDecoder];
     if (self)
     {
-        NSLog(@"DEBUG[StreamGridView]: Init with coder...");
+        //NSLog(@"DEBUG[StreamGridView]: Init with coder...");
         _currentPattern = MVP_Nine;
         UIImageView *dummyImageBackground = [self dummyViewForCurrentMultiViewPattern];
         [dummyImageBackground setFrame:self.bounds];

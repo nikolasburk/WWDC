@@ -33,6 +33,14 @@
     self.puzzleGameGridView.puzzleGridViewDelegate = self;
     [self.puzzleGameGridView setDelegate:self];
     [self newGame];
+    
+    NSLog(@"DEBUG | %s | View: %@ (bounds: width = %f; height = %f)", __func__, self.view, self.view.bounds.size.width, self.view.bounds.size.height);
+
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    NSLog(@"DEBUG | %s | View: %@ (bounds: width = %f; height = %f)", __func__, self.view, self.view.bounds.size.width, self.view.bounds.size.height);
 }
 
 - (void)setGame:(Game *)game

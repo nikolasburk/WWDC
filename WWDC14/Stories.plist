@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>storyID</key>
+        <integer>0</integer>
+        <key>title</key>
+        <string>University for Kids</string>
+        <key>images</key>
+        <integer>3</integer>
+        <key>time</key>
+        <dict>
+            <key>year</key>
+            <integer>2012</integer>
+            <key>month</key>
+            <integer>8</integer>
+        </dict>
+        <key>paragraphs</key>
+        <array>
+            <string>In August 2012, I organized the the &quot;Computer Science Lecture&quot; at the University for Kids, a yearly event hosted by my university. I enjoyed it a lot, since love doing both - working with children as well as talking about computer science :-) </string>
+            <string>You can check out a video that was shot during the event at: https://www.youtube.com/watch?v=inMCLVRLpMs</string>
+        </array>
+    </dict>
+    <dict>
+        <key>storyID</key>
+        <integer>1</integer>
+        <key>title</key>
+        <string>Semester abroad: Seoul 2011</string>
+        <key>images</key>
+        <integer>3</integer>
+        <key>time</key>
+        <dict>
+            <key>year</key>
+            <integer>2011</integer>
+            <key>month</key>
+            <integer>10</integer>
+        </dict>
+        <key>paragraphs</key>
+        <array>
+            <string>During my Bachelor program, I spent one semester at the Seoul Nattional University in South Korea! I had a great time there and got to know a lots of friendly people.</string>
+            <string>I travelled to Korea three weeks before the semester started and spent this time in a buddhist temple in the southern part of the country.</string>
+            <string>My classes at the SNU were very interesting: Computational Neuroscience and and Introduction course to C.</string>
+        </array>
+    </dict>
+    <dict>
+        <key>storyID</key>
+        <integer>2</integer>
+        <key>title</key>
+        <string>Bachelor thesis</string>
+        <key>images</key>
+        <integer>3</integer>
+        <key>time</key>
+        <dict>
+            <key>year</key>
+            <integer>2012</integer>
+            <key>month</key>
+            <integer>5</integer>
+        </dict>
+        <key>paragraphs</key>
+        <array>
+            <string>I wrote my Bachelor thesis in cooperation with SAP at their German headquarters in Walldorf. The department where I wrote the thesis was "Master Data Governance".</string>
+            <string>I implemented a prototype for a "Drill-down search" using an SAP internal HTML5 framework and Javascript. </string>
+            <string>The goal of the thesis was to compare the performance of the prototype running against a regular and an in-memory database.</string>
+        </array>
+    </dict>
+</array>
+</plist>
