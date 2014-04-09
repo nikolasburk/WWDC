@@ -7,6 +7,7 @@
 //
 
 #import "StoryBuilder.h"
+#import "Story.h"
 
 @implementation StoryBuilder
 

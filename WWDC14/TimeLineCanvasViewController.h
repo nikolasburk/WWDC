@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TimeLineCanvas.h"
 
-@interface TimeLineCanvasViewController : UIViewController
+@interface TimeLineCanvasViewController : UIViewController <TimeLineCanvasDelegate>
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil stories:(NSArray *)stories bundle:(NSBundle *)nibBundleOrNil;

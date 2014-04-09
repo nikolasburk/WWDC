@@ -8,11 +8,6 @@
 
 #import "TimeLineView.h"
 
-@interface TimeLineView ()
-
-
-@end
-
 @implementation TimeLineView
 
 - (id)initWithStartYear:(NSInteger)startYear endYear:(NSInteger)endYear skip:(NSRange)skip width:(CGFloat)width
@@ -26,7 +21,6 @@
         self.frame  = CGRectMake(0.0, 0.0, width, TIME_LINE_HEIGHT);
         [self initIntervalSize];
         [self buildTimeLine];
-        
     }
     return self;
 }
@@ -73,7 +67,6 @@
             currentYearLabel.text = yearString;
             currentYearLabel.textColor = [UIColor whiteColor];
             currentYearLabel.textAlignment = NSTextAlignmentCenter;
-            
             
             [self addSubview:currentYearLabel];
         }

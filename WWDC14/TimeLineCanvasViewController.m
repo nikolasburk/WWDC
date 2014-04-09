@@ -7,8 +7,8 @@
 //
 
 #import "TimeLineCanvasViewController.h"
-#import "TimeLineCanvas.h"
 #import "StoryBuilder.h"
+#import "StoryThumbnail.h"
 
 #define BIRTH_YEAR 1989
 #define CURRENT_YEAR 2014
@@ -36,6 +36,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    TimeLineCanvas *timeLineCanvas = (TimeLineCanvas *)self.view;
+    timeLineCanvas.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -44,11 +46,18 @@
     TimeLineCanvas *timeLineCanvas = (TimeLineCanvas *)self.view;
     [timeLineCanvas buildTimeLineWithWidth:self.view.frame.size.width startYear:BIRTH_YEAR endYear:CURRENT_YEAR skip:SKIP_RANGE;
     NSArray *stories = [[StoryBuilder storyBuilderSharedInstance] stories];
-    [timeLineCanvas setStories:stories];
-    
-    NSLog(@"DEBUG | %s | View: %@ (bounds: width = %f; height = %f)", __func__, self.view, self.view.bounds.size.width, self.view.bounds.size.height);
-    
-    NSLog(@"DEBUG | %s | Time line canvas: %@", __func__, timeLineCanvas);}
+    for(Story *story in stories)
+    {
+         [timeLineCanvas addStoryThumbnailToCanvasForStory:story];
+    }
+     
+}
 
-
+#pragma mark - Time line canvas delegate
+     
+- (void)timeLineCanvas:(TimeLineCanvas *)timeLineCanvas didSelectStoryThumbnail:(StoryThumbnail *)storyThumbnail
+{
+    NSLog(@"DEBUG | %s | Did select story: %@", __func__, storyThumbnail.story);
+}
+     
 @end

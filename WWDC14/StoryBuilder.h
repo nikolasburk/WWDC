@@ -11,7 +11,6 @@
 
 
 #import <Foundation/Foundation.h>
-#import "Story.h"
 
 @interface StoryBuilder : NSObject
 

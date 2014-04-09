@@ -9,13 +9,22 @@
 #import <UIKit/UIKit.h>
 #import "TimeLineView.h"
 
+@class TimeLineCanvas, StoryThumbnail, Story;
+
+@protocol TimeLineCanvasDelegate <NSObject>
+
+- (void)timeLineCanvas:(TimeLineCanvas *)timeLineCanvas didSelectStoryThumbnail:(StoryThumbnail *)storyThumbnail;
+
+@end
+
+
 @interface TimeLineCanvas : UIView
 
-@property (nonatomic, strong) TimeLineView *timeLineView;
-@property (nonatomic, strong) NSArray *stories;
+@property (nonatomic, strong, readonly) TimeLineView *timeLineView;
+@property (nonatomic, strong, readonly) NSArray *stories;
+@property (nonatomic, strong) id<TimeLineCanvasDelegate> delegate;
 
-
-- (id)initWithFrame:(CGRect)frame startYear:(NSInteger)startYear endYear:(NSInteger)endYear skip:(NSRange)skip;
 - (void)buildTimeLineWithWidth:(CGFloat)width startYear:(NSInteger)startYear endYear:(NSInteger)endYear skip:(NSRange)skip;
+- (void)addStoryThumbnailToCanvasForStory:(Story *)story;
 
 @end

@@ -29,11 +29,8 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        self.timeLineView = [[TimeLineView alloc] initWithStartYear:startYear endYear:endYear skip:skip width:self.frame.size.width];
+        _timeLineView = [[TimeLineView alloc] initWithStartYear:startYear endYear:endYear skip:skip width:self.frame.size.width];
         [self addSubview:self.timeLineView];
-        
-        
-        
     }
     return self;
 }
@@ -41,7 +38,7 @@
 - (void)buildTimeLineWithWidth:(CGFloat)width startYear:(NSInteger)startYear endYear:(NSInteger)endYear skip:(NSRange)skip
 {
     self.backgroundColor = [UIColor whiteColor];
-    self.timeLineView = [[TimeLineView alloc] initWithStartYear:startYear endYear:endYear skip:skip width:self.frame.size.width - 2 * DEFAULT_MARGIN];
+    _timeLineView = [[TimeLineView alloc] initWithStartYear:startYear endYear:endYear skip:skip width:self.frame.size.width - 2 * DEFAULT_MARGIN];
     [self.timeLineView setX:DEFAULT_MARGIN];
     [self.timeLineView setY:self.frame.size.height-self.timeLineView.frame.size.height-TAB_BAR_HEIGHT-DEFAULT_MARGIN];
     [self addSubview:self.timeLineView];
@@ -64,14 +61,7 @@
     for (Story *story in _stories)
     {
         [self addStoryThumbnailToCanvasForStory:story];
-//        CGFloat x = [self.timeLineView xForYear:story.year month:story.month];
-//        CGRect frame = CGRectMake(x, y, STORY_THUMBNAIL_EDGE, STORY_THUMBNAIL_EDGE);
-//        StoryThumbnail *storyThumbnail = [[StoryThumbnail alloc] initWithFrame:frame story:story];
-//        [self addSubview:storyThumbnail];
     }
-    
-    NSLog(@"DEBUG | %s | Added all thumbnails: %@", __func__, self.storyThumbnails);
-
 }
 
 - (void)addStoryThumbnailToCanvasForStory:(Story *)story
@@ -80,10 +70,21 @@
     CGFloat y =  [self yForThumbnailWithX:x];
     CGRect frame = CGRectMake(x, y, STORY_THUMBNAIL_EDGE, STORY_THUMBNAIL_EDGE);
     StoryThumbnail *storyThumbnail = [[StoryThumbnail alloc] initWithFrame:frame story:story];
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(storyThumbnailTapped:)];
+    [storyThumbnail addGestureRecognizer:tapGestureRecognizer];
     if (!self.storyThumbnails) self.storyThumbnails = [[NSMutableArray alloc] init];
     [self.storyThumbnails addObject:storyThumbnail];
     [self addSubview:storyThumbnail];
     NSLog(@"DEBUG | %s | Added thumbail: %@", __func__, storyThumbnail);
+}
+
+- (void)storyThumbnailTapped:(UITapGestureRecognizer *)tap
+{
+    StoryThumbnail *storyThumbnail = (StoryThumbnail *)tap.view;
+    if ([self.delegate respondsToSelector:@selector(timeLineCanvas:didSelectStoryThumbnail:)])
+    {
+        [self.delegate timeLineCanvas:self didSelectStoryThumbnail:storyThumbnail];
+    }
 }
 
 
