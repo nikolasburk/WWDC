@@ -2,6 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
+    <dict>
+		<key>category</key>
+		<string>Education</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>question</key>
+		<string>In which year did I graduate from high school?</string>
+		<key>answer</key>
+		<string>2008</string>
+        <key>options</key>
+		<array>
+			<string>2006</string>
+			<string>2007</string>
+			<string>2005</string>
+		</array>
+
+   	</dict>
 	<dict>
 		<key>category</key>
 		<string>Personal</string>

@@ -10,6 +10,17 @@
 #import "Game.h" // for enum Level
 #import "NSArray+Util.h"
 
+#define kQuestion @"question"
+#define kCategory @"category"
+#define kType @"type"
+#define kAnswer @"answer"
+
+#define kCategoryEducation @"Education"
+#define kCategoryProfessional @"Professional"
+#define kCategoryIOS @"iOS"
+#define kCategoryPersonal @"Personal"
+
+
 @implementation QuestionReader
 
 #pragma mark - Singleton
@@ -117,7 +128,7 @@ static QuestionReader *questionReaderSharedInstance = nil;
 
 - (Question *)questionForDictionary:(NSDictionary *)dictionary
 {
-    QuestionCategory questionCategory = [dictionary[kCategory] intValue];
+    QuestionCategory questionCategory = [self categoryForKey:dictionary[kCategory]];
     NSString *questionString = dictionary[kQuestion];
     NSString *answerString = dictionary[kAnswer];
     
@@ -135,6 +146,28 @@ static QuestionReader *questionReaderSharedInstance = nil;
     }
     
     return question;
+}
+
+- (QuestionCategory)categoryForKey:(NSString *)categoryKey
+{
+    QuestionCategory category;
+    if ([categoryKey isEqualToString:kCategoryEducation])
+    {
+        category = QC_Education;
+    }
+    else if ([categoryKey isEqualToString:kCategoryProfessional])
+    {
+        category = QC_Professional;
+    }
+    else if ([categoryKey isEqualToString:kCategoryIOS])
+    {
+        category = QC_iOS;
+    }
+    else if ([categoryKey isEqualToString:kCategoryPersonal])
+    {
+        category = QC_Personal;
+    }
+    return category;
 }
                           
 - (Class)classForQuestionTypeShort:(NSString *)questionTypeShort

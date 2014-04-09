@@ -98,8 +98,9 @@
     {
         for (int i = 0; i < columns; i++)
         {
-            Question *currentQuestion = questionsForCurrentLevel[questionIndex++];
-            PuzzlePiece *puzzlePiece = self.game.imagePiecesForCurrentLevel[ j*rows + i ];
+            Question *currentQuestion = questionsForCurrentLevel[questionIndex];
+            PuzzlePiece *puzzlePiece = self.game.imagePiecesForCurrentLevel[questionIndex];
+            questionIndex++;
             QuestionView *questionView = [[QuestionView alloc] initWithFrame:CGRectMake(i*width, j*height, width, height) question:currentQuestion puzzlePiece:puzzlePiece];
             UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self.puzzleGameGridView action:@selector(handleTap:)];
             [questionView addGestureRecognizer:tapRecognizer];

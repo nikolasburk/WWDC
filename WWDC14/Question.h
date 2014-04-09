@@ -14,7 +14,8 @@
 
 typedef enum {
     QC_Personal = 0,
-    QC_EducationAndProfessional,
+    QC_Education,
+    QC_Professional,
     QC_iOS
 } QuestionCategory;
 

@@ -12,10 +12,6 @@
 #define QUESTIONS_FILE_PATH @"Questions"
 #define SUFFIX_PLIST @"plist"
 
-#define kQuestion @"question"
-#define kCategory @"category"
-#define kType @"type"
-#define kAnswer @"answer"
 
 @interface QuestionReader : NSObject
 

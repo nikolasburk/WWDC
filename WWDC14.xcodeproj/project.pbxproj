@@ -61,7 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		555F5D6418EF02D1000950CA /* Quiz Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		555F5D6418EF02D1000950CA /* Puzzle Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puzzle Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		555F5D6718EF02D2000950CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		555F5D6918EF02D2000950CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		555F5D6B18EF02D2000950CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -169,7 +169,7 @@
 		555F5D6518EF02D1000950CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				555F5D6418EF02D1000950CA /* Quiz Me.app */,
+				555F5D6418EF02D1000950CA /* Puzzle Me.app */,
 				555F5D8518EF02D2000950CA /* WWDC14Tests.xctest */,
 			);
 			name = Products;
@@ -359,7 +359,7 @@
 			);
 			name = WWDC14;
 			productName = WWDC14;
-			productReference = 555F5D6418EF02D1000950CA /* Quiz Me.app */;
+			productReference = 555F5D6418EF02D1000950CA /* Puzzle Me.app */;
 			productType = "com.apple.product-type.application";
 		};
 		555F5D8418EF02D2000950CA /* WWDC14Tests */ = {
@@ -597,7 +597,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWDC14/WWDC14-Prefix.pch";
 				INFOPLIST_FILE = "WWDC14/WWDC14-Info.plist";
-				PRODUCT_NAME = "Quiz Me";
+				PRODUCT_NAME = "Puzzle Me";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -610,7 +610,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWDC14/WWDC14-Prefix.pch";
 				INFOPLIST_FILE = "WWDC14/WWDC14-Info.plist";
-				PRODUCT_NAME = "Quiz Me";
+				PRODUCT_NAME = "Puzzle Me";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

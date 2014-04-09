@@ -76,8 +76,11 @@ const NSInteger NUMBER_OF_GUESSES = 3;
         case QC_Personal:
             questionCategoryString = NSLocalizedString(@"Personal", nil);
             break;
-        case QC_EducationAndProfessional:
-            questionCategoryString = NSLocalizedString(@"Education & Professional experience", nil);
+        case QC_Education:
+            questionCategoryString = NSLocalizedString(@"Education", nil);
+            break;
+        case QC_Professional:
+            questionCategoryString = NSLocalizedString(@"Professional experience", nil);
             break;
         case QC_iOS:
             questionCategoryString = NSLocalizedString(@"iOS", nil);
