@@ -1,25 +1,147 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="SjM-wI-kN1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Game View Controller - Item 1-->
+        <scene sceneID="NT0-4O-7Ry">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="VJD-xU-73a" customClass="GameViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="4MS-db-gL1"/>
+                        <viewControllerLayoutGuide type="bottom" id="hWX-F7-Rd8"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="HH0-8r-hfd">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgx-k4-BIA" customClass="PuzzleGameGridView">
+                                <rect key="frame" x="196" y="67" width="633" height="633"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="633" id="3wg-jZ-pz7"/>
+                                    <constraint firstAttribute="width" constant="633" id="D8u-k1-Crm"/>
+                                    <constraint firstAttribute="width" secondItem="Xgx-k4-BIA" secondAttribute="height" multiplier="1:1" id="x8c-fu-yYv"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7me-ds-giI">
+                                <rect key="frame" x="497" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelButtonPressed:" destination="VJD-xU-73a" eventType="touchUpInside" id="XOG-Vk-Clt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtp-1d-3Io">
+                                <rect key="frame" x="551" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="9">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelButtonPressed:" destination="VJD-xU-73a" eventType="touchUpInside" id="IlZ-JD-kIC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NY-oo-yeu">
+                                <rect key="frame" x="443" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelButtonPressed:" destination="VJD-xU-73a" eventType="touchUpInside" id="76E-NF-hfd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgX-L0-9w6">
+                                <rect key="frame" x="20" y="65" width="168" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="New game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGameButtonPressed" destination="VJD-xU-73a" eventType="touchUpInside" id="vPD-pq-LFK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-Nx-2x2">
+                                <rect key="frame" x="20" y="103" width="168" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next level">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextLevelButtonPressed" destination="VJD-xU-73a" eventType="touchUpInside" id="OLY-Df-Xw2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mtp-1d-3Io" firstAttribute="leading" secondItem="7me-ds-giI" secondAttribute="trailing" constant="24" id="4cr-rU-Gu6"/>
+                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="0NY-oo-yeu" secondAttribute="bottom" constant="17" id="5xl-Y3-Es8"/>
+                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="7me-ds-giI" secondAttribute="bottom" constant="17" id="Btl-DL-pvX"/>
+                            <constraint firstItem="7me-ds-giI" firstAttribute="leading" secondItem="0NY-oo-yeu" secondAttribute="trailing" constant="24" id="OcH-eS-HIR"/>
+                            <constraint firstAttribute="centerX" secondItem="7me-ds-giI" secondAttribute="centerX" id="ZNc-nR-J42"/>
+                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="Mtp-1d-3Io" secondAttribute="bottom" constant="17" id="mNB-Om-Rb8"/>
+                            <constraint firstAttribute="centerY" secondItem="Xgx-k4-BIA" secondAttribute="centerY" constant="0.5" id="sU5-vW-D76"/>
+                            <constraint firstAttribute="centerX" secondItem="Xgx-k4-BIA" secondAttribute="centerX" constant="-0.5" id="yY9-l6-7N7"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="T2d-xj-Ilb"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="nextLevelButton" destination="5zO-Nx-2x2" id="Nu2-2f-Vce"/>
+                        <outlet property="puzzleGameGridView" destination="Xgx-k4-BIA" id="AOK-k6-40f"/>
+                        <outletCollection property="gridPatternButtons" destination="0NY-oo-yeu" id="0rM-0f-bvG"/>
+                        <outletCollection property="gridPatternButtons" destination="7me-ds-giI" id="hfV-7z-dcT"/>
+                        <outletCollection property="gridPatternButtons" destination="Mtp-1d-3Io" id="2ec-Eo-HCX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6v-vl-ZjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="-409"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eFw-zl-AV5">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="SjM-wI-kN1" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="n5C-kh-IRf">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VJD-xU-73a" kind="relationship" relationship="viewControllers" id="hzG-KE-eAf"/>
+                        <segue destination="T42-cc-ofs" kind="relationship" relationship="viewControllers" id="9x1-oX-pdO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ME-Zj-nQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115" y="156"/>
+        </scene>
+        <!--View Controller - Item 2-->
+        <scene sceneID="TcY-tD-kAs">
+            <objects>
+                <viewController id="T42-cc-ofs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uyH-kI-Moc"/>
+                        <viewControllerLayoutGuide type="bottom" id="WzM-VJ-UVi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="blz-OD-bXa">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Sb5-Zp-L5h"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9AW-o1-KU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1097" y="710"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

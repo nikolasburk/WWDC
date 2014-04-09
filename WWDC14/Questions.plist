@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>category</key>
+		<string>Personal</string>
+		<key>type</key>
+		<string>L</string>
+		<key>question</key>
+		<string>In which city was I born?</string>
+		<key>answer</key>
+		<string>Hamburg</string>
+        <key>coordinates</key>
+		<dict>
+			<key>latitude</key>
+			<real>53.5653</real>
+			<key>longitude</key>
+			<real>10.0014</real>
+		</dict>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Education</string>
+		<key>type</key>
+		<string>L</string>
+		<key>question</key>
+		<string>Where did I spend one semester abroad during my Bachelor studies?</string>
+		<key>answer</key>
+		<string>Seoul</string>
+        <key>coordinates</key>
+		<dict>
+			<key>latitude</key>
+			<real>37.5665</real>
+			<key>longitude</key>
+			<real>126.9780</real>
+		</dict>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Education</string>
+		<key>type</key>
+		<string>L</string>
+		<key>question</key>
+		<string>Where did I spend one semester abroad during my Master studies?</string>
+		<key>answer</key>
+		<string>Amsterdam</string>
+        <key>coordinates</key>
+		<dict>
+			<key>latitude</key>
+			<real>52.3731</real>
+			<key>longitude</key>
+			<real>4.8922</real>
+		</dict>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>iOS</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>question</key>
+		<string>What was my very first app that I uploaded to the Apple App Store about?</string>
+		<key>options</key>
+		<array>
+			<string>A debt manager to remember what amounts of money have been lent or borrowed</string>
+			<string>A very expensive app with limited availability for very rich people</string>
+			<string>An app that would help you to pick a good restaurant</string>
+		</array>
+		<key>answer</key>
+		<string>An app to manage network cameras</string>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>iOS</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>question</key>
+		<string>For what kind of treatments does my doctor want an iPad app?</string>
+		<key>options</key>
+		<array>
+			<string>X Ray</string>
+			<string>Mouth surgery</string>
+			<string>Amputations</string>
+		</array>
+		<key>answer</key>
+		<string>Botox</string>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Personal</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>question</key>
+		<string>Which one of these are my three favorite podcasts?</string>
+		<key>options</key>
+		<array>
+			<string>ATP</string>
+			<string>iPhreaks</string>
+			<string>iDeveloper Life</string>
+		</array>
+		<key>answer</key>
+		<string>NSBrief, Core Intuition</string>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>iOS</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>question</key>
+		<string>What was the most challenging feature I ever implemented? </string>
+		<key>options</key>
+		<array>
+			<string>A SQL-lite database </string>
+			<string>A core data layer</string>
+			<string>A multi view</string>
+		</array>
+		<key>answer</key>
+		<string>A network sniffer to detect online cameras</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What is the &apos;Specialization Track&apos; that I chose for my Master program?</string>
+		<key>category</key>
+		<string>Education</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>options</key>
+		<array>
+			<string>Information Technology</string>
+			<string>Enterprise Software</string>
+			<string>E-Commerce</string>
+		</array>
+		<key>answer</key>
+		<string>System Design &amp; Development</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What is special about the way an alarm is set in the &apos;Traffic Alarm&apos; app that I am currently working on?</string>
+		<key>category</key>
+		<string>iOS</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>options</key>
+		<array>
+			<string>Alarm time is set by the user directly</string>
+			<string>Alarm time is set randomly by the app</string>
+			<string>Alarm time is set exactly 12 h after the actual alarm</string>
+		</array>
+		<key>answer</key>
+		<string>Alarm time is calcualted according to current traffic information</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Which conference or congress did I attend in February 2014? </string>
+		<key>category</key>
+		<string>Professional</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>options</key>
+		<array>
+			<string>NSConference @</string>
+			<string>UIKonf @Berlin</string>
+			<string>CocoaConf @</string>
+		</array>
+		<key>answer</key>
+		<string>Mobile World Congress @Barcelona</string>
+	</dict>
+    <dict>
+		<key>question</key>
+		<string>Where was the Mobile World Congress that I attented 2014? </string>
+		<key>category</key>
+		<string>Professional</string>
+		<key>type</key>
+		<string>L</string>
+		<key>answer</key>
+		<string>Barcelona</string>
+        <key>coordinates</key>
+		<dict>
+			<key>latitude</key>
+			<real>41.3833</real>
+			<key>longitude</key>
+			<real>2.1833</real>
+		</dict>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Education</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>question</key>
+		<string>In cooperation with which company did I write my Bachelor thesis?</string>
+		<key>options</key>
+		<array>
+			<string>Cameramanager</string>
+			<string>IBM</string>
+			<string>Apple</string>
+		</array>
+		<key>answer</key>
+		<string>SAP</string>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Personal</string>
+		<key>type</key>
+		<string>L</string>
+		<key>question</key>
+		<string>In which city did I spend one year in high school and lived in a host family?</string>
+		<key>answer</key>
+		<string>Douai</string>
+        <key>coordinates</key>
+		<dict>
+			<key>latitude</key>
+			<real>50.3714</real>
+			<key>longitude</key>
+			<real>3.0800</real>
+		</dict>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Professional</string>
+		<key>question</key>
+		<string>Which company acquired my current employer &apos;Cameramanager&apos; in summer 2013?</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>options</key>
+		<array>
+			<string>SAP</string>
+			<string>IBM</string>
+			<string>Axis</string>
+		</array>
+		<key>answer</key>
+		<string>Panasonic</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What was the name of the start-up that I was working on with friends in the last semester of my Bachelor studies?</string>
+		<key>category</key>
+		<string>iOS</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>options</key>
+		<array>
+			<string>WhatsMapp</string>
+			<string>MapApp</string>
+			<string>MappMe</string>
+		</array>
+		<key>answer</key>
+		<string>LetsMapp</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>In what kind of organization did I work between my high school graduation and studies?</string>
+		<key>category</key>
+		<string>Personal</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>options</key>
+		<array>
+			<string>Senior living house</string>
+			<string>Sports club</string>
+			<string>Company</string>
+		</array>
+		<key>answer</key>
+		<string>Kindergarden</string>
+	</dict>
+</array>
+</plist>

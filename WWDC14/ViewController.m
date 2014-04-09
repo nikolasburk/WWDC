@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "GridView.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet GridView *gridView;
 @end
 
 @implementation ViewController
@@ -17,13 +18,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.gridView setCurrentPattern:MVP_Four];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidAppear:animated];
+    [self.gridView setCurrentPattern:MVP_Nine];
 }
+
+- (IBAction)setGridPattern:(UIButton *)sender
+{
+    [self.gridView setCurrentPattern:(MultiViewPattern)sender.tag];
+}
+
 
 @end
