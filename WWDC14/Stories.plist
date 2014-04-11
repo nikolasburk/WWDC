@@ -291,7 +291,7 @@
         <array>
             <string>In January 2014, the yearly company day ("Greenday") was hosted by Cameramanager. In the morning, the whole team of 30-35 pleople has been split up into smaller groups, each of which has been assigned a team lead by our bosses. I was selected to be the lead of the "Mobile and Web team", consisting of our Android developer and three of our web developers.</string>
             <string>Just like all other teams, we had to prepare a presentation that was to be held by the team lead. At the end of the day, everyone could vote for the best presentation that was held in the morning and my presentation won in the end. The price for all team members was one day at the Mobile World Congress that took place in February in Barcelona.</string>
-            <string>So I flew there with my team members, ending up having a great and also very interesting time before and at the congress. I spent most of the time in a hall that had the title "App Planet" and which was packed with interesting companies and their innovative technologies!</string>
+            <string>So I flew there with my team members, ending up having a great and also very interesting time before and at the congress. I spent most of the time in a hall that had the title "App Planet" and which was packed with interesting companies and their innovative technologies! A funny side story of the MCW is that I met an old friend of mine who I got to know during my stay in France and whom I hadn't seen for more than 7 years!</string>
         </array>
     </dict>
     <dict>
@@ -319,7 +319,46 @@
 		<key>storyID</key>
 		<integer>15</integer>
 		<key>title</key>
-		<string></string>
+		<string>Birth</string>
+        <key>images</key>
+        <integer>1</integer>
+        <key>time</key>
+        <dict>
+            <key>year</key>
+            <integer>1989</integer>
+            <key>month</key>
+            <integer>7</integer>
+        </dict>
+        <key>paragraphs</key>
+        <array>
+            <string>I was born on the 26th of July in Hamburg! </string>
+        </array>
+    </dict>
+    <dict>
+		<key>storyID</key>
+		<integer>16</integer>
+		<key>title</key>
+		<string>MacBook Pro Retina 13-inch, Late 2013</string>
+        <key>images</key>
+        <integer>2</integer>
+        <key>time</key>
+        <dict>
+            <key>year</key>
+            <integer>2014</integer>
+            <key>month</key>
+            <integer>2</integer>
+        </dict>
+        <key>paragraphs</key>
+        <array>
+            <string>In March 2014 I ordered a new MacBook to replace my old MacBook Air that I had been using for 3 years. The new MacBook is fantastic and I just love working with it!</string>
+            <string>Here are the specs:\nProcessor: 2,8 GHz Intel Core i7\nMemory: 16 GB 1600 MHz DDR3\Storage: 500 GB Flash</string>
+        </array>
+    </dict>
+    <dict>
+		<key>storyID</key>
+		<integer>17</integer>
+		<key>title</key>
+		<string>Client projects</string>
         <key>images</key>
         <integer>3</integer>
         <key>time</key>
@@ -327,13 +366,76 @@
             <key>year</key>
             <integer>2014</integer>
             <key>month</key>
-            <integer>6</integer>
+            <integer>2</integer>
         </dict>
         <key>paragraphs</key>
         <array>
-            <string>What a great chance to learn directly from Apple engineers, get insights about Apple's future directions and meet other fascinating members of the community! I have heard very much about WWDC and from the beginning it has been very clear to me that one day I would go there. </string>
-            <string>When I saw the possibility to apply for a student scholarship, I didn't hesitate one moment and immediately started thinking about an app that I could build for this purpose, thus "Quiz Me" was born :-)</string>
-            <string>I see this as a major opportunity and would love to be a direct part of this exciting event! </string>
+            <string>Lately, I have started to work on client projects. I am working on three different mobile apps at the moment. The first one is an iPad app for my doctor in Germany who wants to use it to manage the Botox treatments that he is doing with his patients. The app included the management of patients as well maintaining a photo archive of each patient that allows to generate Before/After-pictures for each treatment.</string>
+            <string>The second app is for a guy who I got in touch with through a fellow student of mine. He works as a designer and wants to realize his idea for an iPhone alarm application, where the user enters an appointment along with a location for that appointment, and the app will then according to the current traffic (and some more information that has to be provided by the user) set the actual alarm time for the user.</string>
+            <string>The third one is actually an Android application (sorry...). It is for an iOS developer who has no Android knowledge at all (no experience with Java and Eclipse either...) and who wants to port one iOS app of his to Android. I accepted his request as I find it interesting at least to get to know the basic programming concepts in Android (although I have to say that working with Eclipse is a real pain compared to Xcode).</string>
+        </array>
+    </dict>
+    <dict>
+		<key>storyID</key>
+		<integer>18</integer>
+		<key>title</key>
+		<string>My girlfriend: Mona</string>
+        <key>images</key>
+        <integer>3</integer>
+        <key>time</key>
+        <dict>
+            <key>year</key>
+            <integer>2012</integer>
+            <key>month</key>
+            <integer>10</integer>
+        </dict>
+        <key>paragraphs</key>
+        <array>
+            <string>In January 2012, I met my current girlfiend, Mona! :-) It took us until October to get together but we have been very happy since then. </string>
+            <string>In February 2014, she joined me in Amsterdam where she does an internship and we live live together in a really nice apartment.</string>
+            <string>She doesn't know anything about programming, and yet I am drawing a lot of inspiration from here.</string>
+        </array>
+    </dict>
+    <dict>
+		<key>storyID</key>
+		<integer>19</integer>
+		<key>title</key>
+		<string>Podcasts</string>
+        <key>images</key>
+        <integer>3</integer>
+        <key>time</key>
+        <dict>
+            <key>year</key>
+            <integer>2014</integer>
+            <key>month</key>
+            <integer>1</integer>
+        </dict>
+        <key>paragraphs</key>
+        <array>
+            <string>In January 2014, I started listening to Tech (escpecially iOS related) podcasts. I am enjoying these shows so much, being fascinated and higly inspired by most of them. </string>
+            <string>Here is a list of my favorites:\n1: NSBrief - A show hosted by Saul Mora who for each episode would invite someone from the community to talk about a few iOS related topics.\n2: Core Intuition: Daniel Jalkut and Manton Reece are very entertaining to listen to and also give nice insights into the iOS world.\n3: iDeveloper Life: Scotty telling interesting iOS stories and talking to interesting guests.</string>
+            <string>In Amsterdam, I am spending a lot of time on my bike, which for me is just the perfect occasion to be inspired by these amzing shows! Two of my favorite episodes of NSBRief are the one with Matt Thompson and the one with Mike Lee where they were talking about Mike's project "appsterdam"."</string>
+        </array>
+    </dict>
+    <dict>
+		<key>storyID</key>
+		<integer>20</integer>
+		<key>title</key>
+		<string>My first App Store submission: My Debts</string>
+        <key>images</key>
+        <integer>3</integer>
+        <key>time</key>
+        <dict>
+            <key>year</key>
+            <integer>2013</integer>
+            <key>month</key>
+            <integer>5</integer>
+        </dict>
+        <key>paragraphs</key>
+        <array>
+            <string>After having worked as a working student for SAP for more than half a yar and having internally published one iOS app at SAP and worked a few more iOS projects, I decided that it's time for me to get my first App Store submission. </string>
+            <string>My goal was to build an app that would use CoreData for local storage, as I had never had hands-on experience with CoreData until then but wanted to know more about how it works, so building an own app in my opinion was the best occasion to get going on CoreData.</string>
+            <string>So, I came up with the idea of a debt management application to keep track of borrowed or lent money. Having started with a tab bar controller, I switched to a menu slide view controller along the way. After its initial release in May last year, I unfortunately didn't have the time to build an update, maybe this will come soon.</string>
         </array>
     </dict>
 </array>
