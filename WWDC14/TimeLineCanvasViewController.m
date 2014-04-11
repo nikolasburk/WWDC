@@ -9,9 +9,10 @@
 #import "TimeLineCanvasViewController.h"
 #import "StoryBuilder.h"
 #import "StoryThumbnail.h"
+#import "StoryViewController.h"
 
 #define BIRTH_YEAR 1989
-#define CURRENT_YEAR 2014
+#define CURRENT_YEAR 2015
 #define SKIP_RANGE NSMakeRange(1990, 14)]
 
 
@@ -58,6 +59,9 @@
 - (void)timeLineCanvas:(TimeLineCanvas *)timeLineCanvas didSelectStoryThumbnail:(StoryThumbnail *)storyThumbnail
 {
     NSLog(@"DEBUG | %s | Did select story: %@", __func__, storyThumbnail.story);
+    StoryViewController *storyViewController = [[StoryViewController alloc] initWithNibName:@"StoryViewController" story:storyThumbnail.story bundle:nil];
+    storyViewController.modalPresentationStyle = UIModalPresentationPageSheet;
+    [self presentViewController:storyViewController animated:YES completion:nil];
 }
      
 @end

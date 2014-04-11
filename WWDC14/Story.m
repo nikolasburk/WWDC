@@ -7,6 +7,7 @@
 //
 
 #import "Story.h"
+#import "UIImage+Crop.h"
 
 @implementation Story
 
@@ -38,13 +39,33 @@
     return self;
 }
 
+
+
 - (NSArray *)fetchImages:(NSInteger)numberOfImages
 {
     NSMutableArray *images = [[NSMutableArray alloc] init];
     for(int i = 0; i < numberOfImages; i++)
     {
         NSString *imageTitle = [NSString stringWithFormat:@"story%@_%d", self.storyID, i];
-        [images addObject:[UIImage imageNamed:imageTitle]];
+        UIImage *image = [UIImage imageNamed:imageTitle];
+        
+        // Cropping
+        CGRect centeredSquareArea =  [image centeredSquareArea];
+        UIImage *croppedImage = [UIImage imageWithImage:image cropInRect:centeredSquareArea];
+        NSLog(@"DEBUG | %s | Add cropped image: %@ (%@)", __func__, imageTitle, croppedImage);
+        if (croppedImage)
+        {
+            [images addObject:croppedImage];
+        }
+        
+        // Shrinking
+//        CGSize shrinkedSize = centeredSquareArea.size;        
+//        UIGraphicsBeginImageContext(shrinkedSize);
+//        [image drawInRect:CGRectMake(0,0,shrinkedSize.width,shrinkedSize.height)];
+//        UIImage *shrinkedImage = UIGraphicsGetImageFromCurrentImageContext();
+//        UIGraphicsEndImageContext();
+//        [images addObject:shrinkedImage];
+        
     }
     return images;
 }

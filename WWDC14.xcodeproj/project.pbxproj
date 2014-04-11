@@ -38,6 +38,7 @@
 		555F5DD718F33CD2000950CA /* NSArray+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DD618F33CD2000950CA /* NSArray+Util.m */; };
 		555F5DDC18F356B3000950CA /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DDB18F356B3000950CA /* QuestionView.m */; };
 		555F5DE018F3D70D000950CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5DDF18F3D70D000950CA /* MapKit.framework */; };
+		55C7A1CE18F81B960077BBF0 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C7A1CD18F81B960077BBF0 /* UIImage+Crop.m */; };
 		55E00A8518F44095007E97A6 /* NegativeReplies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55E00A8418F44095007E97A6 /* NegativeReplies.plist */; };
 		55E00A8718F4449A007E97A6 /* PositiveReplies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55E00A8618F4449A007E97A6 /* PositiveReplies.plist */; };
 		55E00A8A18F44727007E97A6 /* ReplyReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E00A8918F44727007E97A6 /* ReplyReader.m */; };
@@ -56,6 +57,8 @@
 		55EE1C0A18F5A9C600B8A737 /* Stories.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EE1C0918F5A9C600B8A737 /* Stories.xcassets */; };
 		55EE1C0C18F5AC6A00B8A737 /* Stories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55EE1C0B18F5AC6A00B8A737 /* Stories.plist */; };
 		55EE1C0F18F5AEAE00B8A737 /* StoryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EE1C0E18F5AEAE00B8A737 /* StoryBuilder.m */; };
+		55EE1C1518F5EA6800B8A737 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EE1C1418F5EA6800B8A737 /* StoryViewController.m */; };
+		55EE1C1718F5EAA200B8A737 /* StoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55EE1C1618F5EAA200B8A737 /* StoryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,8 @@
 		555F5DDB18F356B3000950CA /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionView.m; sourceTree = "<group>"; };
 		555F5DDE18F3CBAB000950CA /* QuestionViewControllerTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionViewControllerTypes.h; sourceTree = "<group>"; };
 		555F5DDF18F3D70D000950CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		55C7A1CC18F81B960077BBF0 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		55C7A1CD18F81B960077BBF0 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
 		55E00A8418F44095007E97A6 /* NegativeReplies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NegativeReplies.plist; sourceTree = "<group>"; };
 		55E00A8618F4449A007E97A6 /* PositiveReplies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PositiveReplies.plist; sourceTree = "<group>"; };
 		55E00A8818F44727007E97A6 /* ReplyReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyReader.h; sourceTree = "<group>"; };
@@ -152,6 +157,9 @@
 		55EE1C0B18F5AC6A00B8A737 /* Stories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stories.plist; sourceTree = "<group>"; };
 		55EE1C0D18F5AEAE00B8A737 /* StoryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryBuilder.h; sourceTree = "<group>"; };
 		55EE1C0E18F5AEAE00B8A737 /* StoryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBuilder.m; sourceTree = "<group>"; };
+		55EE1C1318F5EA6800B8A737 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		55EE1C1418F5EA6800B8A737 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		55EE1C1618F5EAA200B8A737 /* StoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +326,8 @@
 				55E00A9318F46704007E97A6 /* UIImage+Split.h */,
 				55E00A9418F46704007E97A6 /* UIImage+Split.m */,
 				55EE1C0518F5974500B8A737 /* Colors.h */,
+				55C7A1CC18F81B960077BBF0 /* UIImage+Crop.h */,
+				55C7A1CD18F81B960077BBF0 /* UIImage+Crop.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -393,8 +403,9 @@
 			children = (
 				55EE1BF118F581CF00B8A737 /* TimeLineCanvasViewController.h */,
 				55EE1BF218F581CF00B8A737 /* TimeLineCanvasViewController.m */,
-				55EE1BF418F582FB00B8A737 /* TimeLineCanvas.h */,
-				55EE1BF518F582FB00B8A737 /* TimeLineCanvas.m */,
+				55EE1C1318F5EA6800B8A737 /* StoryViewController.h */,
+				55EE1C1418F5EA6800B8A737 /* StoryViewController.m */,
+				55EE1C1618F5EAA200B8A737 /* StoryViewController.xib */,
 			);
 			name = "Time line canvas";
 			sourceTree = "<group>";
@@ -412,6 +423,8 @@
 		55EE1C0118F596F400B8A737 /* Time line */ = {
 			isa = PBXGroup;
 			children = (
+				55EE1BF418F582FB00B8A737 /* TimeLineCanvas.h */,
+				55EE1BF518F582FB00B8A737 /* TimeLineCanvas.m */,
 				55EE1BFC18F585D000B8A737 /* TimeLineView.h */,
 				55EE1BFD18F585D000B8A737 /* TimeLineView.m */,
 				55EE1C0218F5970B00B8A737 /* StoryThumbnail.h */,
@@ -497,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55EE1C0C18F5AC6A00B8A737 /* Stories.plist in Resources */,
+				55EE1C1718F5EAA200B8A737 /* StoryViewController.xib in Resources */,
 				555F5D8018EF02D2000950CA /* Images.xcassets in Resources */,
 				555F5DCC18EFF3D5000950CA /* MultipleChoiceQuestionViewController.xib in Resources */,
 				555F5D7218EF02D2000950CA /* InfoPlist.strings in Resources */,
@@ -553,7 +567,9 @@
 				555F5DBC18EFE6A2000950CA /* LocationQuestion.m in Sources */,
 				55E00A9518F46704007E97A6 /* UIImage+Split.m in Sources */,
 				555F5D7418EF02D2000950CA /* main.m in Sources */,
+				55C7A1CE18F81B960077BBF0 /* UIImage+Crop.m in Sources */,
 				55EE1BF318F581CF00B8A737 /* TimeLineCanvasViewController.m in Sources */,
+				55EE1C1518F5EA6800B8A737 /* StoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

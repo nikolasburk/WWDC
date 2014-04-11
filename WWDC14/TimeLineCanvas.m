@@ -57,7 +57,6 @@
 - (void)setStories:(NSArray *)stories
 {
     _stories = stories;
-    
     for (Story *story in _stories)
     {
         [self addStoryThumbnailToCanvasForStory:story];
@@ -99,7 +98,7 @@
     for (int i = self.timeLineView.startYear-1; i < self.timeLineView.endYear + 2; i++)
     {
         NSInteger factorX = i > self.timeLineView.skip.location ? i - self.timeLineView.startYear - self.timeLineView.skip.length :i - self.timeLineView.startYear ;
-        x = self.timeLineView.intervalSize * factorX;
+        x = self.timeLineView.intervalSize * factorX + self.timeLineView.intervalSize;
         if (i == year)
         {
             x += self.timeLineView.intervalSize/(CGFloat)month; // add the distance for the month
@@ -110,11 +109,12 @@
     return x;
 }
 
+const CGFloat MIN_DISTANCE_FROM_TOP_FOR_STORYTHUMBNAILS = 8.0;
 
 - (CGFloat)yForThumbnailWithX:(CGFloat)x
 {
     const CGFloat yMax = self.timeLineView.frame.origin.y - STORY_THUMBNAIL_EDGE - DEFAULT_MARGIN;
-    const CGFloat yMin = self.frame.size.height / 4.0;
+    const CGFloat yMin = self.frame.size.height / MIN_DISTANCE_FROM_TOP_FOR_STORYTHUMBNAILS;
     
     CGFloat y = [self randomCGFloatWithMin:yMin max:yMax];
     while ([self requestedY:y interfersWithExistingThumbnailAtX:x])

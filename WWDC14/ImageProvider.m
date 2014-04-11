@@ -66,4 +66,17 @@ static ImageProvider *imageProviderSharedInstance  = nil;
     return self.memes[randomIndex];
 }
 
+
+#pragma mark - Static helpers
+
++ (UIImage *)cropCenteredSquareFromImage:(UIImage *)image
+{
+    UIImage *centeredSquare = nil;
+    
+    
+    
+    
+    return centeredSquare;
+}
+
 @end

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "555F5D6318EF02D1000950CA"
-               BuildableName = "Quiz Me.app"
+               BuildableName = "Puzzle Me.app"
                BlueprintName = "WWDC14"
                ReferencedContainer = "container:WWDC14.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "555F5D6318EF02D1000950CA"
-            BuildableName = "Quiz Me.app"
+            BuildableName = "Puzzle Me.app"
             BlueprintName = "WWDC14"
             ReferencedContainer = "container:WWDC14.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "555F5D6318EF02D1000950CA"
-            BuildableName = "Quiz Me.app"
+            BuildableName = "Puzzle Me.app"
             BlueprintName = "WWDC14"
             ReferencedContainer = "container:WWDC14.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "555F5D6318EF02D1000950CA"
-            BuildableName = "Quiz Me.app"
+            BuildableName = "Puzzle Me.app"
             BlueprintName = "WWDC14"
             ReferencedContainer = "container:WWDC14.xcodeproj">
          </BuildableReference>
