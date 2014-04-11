@@ -221,15 +221,15 @@
         <key>time</key>
         <dict>
             <key>year</key>
-            <integer>2011</integer>
+            <integer>2013</integer>
             <key>month</key>
-            <integer>11</integer>
+            <integer>8</integer>
         </dict>
         <key>paragraphs</key>
         <array>
             <string>In the third semester of my Master, I decided once more to go abroad. After having been to Seoul during my Bachelor studies, this time I chose a closer destination, Amsterdam! Iloved the city from the first day, life quality there is very high! I didn't want to live in the student dorms this time, so I tackled apartment search in Amsterdam.</string>
             <string>Little did I know that this is a challenging task in Amsterdam, especially with a student budget. Luckily I had my job at Cameramanager to be able to afford rooms. During my whole stay, I couldn't find a permanent place, so over the whole period that I have been staying in Amsterdam I lived in 4 diffrrent appartments with different roommates.</string>
-            <string>I studied at the Vrije Universiteit, my classes were very interesting and I learned a lot! One class was called "Internet Programming", in this class we had regular programming assignments that we usually had to write in C and where we were exploring the C networking API.</string>
+            <string>I studied at the Vrije Universiteit, my classes were very interesting and I learned a lot! One class was called "Internet Programming", in this class we had regular programming assignments that we usually had to write in C and where we were exploring the C networking API. I could even reuse the knowledge I gained udring the course for (in my opinion the most challenging feature I ever build) when I was implementing the Camera sniffer for the Camermanager iOS app.</string>
         </array>
     </dict>
     <dict>
@@ -271,6 +271,69 @@
             <string>For the time of my studies in Amsterdam, I applied for a job as iOS developer at a few companies. After a Skype interview and one visit at their office in Amsterdam, I signed a working contract as freelance iOS developer. In August when my classes hadn't yet started, I worked full-time, after that I reduce my work time a bit depending on the workload I had for my classes at the VU.</string>
             <string>Cameramanager offers camera surveillance with IP cameras that can be managed in the cloud. Just before I started working there in August, the copmany had been acquired by Panasonic. At the time I started working there, the company already had an iOS app in the App Store, but had just decided to build a completely new interface for it.</string>
             <string>I was (and still am) the only iOS developer in the company, I looked at the code from the old app, was shocked and decided to start the new app from scratch. I tried to reuse as much code as possible from the old app, which finally came down to a few helper classes that I could integrate with the new UI. I managed to build and publish the first version of the (universal) app within 2.5 month and added many features since then.</string>
+        </array>
+    </dict>
+    <dict>
+		<key>storyID</key>
+		<integer>13</integer>
+		<key>title</key>
+		<string>Mobile World Congress 2014 @Barcelona</string>
+        <key>images</key>
+        <integer>3</integer>
+        <key>time</key>
+        <dict>
+            <key>year</key>
+            <integer>2014</integer>
+            <key>month</key>
+            <integer>2</integer>
+        </dict>
+        <key>paragraphs</key>
+        <array>
+            <string>In January 2014, the yearly company day ("Greenday") was hosted by Cameramanager. In the morning, the whole team of 30-35 pleople has been split up into smaller groups, each of which has been assigned a team lead by our bosses. I was selected to be the lead of the "Mobile and Web team", consisting of our Android developer and three of our web developers.</string>
+            <string>Just like all other teams, we had to prepare a presentation that was to be held by the team lead. At the end of the day, everyone could vote for the best presentation that was held in the morning and my presentation won in the end. The price for all team members was one day at the Mobile World Congress that took place in February in Barcelona.</string>
+            <string>So I flew there with my team members, ending up having a great and also very interesting time before and at the congress. I spent most of the time in a hall that had the title "App Planet" and which was packed with interesting companies and their innovative technologies!</string>
+        </array>
+    </dict>
+    <dict>
+		<key>storyID</key>
+		<integer>14</integer>
+		<key>title</key>
+		<string>WWDC 2014 @San Francisco</string>
+        <key>images</key>
+        <integer>3</integer>
+        <key>time</key>
+        <dict>
+            <key>year</key>
+            <integer>2014</integer>
+            <key>month</key>
+            <integer>6</integer>
+        </dict>
+        <key>paragraphs</key>
+        <array>
+            <string>What a great chance to learn directly from Apple engineers, get insights about Apple's future directions and meet other fascinating members of the community! I have heard very much about WWDC and from the beginning it has been very clear to me that one day I would go there. </string>
+            <string>When I saw the possibility to apply for a student scholarship, I didn't hesitate one moment and immediately started thinking about an app that I could build for this purpose, thus "Quiz Me" was born :-)</string>
+            <string>I see this as a major opportunity and would love to be a direct part of this exciting event! </string>
+        </array>
+    </dict>
+    <dict>
+		<key>storyID</key>
+		<integer>15</integer>
+		<key>title</key>
+		<string></string>
+        <key>images</key>
+        <integer>3</integer>
+        <key>time</key>
+        <dict>
+            <key>year</key>
+            <integer>2014</integer>
+            <key>month</key>
+            <integer>6</integer>
+        </dict>
+        <key>paragraphs</key>
+        <array>
+            <string>What a great chance to learn directly from Apple engineers, get insights about Apple's future directions and meet other fascinating members of the community! I have heard very much about WWDC and from the beginning it has been very clear to me that one day I would go there. </string>
+            <string>When I saw the possibility to apply for a student scholarship, I didn't hesitate one moment and immediately started thinking about an app that I could build for this purpose, thus "Quiz Me" was born :-)</string>
+            <string>I see this as a major opportunity and would love to be a direct part of this exciting event! </string>
         </array>
     </dict>
 </array>

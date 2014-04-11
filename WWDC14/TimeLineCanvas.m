@@ -101,7 +101,7 @@
         x = self.timeLineView.intervalSize * factorX + self.timeLineView.intervalSize;
         if (i == year)
         {
-            x += self.timeLineView.intervalSize/(CGFloat)month; // add the distance for the month
+            x += 1.0 - self.timeLineView.intervalSize/(CGFloat)month; // add the distance for the month
             x -= STORY_THUMBNAIL_EDGE/2.0; // center
             break;
         }

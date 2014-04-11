@@ -230,8 +230,7 @@
 				555F5DCF18EFF8E8000950CA /* Content provider */,
 				555F5DD418F33CAB000950CA /* Util */,
 				555F5D7F18EF02D2000950CA /* Images.xcassets */,
-				55E00A9A18F46E6A007E97A6 /* PuzzleBackgrounds.xcassets */,
-				55EE1C0918F5A9C600B8A737 /* Stories.xcassets */,
+				55C7A1CF18F870C60077BBF0 /* Content */,
 				555F5D6E18EF02D2000950CA /* Supporting Files */,
 				555F5DA918EF1A33000950CA /* multiViewHolder.png */,
 			);
@@ -245,10 +244,6 @@
 				555F5D7018EF02D2000950CA /* InfoPlist.strings */,
 				555F5D7318EF02D2000950CA /* main.m */,
 				555F5D7518EF02D2000950CA /* WWDC14-Prefix.pch */,
-				555F5DCD18EFF78B000950CA /* Questions.plist */,
-				55E00A8418F44095007E97A6 /* NegativeReplies.plist */,
-				55E00A8618F4449A007E97A6 /* PositiveReplies.plist */,
-				55EE1C0B18F5AC6A00B8A737 /* Stories.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -371,6 +366,19 @@
 				55E00AA018F49E8C007E97A6 /* MapAnnotation.m */,
 			);
 			name = QuestionViewControllers;
+			sourceTree = "<group>";
+		};
+		55C7A1CF18F870C60077BBF0 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				555F5DCD18EFF78B000950CA /* Questions.plist */,
+				55E00A8418F44095007E97A6 /* NegativeReplies.plist */,
+				55E00A8618F4449A007E97A6 /* PositiveReplies.plist */,
+				55EE1C0B18F5AC6A00B8A737 /* Stories.plist */,
+				55E00A9A18F46E6A007E97A6 /* PuzzleBackgrounds.xcassets */,
+				55EE1C0918F5A9C600B8A737 /* Stories.xcassets */,
+			);
+			name = Content;
 			sourceTree = "<group>";
 		};
 		55EE1BF718F583A200B8A737 /* Game */ = {
