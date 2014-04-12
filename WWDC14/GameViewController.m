@@ -12,6 +12,8 @@
 #import "UIViewController+Alerts.h"
 #import "UIViewController+FrustrationShake.h"
 
+#define HELP_SHAKE_NIBNAME_SUFFIX @"Game"
+
 @interface GameViewController ()
 @property (weak, nonatomic) IBOutlet PuzzleGameGridView *puzzleGameGridView;
 @property (nonatomic, assign) BOOL puzzleMode;
@@ -147,6 +149,23 @@
     }
     
     return allQuestionsAnsweredForCurrentLevel;
+}
+
+
+#pragma mark - Help shake
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        NSLog(@"DEBUG | %s | Got shaked", __func__);
+        [HelpShakeViewController openHelpShakeViewControllerWithViewController:self];
+    }
+}
+
+- (NSString *)nibNameSuffix
+{
+    return HELP_SHAKE_NIBNAME_SUFFIX;
 }
 
 

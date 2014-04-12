@@ -17,7 +17,7 @@
 - (BOOL)canBecomeFirstResponder
 {
     NSLog(@"DEBUG | %s | ", __func__);
-    return YES;
+    return NO;
 }
 
 - (UIImage *)grabTheView:(UIView *)view
@@ -32,7 +32,7 @@
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
-    UIImage *screencap = [self grabTheView:self.parentViewController.view];
+//    UIImage *screencap = [self grabTheView:self.parentViewController.view];
     
     if (motion == UIEventSubtypeMotionShake)
     {

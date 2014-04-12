@@ -10,11 +10,13 @@
 #import "PuzzleGameGridView.h"
 #import "Game.h"
 #import "QuestionViewControllerTypes.h"
+#import "HelpShakeViewController.h"
 
-@interface GameViewController : UIViewController <PuzzleGameGridViewDelegate, QuestionViewControllerDelegate, UIAlertViewDelegate, UITabBarControllerDelegate>
+@interface GameViewController : UIViewController <PuzzleGameGridViewDelegate, QuestionViewControllerDelegate, UIAlertViewDelegate, UITabBarControllerDelegate, HelpShake>
 
 @property (nonatomic, strong) Game *game;
 
 
 
 @end
+

@@ -15,6 +15,8 @@
 		552AFEC918F9885200EA626E /* HelpShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552AFEC718F9885200EA626E /* HelpShakeViewController.m */; };
 		552AFECA18F9885200EA626E /* HelpShakeViewController_Game.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552AFEC818F9885200EA626E /* HelpShakeViewController_Game.xib */; };
 		552AFECC18F9908C00EA626E /* HelpShakeViewController_Questions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552AFECB18F9908C00EA626E /* HelpShakeViewController_Questions.xib */; };
+		552AFECE18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552AFECD18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib */; };
+		552AFED318F9B52000EA626E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552AFED218F9B52000EA626E /* QuartzCore.framework */; };
 		554F837418F89D0B00EFA004 /* RotationTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554F837318F89D0B00EFA004 /* RotationTabBarController.m */; };
 		555F5D6818EF02D2000950CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5D6718EF02D2000950CA /* Foundation.framework */; };
 		555F5D6A18EF02D2000950CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5D6918EF02D2000950CA /* CoreGraphics.framework */; };
@@ -92,6 +94,8 @@
 		552AFEC718F9885200EA626E /* HelpShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpShakeViewController.m; sourceTree = "<group>"; };
 		552AFEC818F9885200EA626E /* HelpShakeViewController_Game.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpShakeViewController_Game.xib; sourceTree = "<group>"; };
 		552AFECB18F9908C00EA626E /* HelpShakeViewController_Questions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpShakeViewController_Questions.xib; sourceTree = "<group>"; };
+		552AFECD18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpShakeViewController_TimeLineCanvas.xib; sourceTree = "<group>"; };
+		552AFED218F9B52000EA626E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		554F837218F89D0B00EFA004 /* RotationTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationTabBarController.h; sourceTree = "<group>"; };
 		554F837318F89D0B00EFA004 /* RotationTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationTabBarController.m; sourceTree = "<group>"; };
 		555F5D6418EF02D1000950CA /* Puzzle Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puzzle Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552AFED318F9B52000EA626E /* QuartzCore.framework in Frameworks */,
 				555F5DE018F3D70D000950CA /* MapKit.framework in Frameworks */,
 				555F5D6A18EF02D2000950CA /* CoreGraphics.framework in Frameworks */,
 				555F5D6C18EF02D2000950CA /* UIKit.framework in Frameworks */,
@@ -219,6 +224,7 @@
 				552AFEC718F9885200EA626E /* HelpShakeViewController.m */,
 				552AFEC818F9885200EA626E /* HelpShakeViewController_Game.xib */,
 				552AFECB18F9908C00EA626E /* HelpShakeViewController_Questions.xib */,
+				552AFECD18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib */,
 			);
 			name = "Help shake";
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 		555F5D6618EF02D1000950CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				552AFED218F9B52000EA626E /* QuartzCore.framework */,
 				555F5DDF18F3D70D000950CA /* MapKit.framework */,
 				555F5D6718EF02D2000950CA /* Foundation.framework */,
 				555F5D6918EF02D2000950CA /* CoreGraphics.framework */,
@@ -571,6 +578,7 @@
 				55E00A8718F4449A007E97A6 /* PositiveReplies.plist in Resources */,
 				55EE1C0A18F5A9C600B8A737 /* Stories.xcassets in Resources */,
 				55E00A8518F44095007E97A6 /* NegativeReplies.plist in Resources */,
+				552AFECE18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib in Resources */,
 				55E00A9B18F46E6A007E97A6 /* PuzzleBackgrounds.xcassets in Resources */,
 				555F5DCE18EFF78B000950CA /* Questions.plist in Resources */,
 				555F5D7B18EF02D2000950CA /* Main.storyboard in Resources */,

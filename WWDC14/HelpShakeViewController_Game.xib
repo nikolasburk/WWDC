@@ -6,6 +6,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpShakeViewController">
             <connections>
+                <outlet property="contentTextView" destination="akF-AS-Htx" id="MK7-gQ-htm"/>
+                <outlet property="contentTitleLabel" destination="VOQ-pL-QrW" id="A5k-oj-x3D"/>
+                <outlet property="puzzleMeTextView" destination="RL9-Pd-hUo" id="OG3-6K-tyv"/>
+                <outlet property="puzzleMeTitleLabel" destination="hl5-MO-BBV" id="EhI-F4-jeK"/>
+                <outlet property="shakeIcon" destination="cTo-Gp-CGz" id="l0K-pZ-vIG"/>
+                <outlet property="subtitleLabel" destination="IAG-cW-Ulx" id="Hkh-5Z-HJU"/>
+                <outlet property="titleLabel" destination="J1b-5S-8Lc" id="0XZ-R8-OYO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,71 +22,79 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Graphic_PhoneShake.png" translatesAutoresizingMaskIntoConstraints="NO" id="cTo-Gp-CGz">
-                    <rect key="frame" x="446" y="35" width="43" height="50"/>
+                    <rect key="frame" x="418" y="20" width="43" height="50"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Need help?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1b-5S-8Lc">
-                    <rect key="frame" x="159" y="35" width="279" height="50"/>
+                    <rect key="frame" x="131" y="20" width="279" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Lbr-2p-DtW">
-                    <rect key="frame" x="20" y="93" width="500" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <string key="text">This app features a "Help Shake", whenever you see the shaking phone icon, the shake gesture will open up a help screen to support you solve your current task. </string>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wk-v4-VOj">
-                    <rect key="frame" x="20" y="191" width="479" height="70"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <string key="text">Puzzle me is an iPad app where the users must learn facts about a person (in this case this is me :-). Knowledge of these facts will help them to unlock and play the puzzle, reach the next level and ultimately win the game by having completed all three puzzles. </string>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puzzle me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl5-MO-BBV">
-                    <rect key="frame" x="20" y="151" width="122" height="32"/>
+                    <rect key="frame" x="20" y="143" width="122" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akF-AS-Htx">
-                    <rect key="frame" x="94" y="269" width="566" height="207"/>
+                    <rect key="frame" x="20" y="292" width="500" height="245"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <mutableString key="text">The game consists of three levels. In each level the user must answer a number of questions in order to unlock the underlying puzzle. A question can be openened by tapping on the unlocked puzzle piece that displays the category of the questions and the number of tries that the user has left for it. The first level has only one question and no puzzle, users can directly move to the next level after they have answered the first question correctly. In the second level, users need to answer four questions, with each correctly answered question, one puzzle piece will be revealed. The same applies for the third level, only that here the puzzle consists of nine pieces. After having unlocked and solved the puzzle in the third level, the user won and the game is over.</mutableString>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">The game consists of three levels. In each level the user must answer a number of questions in order to unlock the underlying puzzle. A question can be openened by tapping on the unlocked puzzle piece that displays the category of the questions and the number of tries that the user has left for it. The first level has only one question and no puzzle, users can directly move to the next level after they have answered the first question correctly. In the second level, users need to answer four questions, with each correctly answered question, one puzzle piece will be revealed. The same applies for the third level, only that here the puzzle consists of nine pieces. After having unlocked and solved the puzzle in the third level, the user won and the game is over.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IAG-cW-Ulx">
+                    <rect key="frame" x="20" y="78" width="500" height="67"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">This app features a "Help Shake", whenever you see the shaking phone icon, a shake gesture will open up a help screen to support you in solving your current task. </string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlB-cz-BT1">
-                    <rect key="frame" x="20" y="535" width="556" height="67"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL9-Pd-hUo">
+                    <rect key="frame" x="20" y="172" width="500" height="83"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <string key="text">There are two types of questions, location questions and multiplce choice questions. Location questions need to be answered by finding a specific location or area on a map and performing a long press on it.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">Puzzle me is an iPad app where the users must learn facts about a person (in this case this person is me :-). Knowledge of these facts will help them to unlock and play the puzzle, reach the next level and ultimately win the game by having completed all three puzzles. </string>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj6-4S-ARN">
-                    <rect key="frame" x="20" y="280" width="122" height="32"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game rules" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOQ-pL-QrW">
+                    <rect key="frame" x="20" y="264" width="210" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTZ-Vy-Ovg">
-                    <rect key="frame" x="20" y="503" width="122" height="32"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbS-5W-FYR">
+                    <rect key="frame" x="209" y="550" width="122" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                    <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="Thanks!">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dismiss" destination="-1" eventType="touchUpInside" id="RB8-0H-daQ"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+            <gestureRecognizers/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="Hnu-C8-rjB" appends="YES" id="eev-qN-kVg"/>
+            </connections>
         </view>
+        <rotationGestureRecognizer id="Hnu-C8-rjB">
+            <connections>
+                <action selector="shake:" destination="-1" id="Ig1-A0-4tv"/>
+            </connections>
+        </rotationGestureRecognizer>
     </objects>
     <resources>
         <image name="Graphic_PhoneShake.png" width="85" height="100"/>

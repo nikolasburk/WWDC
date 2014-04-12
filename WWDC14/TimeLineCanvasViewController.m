@@ -15,6 +15,7 @@
 #define CURRENT_YEAR 2015
 #define SKIP_RANGE NSMakeRange(1990, 14)]
 
+#define HELP_SHAKE_NIBNAME_SUFFIX @"TimeLineCanvas"
 
 @interface TimeLineCanvasViewController ()
 
@@ -54,7 +55,7 @@
     [super viewWillAppear:animated];
     
     // Make sure orientation is in landscape
-//    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+    //    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
     
     TimeLineCanvas *timeLineCanvas = (TimeLineCanvas *)self.view;
     if (!timeLineCanvas.timeLineView)
@@ -67,23 +68,31 @@
          }
     }
 }
+         
 
-#pragma mark - Rotation
 
-//-(NSUInteger)supportedInterfaceOrientations
-//{
-//    return UIInterfaceOrientationMaskLandscape ;
-//}
-//         
-//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-//{
-//    return UIInterfaceOrientationLandscapeRight;
-//}
-//
-//- (BOOL)shouldAutorotate
-//{
-//    return NO;
-//}
+#pragma mark - Help shake
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        NSLog(@"DEBUG | %s | Got shaked", __func__);
+        [HelpShakeViewController openHelpShakeViewControllerWithViewController:self];
+    }
+}
+
+- (NSString *)nibNameSuffix
+{
+    return HELP_SHAKE_NIBNAME_SUFFIX;
+}
+
+
+         
+
+         
+         
+
 
 
 #pragma mark - Time line canvas delegate

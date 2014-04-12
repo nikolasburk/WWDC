@@ -9,6 +9,8 @@
 #import "QuestionViewController.h"
 #import "ReplyReader.h"
 
+#define HELP_SHAKE_NIBNAME_SUFFIX @"Questions"
+
 @interface QuestionViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
@@ -110,6 +112,22 @@
     } completion:nil];
 }
 
+
+#pragma mark - Help shake
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        NSLog(@"DEBUG | %s | Got shaked", __func__);
+        [HelpShakeViewController openHelpShakeViewControllerWithViewController:self];
+    }
+}
+
+- (NSString *)nibNameSuffix
+{
+    return HELP_SHAKE_NIBNAME_SUFFIX;
+}
 
 
 

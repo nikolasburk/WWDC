@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol HelpShake <NSObject>
+
+//- (void)openHelpShakeViewControlller;
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event; // from UIResponder
+- (NSString *)nibNameSuffix;
+
+@end
+
+
 @interface HelpShakeViewController : UIViewController
+
++ (void)openHelpShakeViewControllerWithViewController:(id<HelpShake>)viewController;
+
+-(IBAction)shake:(UIRotationGestureRecognizer *)recognizer;
 
 @end
