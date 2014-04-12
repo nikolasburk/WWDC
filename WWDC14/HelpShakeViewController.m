@@ -13,12 +13,12 @@
 
 @interface HelpShakeViewController ()
 
-@property double startRadians;
+//@property double startRadians;
 
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UITextView *subtitleLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *shakeIcon;
+@property (strong, nonatomic) IBOutlet UIImageView *shakeIcon;
 @property (weak, nonatomic) IBOutlet UILabel *puzzleMeTitleLabel;
 @property (weak, nonatomic) IBOutlet UITextView *puzzleMeTextView;
 @property (weak, nonatomic) IBOutlet UILabel *contentTitleLabel;
@@ -51,9 +51,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
 	AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+}
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self shake];
 }
 
 - (IBAction)dismiss
@@ -64,36 +68,36 @@
 // Rotate the image from fromValue radians to toValue radians
 -(void)rotateTo:(double)toValue from:(double)fromValue
 {
-    NSLog(@"fromValue: %f toValue: %f",fromValue, toValue);
+    NSLog(@"DEBUG | %s | To: %f; From: %f", __func__, toValue, fromValue);
+    float repeatCount = 6.0;
+    float duration = 0.18;
     
-    self.startRadians = fromValue;
-    
-    CABasicAnimation* anim = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-    [anim setFromValue:[NSNumber numberWithFloat:fromValue]];
-    [anim setToValue:[NSNumber numberWithDouble:toValue]]; // rotation angle
-    [anim setDuration:0.1];
-    [anim setRepeatCount:6];
-    [anim setAutoreverses:YES];
-    [self.shakeIcon.layer addAnimation:anim forKey:@"iconShake"];
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    [animation setFromValue:[NSNumber numberWithFloat:fromValue]];
+    [animation setToValue:[NSNumber numberWithDouble:toValue]];
+    [animation setDuration:duration];
+    [animation setRepeatCount:repeatCount];
+    [animation setAutoreverses:YES];
+    [animation setRemovedOnCompletion:YES];
+    [self.shakeIcon.layer addAnimation:animation forKey:@"iconShake"];
 }
 
--(IBAction)shake:(UIRotationGestureRecognizer *)recognizer
+-(void)shake
 {
-    // Determine the transform from the current position
-    double startPosition = self.startRadians + [recognizer rotation];
+    NSLog(@"DEBUG | %s | Shake", __func__);
+
+    CGFloat rotateRadians = 0.85; // rotate two radians (2 rad = 115 c)
     
+    // Determine the transform from the current position
+    double startPosition = 0.0; //self.startRadians;
+    double toValue = startPosition + rotateRadians;
+
+    // Set initial transform
     CGAffineTransform transform = CGAffineTransformMakeRotation(startPosition);
     self.shakeIcon.transform = transform;
     
-    // If the gesture has ended or is canceled, begin the animation
-    // back to horizontal and fade out
-    if (([recognizer state] == UIGestureRecognizerStateEnded) || ([recognizer state] == UIGestureRecognizerStateCancelled)) {
-        
-        // To value should be current rotation in radians
-        CGFloat toValue = self.startRadians;
-        [self rotateTo:toValue from:startPosition];
-        
-    }
+    [self rotateTo:toValue from:startPosition];
 }
+
 
 @end

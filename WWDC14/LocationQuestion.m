@@ -25,7 +25,7 @@
 
 - (NSString *)instructionTextString
 {
-    return NSLocalizedString(@"This is a location question. Please find the sought location on the map and perform a long press on it to submit an answer.", nil);
+    return NSLocalizedString(@"This is a location question. Please find the sought location on the map and perform a long press (hold and release) on it to submit an answer.", nil);
 }
 
 - (NSString *)readableName

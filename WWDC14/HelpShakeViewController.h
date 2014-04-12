@@ -21,6 +21,6 @@
 
 + (void)openHelpShakeViewControllerWithViewController:(id<HelpShake>)viewController;
 
--(IBAction)shake:(UIRotationGestureRecognizer *)recognizer;
+//-(IBAction)shake:(UIRotationGestureRecognizer *)recognizer;
 
 @end
