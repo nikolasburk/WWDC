@@ -8,6 +8,9 @@
 
 #import "MultipleChoiceQuestionViewController.h"
 #import "NSArray+Util.h"
+#import "Colors.h"
+#import "UIView+FrameModification.h"
+#import <QuartzCore/QuartzCore.h>
 
 #define TAG_A 0
 #define TAG_B 1
@@ -25,6 +28,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *secondAnswerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *thirdAnswerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *fourthAnswerLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *aLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bLabel;
+@property (weak, nonatomic) IBOutlet UILabel *cLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dLabel;
+
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answerButtons;
 
@@ -52,6 +61,12 @@
     self.secondAnswerLabel.text = self.answerOptions[TAG_B];
     self.thirdAnswerLabel.text = self.answerOptions[TAG_C];
     self.fourthAnswerLabel.text = self.answerOptions[TAG_D];
+    
+    for (UIButton *answerButton in self.answerButtons)
+    {
+        answerButton.layer.cornerRadius = BUTTON_CORNER_RADIUS;
+        answerButton.backgroundColor = SNOW_4;
+    }
 }
 
 - (NSInteger)tagIndexForButton:(UIButton *)button
@@ -83,30 +98,49 @@
     NSString *answer = self.answerOptions[index];
     [self submitAnswer:answer];
     
+    CGFloat fontSize = self.aLabel.font.pointSize;
+    
+    CGFloat distance = self.firstAnswerLabel.frame.origin.x - self.aLabel.frame.origin.x - self.aLabel.frame.size.width;
+    
+    UILabel *correctAnswerLabel = nil;
+    UILabel *correctLetterLabel = nil;
+    
     if (self.question.answered)
     {
         switch (index)
         {
             case TAG_A:
-                self.firstAnswerLabel.textColor = [UIColor whiteColor];
-                self.firstAnswerLabel.backgroundColor = [UIColor greenColor];
+                correctAnswerLabel = self.firstAnswerLabel;
+                correctLetterLabel = self.aLabel;
                 break;
             case TAG_B:
-                self.secondAnswerLabel.textColor = [UIColor whiteColor];
-                self.secondAnswerLabel.backgroundColor = [UIColor greenColor];
+                correctAnswerLabel = self.secondAnswerLabel;
+                correctLetterLabel = self.bLabel;
                 break;
             case TAG_C:
-                self.thirdAnswerLabel.textColor = [UIColor whiteColor];
-                self.thirdAnswerLabel.backgroundColor = [UIColor greenColor];
+
+                correctAnswerLabel = self.thirdAnswerLabel;
+                correctLetterLabel = self.cLabel;
                 break;
             case TAG_D:
-                self.fourthAnswerLabel.textColor = [UIColor whiteColor];
-                self.fourthAnswerLabel.backgroundColor = [UIColor greenColor];
+                correctAnswerLabel = self.fourthAnswerLabel;
+                correctLetterLabel = self.dLabel;
                 break;
                 
             default:
                 break;
         }
+        
+        correctAnswerLabel.textColor = [UIColor whiteColor];
+        correctAnswerLabel.backgroundColor = DARK_GREEN;
+        correctAnswerLabel.font = [UIFont boldSystemFontOfSize:fontSize];
+        correctLetterLabel.textColor = [UIColor whiteColor];
+        correctLetterLabel.backgroundColor = DARK_GREEN;
+        correctLetterLabel.font = [UIFont boldSystemFontOfSize:fontSize];
+        
+        NSLog(@"DEBUG | %s | Enlarge view with width: %f with x delta: %f", __func__, correctLetterLabel.frame.size.width, distance);
+        
+        [correctLetterLabel enlargeViewWithXDelta:distance];
         
         for (UIButton *button in self.answerButtons)
         {

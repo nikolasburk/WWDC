@@ -19,12 +19,15 @@
 @property (nonatomic, assign) BOOL puzzleMode;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *gridPatternButtons;
+@property (weak, nonatomic) IBOutlet UIButton *startNewGameButton;
+
 @property (weak, nonatomic) IBOutlet UIButton *nextLevelButton;
 - (IBAction)nextLevelButtonPressed;
 
 @property (nonatomic, assign) NSInteger currentlySelectedQuestionIndex;
 
 - (IBAction)levelButtonPressed:(id)sender;
+- (IBAction)helpShakeButtonPressed;
 
 @end
 
@@ -318,5 +321,10 @@
     {
         
     }
+}
+
+- (IBAction)helpShakeButtonPressed
+{
+    [HelpShakeViewController showHelpShakeInfo];
 }
 @end

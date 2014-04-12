@@ -10,6 +10,9 @@
 #import "Question.h"
 #import "HelpShakeViewController.h"
 
+#define BUTTON_CORNER_RADIUS 5.0
+
+
 @class QuestionViewController;
 
 @protocol QuestionViewControllerDelegate <NSObject>

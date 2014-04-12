@@ -20,6 +20,7 @@
 @interface TimeLineCanvasViewController ()
 
 @property (nonatomic, strong) NSArray *stories;
+- (IBAction)helpShakeButtonPressed;
 
 @end
 
@@ -87,12 +88,10 @@
     return HELP_SHAKE_NIBNAME_SUFFIX;
 }
 
-
-         
-
-         
-         
-
+- (IBAction)helpShakeButtonPressed
+{
+    [HelpShakeViewController showHelpShakeInfo];
+}
 
 
 #pragma mark - Time line canvas delegate
@@ -105,4 +104,5 @@
     [self presentViewController:storyViewController animated:YES completion:nil];
 }
      
+
 @end

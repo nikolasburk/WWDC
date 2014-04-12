@@ -7,6 +7,7 @@
 //
 
 #import "StoryViewController.h"
+#import "UIView+Decoration.h"
 
 @interface StoryViewController ()
 
@@ -45,6 +46,7 @@
     self.timeLabel.text = [NSString stringWithFormat:@"%@ %d", [self.story monthName], self.story.year];
 
     self.firstImageView.image = self.story.images[0];
+    [self.firstImageView addDecorativeFrameWithWidth:1.0 color:[UIColor blackColor]];
     self.firstTextView.text = self.story.paragraphs[0];
     self.firstTextView.font = [UIFont systemFontOfSize:22.0];
     self.firstTextView.textAlignment = NSTextAlignmentCenter;
@@ -52,6 +54,7 @@
     if ([self.story.images count] > 1 && [self.story.paragraphs count] > 1)
     {
         self.secondImageView.image = self.story.images[1];
+        [self.secondImageView addDecorativeFrameWithWidth:1.0 color:[UIColor blackColor]];
         self.secondTextView.text = self.story.paragraphs[1];
         self.secondTextView.font = [UIFont systemFontOfSize:22.0];
         self.secondTextView.textAlignment = NSTextAlignmentCenter;
@@ -65,6 +68,7 @@
     if ([self.story.images count] > 2 && [self.story.paragraphs count] > 2)
     {
         self.thirdImageView.image = self.story.images[2];
+        [self.thirdImageView addDecorativeFrameWithWidth:1.0 color:[UIColor blackColor]];
         self.thirdTextView.text = self.story.paragraphs[2];
         self.thirdTextView.font = [UIFont systemFontOfSize:22.0];
         self.thirdTextView.textAlignment = NSTextAlignmentCenter;

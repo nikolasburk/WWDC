@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgX-L0-9w6">
-                                <rect key="frame" x="20" y="65" width="168" height="30"/>
+                                <rect key="frame" x="661" y="20" width="168" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="New game">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -68,13 +68,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-Nx-2x2">
-                                <rect key="frame" x="20" y="103" width="168" height="30"/>
+                                <rect key="frame" x="196" y="20" width="168" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next level">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="nextLevelButtonPressed" destination="VJD-xU-73a" eventType="touchUpInside" id="OLY-Df-Xw2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arh-M1-jAg">
+                                <rect key="frame" x="13" y="20" width="43" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Graphic_PhoneShake.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="helpShakeButtonPressed" destination="VJD-xU-73a" eventType="touchUpInside" id="yeo-8Y-j0G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,6 +106,7 @@
                     <connections>
                         <outlet property="nextLevelButton" destination="5zO-Nx-2x2" id="Nu2-2f-Vce"/>
                         <outlet property="puzzleGameGridView" destination="Xgx-k4-BIA" id="AOK-k6-40f"/>
+                        <outlet property="startNewGemaButton" destination="xgX-L0-9w6" id="y4B-jb-Q36"/>
                         <outletCollection property="gridPatternButtons" destination="0NY-oo-yeu" id="0rM-0f-bvG"/>
                         <outletCollection property="gridPatternButtons" destination="7me-ds-giI" id="hfV-7z-dcT"/>
                         <outletCollection property="gridPatternButtons" destination="Mtp-1d-3Io" id="2ec-Eo-HCX"/>
@@ -140,6 +151,16 @@
                                 <rect key="frame" x="212" y="10" width="600" height="600"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lie-zs-I3m">
+                                <rect key="frame" x="12" y="10" width="43" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Graphic_PhoneShake.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="helpShakeButtonPressed" destination="7ip-Dy-7eK" eventType="touchUpInside" id="Px5-pm-ZGc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -153,6 +174,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Graphic_PhoneShake.png" width="85" height="100"/>
         <image name="fb_profile" width="720" height="720"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

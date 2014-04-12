@@ -38,6 +38,14 @@
     [viewController presentViewController:helpShakeViewController animated:YES completion:nil];
 }
 
++ (void)showHelpShakeInfo
+{
+    NSString *title = NSLocalizedString(@"Shake it, baby!", nil);
+    NSString *message = NSLocalizedString(@"Whenever you see this icon, a shake gesture on the device will open a help screen to support you with your current task.", nil);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil];
+    [alert show];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

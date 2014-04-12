@@ -20,6 +20,7 @@
 @interface HelpShakeViewController : UIViewController
 
 + (void)openHelpShakeViewControllerWithViewController:(id<HelpShake>)viewController;
++ (void)showHelpShakeInfo;
 
 //-(IBAction)shake:(UIRotationGestureRecognizer *)recognizer;
 

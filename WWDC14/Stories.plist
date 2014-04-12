@@ -148,8 +148,7 @@
 			<string>I still love being in Mannheim, I made a lot of friends there and I am living in an apartment that I share with three other guys, two of which I met during my very first day at the univeristy in August 2008.</string>
 		</array>
 	</dict>
-
-    <dict>
+	<dict>
 		<key>storyID</key>
 		<integer>7</integer>
 		<key>title</key>
@@ -169,274 +168,281 @@
 			<string>Having only used Windows PCs until then, I set up my first Linux environment for that job. After a couple of month on that job, I bought my first MacBook - a MacBook Air that I just recently replaced with a MacBook Pro with a retina display.</string>
 		</array>
 	</dict>
-    <dict>
+	<dict>
 		<key>storyID</key>
 		<integer>8</integer>
 		<key>title</key>
 		<string>Working student @SAP</string>
-        <key>images</key>
-        <integer>3</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2012</integer>
-            <key>month</key>
-            <integer>6</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>Right after my Bachelor graduation I switch from the department "Master Data Governance" where I wrote my Bachelor thesis to the department "IT Mobile - Center of Excellence (CoE)", my team was concerned with building SAP internal apps that were to be used by employees.</string>
-            <string>From June until August I developed my first real iOS app, it was was "MyStaffingList" and was intented to be used mostly by SAP consultants to help them getting an overview of their current staffings and projects. The app ran against an SAP backend with a REST interface.</string>
-            <string>In the following year I was implementing one prototype for an app idea in our team, was responsible for maintenance of the "MyStaffingList" app and was helping out in a couple of bigger projects within my team.</string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>3</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2012</integer>
+			<key>month</key>
+			<integer>6</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>Right after my Bachelor graduation I switch from the department &quot;Master Data Governance&quot; where I wrote my Bachelor thesis to the department &quot;IT Mobile - Center of Excellence (CoE)&quot;, my team was concerned with building SAP internal apps that were to be used by employees.</string>
+			<string>From June until August I developed my first real iOS app, it was was &quot;MyStaffingList&quot; and was intented to be used mostly by SAP consultants to help them getting an overview of their current staffings and projects. The app ran against an SAP backend with a REST interface.</string>
+			<string>In the following year I was implementing one prototype for an app idea in our team, was responsible for maintenance of the &quot;MyStaffingList&quot; app and was helping out in a couple of bigger projects within my team.</string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>9</integer>
 		<key>title</key>
 		<string>LetsMapp</string>
-        <key>images</key>
-        <integer>3</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2011</integer>
-            <key>month</key>
-            <integer>11</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>During my semester abroad in Seoul, I met another German guy. He studied Business in Münster, but originally he came from Hamburg, just like me. At that time, he was working for a start-up with a few friends from him from Hamburg. They were developing an iPhone app that combined instant messaging with a "friends finding" function, called LetsMapp.</string>
-            <string>I joined the team whithout practical experience on iOS at a point in time when the iPhone app was basically already done. The app worked very well, users could log in with Facebook and then see all their friends that were also using the app on a map. The major drawback of the app was its battery consumption as we were doing regular GPS updates so that movements of friends would be visible.</string>
-            <string>We put a lot of effort into optimizing the algorithm for updating locations to save battery power. After we returned to Germany, I helped building the website, but after returning to Mannheim I had to focus on finishing my Bachelor and writing my thesis so I stopped my activities for LetsMapp.</string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>3</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2011</integer>
+			<key>month</key>
+			<integer>11</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>During my semester abroad in Seoul, I met another German guy. He studied Business in Münster, but originally he came from Hamburg, just like me. At that time, he was working for a start-up with a few friends from him from Hamburg. They were developing an iPhone app that combined instant messaging with a &quot;friends finding&quot; function, called LetsMapp.</string>
+			<string>I joined the team whithout practical experience on iOS at a point in time when the iPhone app was basically already done. The app worked very well, users could log in with Facebook and then see all their friends that were also using the app on a map. The major drawback of the app was its battery consumption as we were doing regular GPS updates so that movements of friends would be visible.</string>
+			<string>We put a lot of effort into optimizing the algorithm for updating locations to save battery power. After we returned to Germany, I helped building the website, but after returning to Mannheim I had to focus on finishing my Bachelor and writing my thesis so I stopped my activities for LetsMapp.</string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>10</integer>
 		<key>title</key>
 		<string>Semster abroad: Amsterdam</string>
-        <key>images</key>
-        <integer>3</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2013</integer>
-            <key>month</key>
-            <integer>8</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>In the third semester of my Master, I decided once more to go abroad. After having been to Seoul during my Bachelor studies, this time I chose a closer destination, Amsterdam! Iloved the city from the first day, life quality there is very high! I didn't want to live in the student dorms this time, so I tackled apartment search in Amsterdam.</string>
-            <string>Little did I know that this is a challenging task in Amsterdam, especially with a student budget. Luckily I had my job at Cameramanager to be able to afford rooms. During my whole stay, I couldn't find a permanent place, so over the whole period that I have been staying in Amsterdam I lived in 4 diffrrent appartments with different roommates.</string>
-            <string>I studied at the Vrije Universiteit, my classes were very interesting and I learned a lot! One class was called "Internet Programming", in this class we had regular programming assignments that we usually had to write in C and where we were exploring the C networking API. I could even reuse the knowledge I gained udring the course for (in my opinion the most challenging feature I ever build) when I was implementing the Camera sniffer for the Camermanager iOS app.</string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>3</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2013</integer>
+			<key>month</key>
+			<integer>8</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>In the third semester of my Master, I decided once more to go abroad. After having been to Seoul during my Bachelor studies, this time I chose a closer destination, Amsterdam! Iloved the city from the first day, life quality there is very high! I didn&apos;t want to live in the student dorms this time, so I tackled apartment search in Amsterdam.</string>
+			<string>Little did I know that this is a challenging task in Amsterdam, especially with a student budget. Luckily I had my job at Cameramanager to be able to afford rooms. During my whole stay, I couldn&apos;t find a permanent place, so over the whole period that I have been staying in Amsterdam I lived in 4 diffrrent appartments with different roommates.</string>
+			<string>I studied at the Vrije Universiteit, my classes were very interesting and I learned a lot! One class was called &quot;Internet Programming&quot;, in this class we had regular programming assignments that we usually had to write in C and where we were exploring the C networking API. I could even reuse the knowledge I gained udring the course for (in my opinion the most challenging feature I ever build) when I was implementing the Camera sniffer for the Camermanager iOS app.</string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>11</integer>
 		<key>title</key>
 		<string>Pig with ice cream</string>
-        <key>images</key>
-        <integer>2</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2005</integer>
-            <key>month</key>
-            <integer>7</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>This is just a little pig enjoying some ice cream, cute right?</string>
-            <string>Enjoy your day! :-)</string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>2</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2005</integer>
+			<key>month</key>
+			<integer>7</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>This is just a little pig enjoying some ice cream, cute right?</string>
+			<string>Enjoy your day! :-)</string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>12</integer>
 		<key>title</key>
 		<string>Cameramanager</string>
-        <key>images</key>
-        <integer>3</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2013</integer>
-            <key>month</key>
-            <integer>8</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>For the time of my studies in Amsterdam, I applied for a job as iOS developer at a few companies. After a Skype interview and one visit at their office in Amsterdam, I signed a working contract as freelance iOS developer. In August when my classes hadn't yet started, I worked full-time, after that I reduce my work time a bit depending on the workload I had for my classes at the VU.</string>
-            <string>Cameramanager offers camera surveillance with IP cameras that can be managed in the cloud. Just before I started working there in August, the copmany had been acquired by Panasonic. At the time I started working there, the company already had an iOS app in the App Store, but had just decided to build a completely new interface for it.</string>
-            <string>I was (and still am) the only iOS developer in the company, I looked at the code from the old app, was shocked and decided to start the new app from scratch. I tried to reuse as much code as possible from the old app, which finally came down to a few helper classes that I could integrate with the new UI. I managed to build and publish the first version of the (universal) app within 2.5 month and added many features since then.</string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>3</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2013</integer>
+			<key>month</key>
+			<integer>8</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>For the time of my studies in Amsterdam, I applied for a job as iOS developer at a few companies. After a Skype interview and one visit at their office in Amsterdam, I signed a working contract as freelance iOS developer. In August when my classes hadn&apos;t yet started, I worked full-time, after that I reduce my work time a bit depending on the workload I had for my classes at the VU.</string>
+			<string>Cameramanager offers camera surveillance with IP cameras that can be managed in the cloud. Just before I started working there in August, the copmany had been acquired by Panasonic. At the time I started working there, the company already had an iOS app in the App Store, but had just decided to build a completely new interface for it.</string>
+			<string>I was (and still am) the only iOS developer in the company, I looked at the code from the old app, was shocked and decided to start the new app from scratch. I tried to reuse as much code as possible from the old app, which finally came down to a few helper classes that I could integrate with the new UI. I managed to build and publish the first version of the (universal) app within 2.5 month and added many features since then.</string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>13</integer>
 		<key>title</key>
 		<string>Mobile World Congress 2014 @Barcelona</string>
-        <key>images</key>
-        <integer>3</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2014</integer>
-            <key>month</key>
-            <integer>2</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>In January 2014, the yearly company day ("Greenday") was hosted by Cameramanager. In the morning, the whole team of 30-35 pleople has been split up into smaller groups, each of which has been assigned a team lead by our bosses. I was selected to be the lead of the "Mobile and Web team", consisting of our Android developer and three of our web developers.</string>
-            <string>Just like all other teams, we had to prepare a presentation that was to be held by the team lead. At the end of the day, everyone could vote for the best presentation that was held in the morning and my presentation won in the end. The price for all team members was one day at the Mobile World Congress that took place in February in Barcelona.</string>
-            <string>So I flew there with my team members, ending up having a great and also very interesting time before and at the congress. I spent most of the time in a hall that had the title "App Planet" and which was packed with interesting companies and their innovative technologies! A funny side story of the MCW is that I met an old friend of mine who I got to know during my stay in France and whom I hadn't seen for more than 7 years!</string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>3</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2014</integer>
+			<key>month</key>
+			<integer>2</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>In January 2014, the yearly company day (&quot;Greenday&quot;) was hosted by Cameramanager. In the morning, the whole team of 30-35 pleople has been split up into smaller groups, each of which has been assigned a team lead by our bosses. I was selected to be the lead of the &quot;Mobile and Web team&quot;, consisting of our Android developer and three of our web developers.</string>
+			<string>Just like all other teams, we had to prepare a presentation that was to be held by the team lead. At the end of the day, everyone could vote for the best presentation that was held in the morning and my presentation won in the end. The price for all team members was one day at the Mobile World Congress that took place in February in Barcelona.</string>
+			<string>So I flew there with my team members, ending up having a great and also very interesting time before and at the congress. I spent most of the time in a hall that had the title &quot;App Planet&quot; and which was packed with interesting companies and their innovative technologies! A funny side story of the MCW is that I met an old friend of mine who I got to know during my stay in France and whom I hadn&apos;t seen for more than 7 years!</string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>14</integer>
 		<key>title</key>
 		<string>WWDC 2014 @San Francisco</string>
-        <key>images</key>
-        <integer>3</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2014</integer>
-            <key>month</key>
-            <integer>6</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>What a great chance to learn directly from Apple engineers, get insights about Apple's future directions and meet other fascinating members of the community! I have heard very much about WWDC and from the beginning it has been very clear to me that one day I would go there. </string>
-            <string>When I saw the possibility to apply for a student scholarship, I didn't hesitate one moment and immediately started thinking about an app that I could build for this purpose, thus "Quiz Me" was born :-)</string>
-            <string>I see this as a major opportunity and would love to be a direct part of this exciting event! </string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>3</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2014</integer>
+			<key>month</key>
+			<integer>6</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>What a great chance to learn directly from Apple engineers, get insights about Apple&apos;s future directions and meet other fascinating members of the community! I have heard very much about WWDC and from the beginning it has been very clear to me that one day I would go there. </string>
+			<string>When I saw the possibility to apply for a student scholarship, I didn&apos;t hesitate one moment and immediately started thinking about an app that I could build for this purpose, thus &quot;Quiz Me&quot; was born :-)</string>
+			<string>I see this as a major opportunity and would love to be a direct part of this exciting event! </string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>15</integer>
 		<key>title</key>
 		<string>Birth</string>
-        <key>images</key>
-        <integer>1</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>1989</integer>
-            <key>month</key>
-            <integer>7</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>I was born on the 26th of July in Hamburg! </string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>1</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>1989</integer>
+			<key>month</key>
+			<integer>7</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>Date of birth: 26th of July, 1989
+Place of birth: Hamburg</string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>16</integer>
 		<key>title</key>
 		<string>MacBook Pro Retina 13-inch, Late 2013</string>
-        <key>images</key>
-        <integer>2</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2014</integer>
-            <key>month</key>
-            <integer>2</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>In March 2014 I ordered a new MacBook to replace my old MacBook Air that I had been using for 3 years. The new MacBook is fantastic and I just love working with it!</string>
-            <string>Here are the specs:\nProcessor: 2,8 GHz Intel Core i7\nMemory: 16 GB 1600 MHz DDR3\Storage: 500 GB Flash</string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>2</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2014</integer>
+			<key>month</key>
+			<integer>2</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>In March 2014 I ordered a new MacBook to replace my old MacBook Air that I had been using for 3 years. The new MacBook is fantastic and I just love working with it!</string>
+			<string>Here are the specs:
+Processor: 2,8 GHz Intel Core i7
+Memory: 16 GB 1600 MHz DDR3
+Storage: 500 GB Flash</string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>17</integer>
 		<key>title</key>
 		<string>Client projects</string>
-        <key>images</key>
-        <integer>3</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2014</integer>
-            <key>month</key>
-            <integer>2</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>Lately, I have started to work on client projects. I am working on three different mobile apps at the moment. The first one is an iPad app for my doctor in Germany who wants to use it to manage the Botox treatments that he is doing with his patients. The app included the management of patients as well maintaining a photo archive of each patient that allows to generate Before/After-pictures for each treatment.</string>
-            <string>The second app is for a guy who I got in touch with through a fellow student of mine. He works as a designer and wants to realize his idea for an iPhone alarm application, where the user enters an appointment along with a location for that appointment, and the app will then according to the current traffic (and some more information that has to be provided by the user) set the actual alarm time for the user.</string>
-            <string>The third one is actually an Android application (sorry...). It is for an iOS developer who has no Android knowledge at all (no experience with Java and Eclipse either...) and who wants to port one iOS app of his to Android. I accepted his request as I find it interesting at least to get to know the basic programming concepts in Android (although I have to say that working with Eclipse is a real pain compared to Xcode).</string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>3</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2014</integer>
+			<key>month</key>
+			<integer>2</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>Lately, I have started to work on client projects. I am working on three different mobile apps at the moment. The first one is an iPad app for my doctor in Germany who wants to use it to manage the Botox treatments that he is doing with his patients. The app included the management of patients as well maintaining a photo archive of each patient that allows to generate Before/After-pictures for each treatment.</string>
+			<string>The second app is for a guy who I got in touch with through a fellow student of mine. He works as a designer and wants to realize his idea for an iPhone alarm application, where the user enters an appointment along with a location for that appointment, and the app will then according to the current traffic (and some more information that has to be provided by the user) set the actual alarm time for the user.</string>
+			<string>The third one is actually an Android application (sorry...). It is for an iOS developer who has no Android knowledge at all (no experience with Java and Eclipse either...) and who wants to port one iOS app of his to Android. I accepted his request as I find it interesting at least to get to know the basic programming concepts in Android (although I have to say that working with Eclipse is a real pain compared to Xcode).</string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>18</integer>
 		<key>title</key>
 		<string>My girlfriend: Mona</string>
-        <key>images</key>
-        <integer>3</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2012</integer>
-            <key>month</key>
-            <integer>10</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>In January 2012, I met my current girlfiend, Mona! :-) It took us until October to get together but we have been very happy since then. </string>
-            <string>In February 2014, she joined me in Amsterdam where she does an internship and we live live together in a really nice apartment.</string>
-            <string>She doesn't know anything about programming, and yet I am drawing a lot of inspiration from here.</string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>3</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2012</integer>
+			<key>month</key>
+			<integer>10</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>In January 2012, I met my current girlfiend, Mona! :-) It took us until October to get together but we have been very happy since then. </string>
+			<string>In February 2014, she joined me in Amsterdam where she does an internship and we live live together in a really nice apartment.</string>
+			<string>She doesn&apos;t know anything about programming, and yet I am drawing a lot of inspiration from here.</string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>19</integer>
 		<key>title</key>
 		<string>Podcasts</string>
-        <key>images</key>
-        <integer>3</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2014</integer>
-            <key>month</key>
-            <integer>1</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>In January 2014, I started listening to Tech (escpecially iOS related) podcasts. I am enjoying these shows so much, being fascinated and higly inspired by most of them. </string>
-            <string>Here is a list of my favorites:\n1: NSBrief - A show hosted by Saul Mora who for each episode would invite someone from the community to talk about a few iOS related topics.\n2: Core Intuition: Daniel Jalkut and Manton Reece are very entertaining to listen to and also give nice insights into the iOS world.\n3: iDeveloper Life: Scotty telling interesting iOS stories and talking to interesting guests.</string>
-            <string>In Amsterdam, I am spending a lot of time on my bike, which for me is just the perfect occasion to be inspired by these amzing shows! Two of my favorite episodes of NSBRief are the one with Matt Thompson and the one with Mike Lee where they were talking about Mike's project "appsterdam"."</string>
-        </array>
-    </dict>
-    <dict>
+		<key>images</key>
+		<integer>3</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2014</integer>
+			<key>month</key>
+			<integer>1</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>In January 2014, I started listening to Tech (escpecially iOS related) podcasts. I am enjoying these shows so much, being fascinated and higly inspired by most of them. </string>
+			<string>Here is a list of my favorites:
+1: NSBrief - A show hosted by Saul Mora who for each episode would invite someone from the community to talk about a few iOS related topics.
+2: Core Intuition: Daniel Jalkut and Manton Reece are very entertaining to listen to and also give nice insights into the iOS world.
+3: iDeveloper Life: Scotty telling interesting iOS stories and talking to interesting guests.</string>
+			<string>In Amsterdam, I am spending a lot of time on my bike, which for me is just the perfect occasion to be inspired by these amzing shows! Two of my favorite episodes of NSBRief are the one with Matt Thompson and the one with Mike Lee where they were talking about Mike&apos;s project &quot;appsterdam&quot;.&quot;</string>
+		</array>
+	</dict>
+	<dict>
 		<key>storyID</key>
 		<integer>20</integer>
 		<key>title</key>
 		<string>My first App Store submission: My Debts</string>
-        <key>images</key>
-        <integer>3</integer>
-        <key>time</key>
-        <dict>
-            <key>year</key>
-            <integer>2013</integer>
-            <key>month</key>
-            <integer>5</integer>
-        </dict>
-        <key>paragraphs</key>
-        <array>
-            <string>After having worked as a working student for SAP for more than half a yar and having internally published one iOS app at SAP and worked a few more iOS projects, I decided that it's time for me to get my first App Store submission. </string>
-            <string>My goal was to build an app that would use CoreData for local storage, as I had never had hands-on experience with CoreData until then but wanted to know more about how it works, so building an own app in my opinion was the best occasion to get going on CoreData.</string>
-            <string>So, I came up with the idea of a debt management application to keep track of borrowed or lent money. Having started with a tab bar controller, I switched to a menu slide view controller along the way. After its initial release in May last year, I unfortunately didn't have the time to build an update, maybe this will come soon.</string>
-        </array>
-    </dict>
+		<key>images</key>
+		<integer>3</integer>
+		<key>time</key>
+		<dict>
+			<key>year</key>
+			<integer>2013</integer>
+			<key>month</key>
+			<integer>5</integer>
+		</dict>
+		<key>paragraphs</key>
+		<array>
+			<string>After having worked as a working student for SAP for more than half a yar and having internally published one iOS app at SAP and worked a few more iOS projects, I decided that it&apos;s time for me to get my first App Store submission. </string>
+			<string>My goal was to build an app that would use CoreData for local storage, as I had never had hands-on experience with CoreData until then but wanted to know more about how it works, so building an own app in my opinion was the best occasion to get going on CoreData.</string>
+			<string>So, I came up with the idea of a debt management application to keep track of borrowed or lent money. Having started with a tab bar controller, I switched to a menu slide view controller along the way. After its initial release in May last year, I unfortunately didn&apos;t have the time to build an update, maybe this will come soon.</string>
+		</array>
+	</dict>
 </array>
 </plist>

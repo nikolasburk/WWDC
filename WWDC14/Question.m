@@ -7,6 +7,7 @@
 //
 
 #import "Question.h"
+#import "Colors.h"
 
 //@class LocationQuestion, MultipleChoiceQuestion;
 
@@ -103,21 +104,41 @@ const NSInteger NUMBER_OF_GUESSES = 3;
     switch (self.questionCategory)
     {
         case QC_Personal:
-            questionCategoryColor = [UIColor grayColor];
+            questionCategoryColor = OCEAN_BLUE;
             break;
         case QC_Education:
             questionCategoryColor = [UIColor purpleColor];
             break;
         case QC_Professional:
-            questionCategoryColor = [UIColor blueColor];
+            questionCategoryColor = GREENISH_BLUE;
             break;
         case QC_iOS:
-            questionCategoryColor = [UIColor orangeColor];
+            questionCategoryColor = BLUE_GRAY;
             break;
         default:
             break;
     }
     return questionCategoryColor;
+}
+
+- (UIColor *)currentStatusColor
+{
+    UIColor *currentStatusColor = nil;
+    switch (self.triesLeft)
+    {
+        case 3:
+            currentStatusColor = DARK_GREEN;
+            break;
+        case 2:
+            currentStatusColor = RUBBER_DUCKY_YELLOW;
+            break;
+        case 1:
+            currentStatusColor = FIREBRICK;
+            break;
+        default:
+            break;
+    }
+    return  currentStatusColor;
 }
 
 - (NSString *)description
