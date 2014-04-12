@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Story.h"
 
-#define STORY_THUMBNAIL_EDGE 60.0
+#define STORY_THUMBNAIL_EDGE 50.0
 
 @interface StoryThumbnail : UIView
 

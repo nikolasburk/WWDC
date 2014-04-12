@@ -63,10 +63,12 @@
     }
 }
 
+static int counter = 0;
+
 - (void)addStoryThumbnailToCanvasForStory:(Story *)story
 {
     CGFloat x = [self xForYear:story.year month:story.month];
-    CGFloat y =  [self yForThumbnailWithX:x];
+    CGFloat y =  [self yForThumbnailWithX:x]; // ERROR with 20th story
     CGRect frame = CGRectMake(x, y, STORY_THUMBNAIL_EDGE, STORY_THUMBNAIL_EDGE);
     StoryThumbnail *storyThumbnail = [[StoryThumbnail alloc] initWithFrame:frame story:story];
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(storyThumbnailTapped:)];
@@ -74,7 +76,7 @@
     if (!self.storyThumbnails) self.storyThumbnails = [[NSMutableArray alloc] init];
     [self.storyThumbnails addObject:storyThumbnail];
     [self addSubview:storyThumbnail];
-    NSLog(@"DEBUG | %s | Added thumbail: %@", __func__, storyThumbnail);
+    NSLog(@"DEBUG | %s | Added thumbail for story: %@ (%d)", __func__, storyThumbnail.story, counter++);
 }
 
 - (void)storyThumbnailTapped:(UITapGestureRecognizer *)tap
@@ -109,12 +111,12 @@
     return x;
 }
 
-const CGFloat MIN_DISTANCE_FROM_TOP_FOR_STORYTHUMBNAILS = 8.0;
+const CGFloat MIN_DISTANCE_FROM_TOP_FOR_STORYTHUMBNAILS = 0.0;
 
 - (CGFloat)yForThumbnailWithX:(CGFloat)x
 {
     const CGFloat yMax = self.timeLineView.frame.origin.y - STORY_THUMBNAIL_EDGE - DEFAULT_MARGIN;
-    const CGFloat yMin = self.frame.size.height / MIN_DISTANCE_FROM_TOP_FOR_STORYTHUMBNAILS;
+    const CGFloat yMin = MIN_DISTANCE_FROM_TOP_FOR_STORYTHUMBNAILS != 0.0 ? self.frame.size.height / MIN_DISTANCE_FROM_TOP_FOR_STORYTHUMBNAILS : 0.0;
     
     CGFloat y = [self randomCGFloatWithMin:yMin max:yMax];
     while ([self requestedY:y interfersWithExistingThumbnailAtX:x])

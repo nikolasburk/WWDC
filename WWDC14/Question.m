@@ -80,7 +80,7 @@ const NSInteger NUMBER_OF_GUESSES = 3;
             questionCategoryString = NSLocalizedString(@"Education", nil);
             break;
         case QC_Professional:
-            questionCategoryString = NSLocalizedString(@"Professional experience", nil);
+            questionCategoryString = NSLocalizedString(@"Professional", nil);
             break;
         case QC_iOS:
             questionCategoryString = NSLocalizedString(@"iOS", nil);
@@ -95,6 +95,29 @@ const NSInteger NUMBER_OF_GUESSES = 3;
 {
     [NSException raise:@" - (NSString *)instructionTextString has to be implemented in subclass" format:nil];
     return @"";
+}
+
+- (UIColor *)categoryColor
+{
+    UIColor *questionCategoryColor;
+    switch (self.questionCategory)
+    {
+        case QC_Personal:
+            questionCategoryColor = [UIColor grayColor];
+            break;
+        case QC_Education:
+            questionCategoryColor = [UIColor purpleColor];
+            break;
+        case QC_Professional:
+            questionCategoryColor = [UIColor blueColor];
+            break;
+        case QC_iOS:
+            questionCategoryColor = [UIColor orangeColor];
+            break;
+        default:
+            break;
+    }
+    return questionCategoryColor;
 }
 
 - (NSString *)description

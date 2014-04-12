@@ -27,14 +27,14 @@
             <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" text="This is a multiple choice questions, please answer by tapping on the button that represents your answer!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYA-qR-sqC">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="This is a multiple choice questions, please answer by tapping on the button that represents your answer!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cYA-qR-sqC">
                     <rect key="frame" x="20" y="68" width="500" height="61"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" text="What is special about the way an alarm is set in the 'Traffic Alarm' app that I am currently working on?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pli-04-wU8">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="What is special about the way an alarm is set in the 'Traffic Alarm' app that I am currently working on?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pli-04-wU8">
                     <rect key="frame" x="20" y="137" width="500" height="85"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

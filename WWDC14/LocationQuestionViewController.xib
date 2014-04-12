@@ -20,14 +20,14 @@
             <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="This is a location question. Please find the sought location on the map and perform a long press on it to submit an answer." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea1-o4-C5C">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="This is a location question. Please find the sought location on the map and perform a long press on it to submit an answer." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ea1-o4-C5C">
                     <rect key="frame" x="20" y="68" width="500" height="61"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="Where did I spend one semester abroad during my Master studies?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4Z-q2-a1R">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="Where did I spend one semester abroad during my Master studies?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f4Z-q2-a1R">
                     <rect key="frame" x="20" y="137" width="500" height="85"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

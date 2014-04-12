@@ -9,6 +9,8 @@
 #import "QuestionView.h"
 #import <CoreGraphics/CoreGraphics.h>
 #import "math.h"
+#import "UIView+Decoration.h"
+#import "CategoryView.h"
 
 #define TRIES_LEFT_LABEL_TAG 42
 
@@ -87,23 +89,24 @@
 
 - (void)buildFrameView
 {
-    UIView *topLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.bounds.size.width, 1.0)];
-    topLine.backgroundColor = [UIColor lightGrayColor];
-    UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, self.bounds.size.height-1.0, self.bounds.size.width, 1.0)];
-    bottomLine.backgroundColor = [UIColor lightGrayColor];
-    UIView *leftLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 1.0, self.bounds.size.height)];
-    leftLine.backgroundColor = [UIColor lightGrayColor];
-    UIView *rightLine = [[UIView alloc] initWithFrame:CGRectMake(self.bounds.size.width-1.0, 0.0, 1.0, self.bounds.size.height)];
-    rightLine.backgroundColor = [UIColor lightGrayColor];
-    
-    UIView *frameView = [[UIView alloc] initWithFrame:self.bounds];
-    frameView.backgroundColor = [UIColor clearColor];
-    [frameView addSubview:topLine];
-    [frameView addSubview:bottomLine];
-    [frameView addSubview:leftLine];
-    [frameView addSubview:rightLine];
-    
-    [self addSubview:frameView];
+    [self addDecorativeFrameWithWidth:1.0 color:[UIColor lightGrayColor]];
+//    UIView *topLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.bounds.size.width, 1.0)];
+//    topLine.backgroundColor = [UIColor lightGrayColor];
+//    UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, self.bounds.size.height-1.0, self.bounds.size.width, 1.0)];
+//    bottomLine.backgroundColor = [UIColor lightGrayColor];
+//    UIView *leftLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 1.0, self.bounds.size.height)];
+//    leftLine.backgroundColor = [UIColor lightGrayColor];
+//    UIView *rightLine = [[UIView alloc] initWithFrame:CGRectMake(self.bounds.size.width-1.0, 0.0, 1.0, self.bounds.size.height)];
+//    rightLine.backgroundColor = [UIColor lightGrayColor];
+//    
+//    UIView *frameView = [[UIView alloc] initWithFrame:self.bounds];
+//    frameView.backgroundColor = [UIColor clearColor];
+//    [frameView addSubview:topLine];
+//    [frameView addSubview:bottomLine];
+//    [frameView addSubview:leftLine];
+//    [frameView addSubview:rightLine];
+//    
+//    [self addSubview:frameView];
 }
 
 - (UIView *)categoryTopViewForCurrentQuestion
@@ -114,13 +117,14 @@
     UILabel *label;
     
     label = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, self.bounds.size.width, self.bounds.size.height / 2.0)];
-    label.backgroundColor = [UIColor clearColor];
     label.adjustsFontSizeToFitWidth = YES;
     label.font = [UIFont systemFontOfSize:50.0];
+    label.textColor = [UIColor whiteColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.text = [self.question questionCategoryString];
+    label.backgroundColor = [self.question categoryColor];
     [categoryTopView addSubview:label];
-    
+
     label = [[UILabel alloc] initWithFrame:CGRectMake(0.0, self.bounds.size.height / 2.0, self.bounds.size.width, self.bounds.size.height / 2.0)];
     label.tag = TRIES_LEFT_LABEL_TAG;
     label.backgroundColor = [UIColor clearColor];

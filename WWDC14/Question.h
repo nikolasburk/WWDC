@@ -35,5 +35,5 @@ typedef enum {
 - (NSString *)questionCategoryString;
 - (NSString *)instructionTextString;
 - (NSString *)readableName;
-
+- (UIColor *)categoryColor;
 @end

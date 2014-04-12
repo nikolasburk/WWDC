@@ -10,6 +10,7 @@
 #import "QuestionReader.h"
 #import "QuestionView.h"
 #import "UIViewController+Alerts.h"
+#import "UIViewController+FrustrationShake.h"
 
 @interface GameViewController ()
 @property (weak, nonatomic) IBOutlet PuzzleGameGridView *puzzleGameGridView;
@@ -35,7 +36,6 @@
     [self newGame];
     
     NSLog(@"DEBUG | %s | View: %@ (bounds: width = %f; height = %f)", __func__, self.view, self.view.bounds.size.width, self.view.bounds.size.height);
-
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
@@ -263,6 +263,22 @@
 }
 
 
+#pragma mark - Tab bar controller delegate
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    if (UIInterfaceOrientationIsPortrait([[UIDevice currentDevice] orientation]))
+    {
+        NSString *title = NSLocalizedString(@"Info", nil);
+        NSString *message = NSLocalizedString(@"The time line canvas can only be used in landscape orientation, please turn your device and reopen the canvas again.", nil);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil, nil];
+        [alert show];
+        return NO;
+    }
+    return YES;
+}
+
+
 #pragma mark - Actions
 
 - (IBAction)newGameButtonPressed
@@ -276,7 +292,6 @@
     
     self.nextLevelButton.enabled = NO;
 }
-
 
 - (IBAction)levelButtonPressed:(UIButton *)sender
 {

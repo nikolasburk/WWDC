@@ -11,7 +11,7 @@
 #import "Game.h"
 #import "QuestionViewControllerTypes.h"
 
-@interface GameViewController : UIViewController <PuzzleGameGridViewDelegate, QuestionViewControllerDelegate, UIAlertViewDelegate>
+@interface GameViewController : UIViewController <PuzzleGameGridViewDelegate, QuestionViewControllerDelegate, UIAlertViewDelegate, UITabBarControllerDelegate>
 
 @property (nonatomic, strong) Game *game;
 

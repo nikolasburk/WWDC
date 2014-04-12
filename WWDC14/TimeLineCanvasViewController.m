@@ -34,25 +34,57 @@
     return self;
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     TimeLineCanvas *timeLineCanvas = (TimeLineCanvas *)self.view;
     timeLineCanvas.delegate = self;
+    
+    // Hide status bar on canvas
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    // Make sure orientation is in landscape
+//    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+    
     TimeLineCanvas *timeLineCanvas = (TimeLineCanvas *)self.view;
-    [timeLineCanvas buildTimeLineWithWidth:self.view.frame.size.width startYear:BIRTH_YEAR endYear:CURRENT_YEAR skip:SKIP_RANGE;
-    NSArray *stories = [[StoryBuilder storyBuilderSharedInstance] stories];
-    for(Story *story in stories)
+    if (!timeLineCanvas.timeLineView)
     {
-         [timeLineCanvas addStoryThumbnailToCanvasForStory:story];
+        [timeLineCanvas buildTimeLineWithWidth:self.view.frame.size.width startYear:BIRTH_YEAR endYear:CURRENT_YEAR skip:SKIP_RANGE;
+         NSArray *stories = [[StoryBuilder storyBuilderSharedInstance] stories];
+         for(Story *story in stories)
+         {
+             [timeLineCanvas addStoryThumbnailToCanvasForStory:story];
+         }
     }
-     
 }
+
+#pragma mark - Rotation
+
+//-(NSUInteger)supportedInterfaceOrientations
+//{
+//    return UIInterfaceOrientationMaskLandscape ;
+//}
+//         
+//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+//{
+//    return UIInterfaceOrientationLandscapeRight;
+//}
+//
+//- (BOOL)shouldAutorotate
+//{
+//    return NO;
+//}
+
 
 #pragma mark - Time line canvas delegate
      
