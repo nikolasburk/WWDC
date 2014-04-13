@@ -30,7 +30,7 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7me-ds-giI">
                                 <rect key="frame" x="497" y="20" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="4">
+                                <state key="normal" title="2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -40,7 +40,7 @@
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtp-1d-3Io">
                                 <rect key="frame" x="551" y="20" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="9">
+                                <state key="normal" title="3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -57,8 +57,8 @@
                                     <action selector="levelButtonPressed:" destination="VJD-xU-73a" eventType="touchUpInside" id="76E-NF-hfd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgX-L0-9w6">
-                                <rect key="frame" x="661" y="20" width="168" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgX-L0-9w6">
+                                <rect key="frame" x="755" y="20" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="New game">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,8 +67,8 @@
                                     <action selector="newGameButtonPressed" destination="VJD-xU-73a" eventType="touchUpInside" id="vPD-pq-LFK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-Nx-2x2">
-                                <rect key="frame" x="196" y="20" width="168" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-Nx-2x2">
+                                <rect key="frame" x="196" y="20" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next level">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,9 +77,13 @@
                                     <action selector="nextLevelButtonPressed" destination="VJD-xU-73a" eventType="touchUpInside" id="OLY-Df-Xw2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arh-M1-jAg">
-                                <rect key="frame" x="13" y="20" width="43" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arh-M1-jAg">
+                                <rect key="frame" x="20" y="20" width="43" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="Gpp-Bb-dfb"/>
+                                    <constraint firstAttribute="height" constant="50" id="bed-mO-zUx"/>
+                                </constraints>
                                 <state key="normal" image="Graphic_PhoneShake.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -90,14 +94,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93333333330000001" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Mtp-1d-3Io" firstAttribute="leading" secondItem="7me-ds-giI" secondAttribute="trailing" constant="24" id="4cr-rU-Gu6"/>
-                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="0NY-oo-yeu" secondAttribute="bottom" constant="17" id="5xl-Y3-Es8"/>
-                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="7me-ds-giI" secondAttribute="bottom" constant="17" id="Btl-DL-pvX"/>
-                            <constraint firstItem="7me-ds-giI" firstAttribute="leading" secondItem="0NY-oo-yeu" secondAttribute="trailing" constant="24" id="OcH-eS-HIR"/>
-                            <constraint firstAttribute="centerX" secondItem="7me-ds-giI" secondAttribute="centerX" id="ZNc-nR-J42"/>
-                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="Mtp-1d-3Io" secondAttribute="bottom" constant="17" id="mNB-Om-Rb8"/>
-                            <constraint firstAttribute="centerY" secondItem="Xgx-k4-BIA" secondAttribute="centerY" constant="0.5" id="sU5-vW-D76"/>
-                            <constraint firstAttribute="centerX" secondItem="Xgx-k4-BIA" secondAttribute="centerX" constant="-0.5" id="yY9-l6-7N7"/>
+                            <constraint firstAttribute="centerX" secondItem="Xgx-k4-BIA" secondAttribute="centerX" constant="-0.5" id="5eO-JX-Gxc"/>
+                            <constraint firstItem="xgX-L0-9w6" firstAttribute="leading" secondItem="7me-ds-giI" secondAttribute="trailing" constant="228" id="6Mu-3l-Ynh"/>
+                            <constraint firstAttribute="centerY" secondItem="7me-ds-giI" secondAttribute="centerY" constant="349" id="9Qr-Hw-tlR"/>
+                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="7me-ds-giI" secondAttribute="bottom" constant="17" id="F1F-7s-A9W"/>
+                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="xgX-L0-9w6" secondAttribute="bottom" constant="17" id="GSE-vb-gaP"/>
+                            <constraint firstItem="7me-ds-giI" firstAttribute="leading" secondItem="0NY-oo-yeu" secondAttribute="trailing" constant="24" id="Ien-dC-WuM"/>
+                            <constraint firstItem="arh-M1-jAg" firstAttribute="leading" secondItem="HH0-8r-hfd" secondAttribute="leading" constant="20" id="Lz6-cJ-Xyc"/>
+                            <constraint firstItem="7me-ds-giI" firstAttribute="baseline" secondItem="Mtp-1d-3Io" secondAttribute="baseline" id="MOz-AK-Rbu"/>
+                            <constraint firstItem="arh-M1-jAg" firstAttribute="top" secondItem="4MS-db-gL1" secondAttribute="bottom" id="c56-em-KUM"/>
+                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="5zO-Nx-2x2" secondAttribute="bottom" constant="17" id="ieT-Ji-HIA"/>
+                            <constraint firstItem="Mtp-1d-3Io" firstAttribute="leading" secondItem="7me-ds-giI" secondAttribute="trailing" constant="24" id="ktI-Iu-sdZ"/>
+                            <constraint firstItem="7me-ds-giI" firstAttribute="leading" secondItem="5zO-Nx-2x2" secondAttribute="trailing" constant="233" id="mYc-X4-Iwu"/>
+                            <constraint firstAttribute="centerY" secondItem="Xgx-k4-BIA" secondAttribute="centerY" constant="0.5" id="tcp-Kj-ou8"/>
+                            <constraint firstAttribute="centerX" secondItem="7me-ds-giI" secondAttribute="centerX" id="voA-VZ-aA5"/>
+                            <constraint firstItem="0NY-oo-yeu" firstAttribute="baseline" secondItem="7me-ds-giI" secondAttribute="baseline" id="wPS-D0-nil"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -106,7 +117,6 @@
                     <connections>
                         <outlet property="nextLevelButton" destination="5zO-Nx-2x2" id="Nu2-2f-Vce"/>
                         <outlet property="puzzleGameGridView" destination="Xgx-k4-BIA" id="AOK-k6-40f"/>
-                        <outlet property="startNewGemaButton" destination="xgX-L0-9w6" id="y4B-jb-Q36"/>
                         <outletCollection property="gridPatternButtons" destination="0NY-oo-yeu" id="0rM-0f-bvG"/>
                         <outletCollection property="gridPatternButtons" destination="7me-ds-giI" id="hfV-7z-dcT"/>
                         <outletCollection property="gridPatternButtons" destination="Mtp-1d-3Io" id="2ec-Eo-HCX"/>

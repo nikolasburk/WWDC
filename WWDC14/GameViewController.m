@@ -11,6 +11,8 @@
 #import "QuestionView.h"
 #import "UIViewController+Alerts.h"
 #import "UIViewController+FrustrationShake.h"
+#import <QuartzCore/QuartzCore.h>
+#import "Colors.h"
 
 #define HELP_SHAKE_NIBNAME_SUFFIX @"Game"
 
@@ -19,7 +21,6 @@
 @property (nonatomic, assign) BOOL puzzleMode;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *gridPatternButtons;
-@property (weak, nonatomic) IBOutlet UIButton *startNewGameButton;
 
 @property (weak, nonatomic) IBOutlet UIButton *nextLevelButton;
 - (IBAction)nextLevelButtonPressed;
@@ -69,6 +70,16 @@
     self.game = newGame;
     [self updateUIForCurrentLevel];
 }
+
+//- (void)setupButtons
+//{
+//    self.startNewGameButton.backgroundColor = SNOW_4;
+//    self.startNewGameButton.layer.cornerRadius = 2.5;
+//    [self.startNewGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    self.nextLevelButton.backgroundColor = SNOW_4;
+//    self.nextLevelButton.layer.cornerRadius = 2.5;
+//    [self.nextLevelButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//}
 
 - (void)updateUIForCurrentLevel
 {

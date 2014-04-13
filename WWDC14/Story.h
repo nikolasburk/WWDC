@@ -29,7 +29,6 @@
 @property (nonatomic, assign, readonly) NSInteger month;
 
 
-- (id)initWithTitle:(NSString *)title paragraphs:(NSArray *)paragraphs images:(NSArray *)images time:(NSDictionary *)time;
 - (id)initWithStoryInfo:(NSDictionary *)storyInfo;
 
 - (NSString *)monthName;

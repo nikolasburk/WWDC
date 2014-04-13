@@ -22,14 +22,16 @@ typedef enum
 
 @protocol GridViewDelegate <NSObject>
 
+
+
+@optional
+
 - (void)willRemoveView:(UIView *)view atIndex:(NSInteger)index;
 - (void)didRemoveView:(UIView *)view atIndex:(NSInteger)index;
 - (void)didSelectStreamView:(UIView *)streamView atIndex:(NSInteger)index;
 - (void)didDeselectStreamView:(UIView *)streamView atIndex:(NSInteger)index;
 - (void)willChangeGridPatternFromPattern:(MultiViewPattern)oldPattern toPattern:(MultiViewPattern)newPattern;
 - (void)didChangeGridPatternFromPattern:(MultiViewPattern)oldPattern toPattern:(MultiViewPattern)newPattern;
-
-@optional
 - (void)willExchangeView:(UIView *)sourceView atIndex:(NSInteger)sourceIndex withView:(UIView *)targetView atIndex:(NSInteger)targetIndex;
 - (void)didExchangeView:(UIView *)sourceView atIndex:(NSInteger)sourceIndex withView:(UIView *)targetView atIndex:(NSInteger)targetIndex;
 

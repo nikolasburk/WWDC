@@ -11,7 +11,6 @@
 #import "math.h"
 #import "UIView+Decoration.h"
 #import "CategoryView.h"
-#import <QuartzCore/QuartzCore.h>
 
 #define TRIES_LEFT_LABEL_TAG 42
 
@@ -110,7 +109,7 @@
     CGFloat width = height;
 
     self.triesLeftLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, y, width, height)];
-    self.triesLeftLabel.layer.cornerRadius = 2.5;
+
     self.triesLeftLabel.center = CGPointMake(self.bounds.size.width / 2.0, self.triesLeftLabel.center.y);
     self.triesLeftLabel.adjustsFontSizeToFitWidth = YES;
     self.triesLeftLabel.tag = TRIES_LEFT_LABEL_TAG;
@@ -120,6 +119,9 @@
     self.triesLeftLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%d", nil), self.question.triesLeft];
     self.triesLeftLabel.textColor = [UIColor whiteColor];
     [categoryTopView addSubview:self.triesLeftLabel];
+    
+    self.triesLeftLabel.layer.cornerRadius = 5.0;
+    self.triesLeftLabel.layer.masksToBounds = YES;
     
     return categoryTopView;
 }

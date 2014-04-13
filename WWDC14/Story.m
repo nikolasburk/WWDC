@@ -11,18 +11,6 @@
 
 @implementation Story
 
-- (id)initWithTitle:(NSString *)title paragraphs:(NSArray *)paragraphs images:(NSArray *)images
-{
-    self = [super init];
-    if (self)
-    {
-        _title = title;
-        _paragraphs = paragraphs;
-        _images = images;
-    }
-    return self;
-}
-
 - (id)initWithStoryInfo:(NSDictionary *)storyInfo
 {
     self = [super init];

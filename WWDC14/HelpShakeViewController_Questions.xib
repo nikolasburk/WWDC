@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="contentTextView" destination="8Za-Pn-fap" id="1Hc-cG-R7p"/>
                 <outlet property="contentTitleLabel" destination="ZCd-PT-5mJ" id="UZg-HL-DSb"/>
+                <outlet property="dismissButton" destination="KXf-Ra-Gnh" id="LAP-J9-BCY"/>
                 <outlet property="puzzleMeTextView" destination="Lwv-RG-4UW" id="ql7-xe-8fL"/>
                 <outlet property="puzzleMeTitleLabel" destination="7SD-LP-eKw" id="gtZ-2z-d0h"/>
                 <outlet property="shakeIcon" destination="H0g-bk-myr" id="vLs-Bn-duO"/>
@@ -41,7 +42,7 @@
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Za-Pn-fap">
                     <rect key="frame" x="20" y="302" width="500" height="220"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <mutableString key="text">There are two types of questions, location questions and multiplce choice questions. Location questions need to be answered by finding a specific location or area on a map and performing a long press (hold and release) on it. If the press was made at the correct coordinates in the map, the question is considered to have been answered correctly. Otherwise, the tries left for that question get reduced by one. For multiple choice questions, the user needs to select the correct answer by pressing the corresponding button. If the wrong button is pressed, tries left will be reduced by one. Go to the time line canvas, if you need to find out the answer to a question.</mutableString>
+                    <string key="text">There are two types of questions, location questions and multiplce choice questions. Location questions need to be answered by finding a specific location or area on a map and performing a long press (hold and release) on it. If the press was made at the correct coordinates in the map, the question is considered to have been answered correctly. Otherwise, the tries left for that question get reduced by one. For multiple choice questions, the user needs to select the correct answer by pressing the corresponding button. If the wrong button is pressed, tries left will be reduced by one. Go to the time line canvas, if you need to find out the answer to a question.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>

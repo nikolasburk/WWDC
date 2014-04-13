@@ -27,7 +27,7 @@
     UITabBarItem *timeLineCanvasTabItem = tabBarItems[TIMELINE_CANVAS_TAB_INDEX];
     timeLineCanvasTabItem.title = NSLocalizedString(@"Time line canvas", nil);
     
-    UIViewController *gameViewController = [root.viewControllers firstObject];
+    GameViewController *gameViewController = [root.viewControllers firstObject];
     root.delegate = gameViewController;
     
     return YES;

@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="contentTextView" destination="C46-Z1-ULM" id="qoV-sT-9fb"/>
                 <outlet property="contentTitleLabel" destination="Nxy-FF-kFB" id="ih2-cw-vQP"/>
+                <outlet property="dismissButton" destination="soO-qv-zqz" id="YQd-Iz-p3b"/>
                 <outlet property="puzzleMeTextView" destination="l2H-Yh-ifa" id="TTI-aB-UCZ"/>
                 <outlet property="puzzleMeTitleLabel" destination="sio-Mz-8ST" id="aMd-wm-pDs"/>
                 <outlet property="shakeIcon" destination="vis-It-MS9" id="cBp-zh-Xtk"/>
@@ -41,10 +42,10 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2H-Yh-ifa">
-                    <rect key="frame" x="20" y="191" width="500" height="83"/>
+                    <rect key="frame" x="20" y="191" width="498" height="93"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <string key="text">Puzzle me is an iPad app where the users must learn facts about a person (in this case this person is me :-). Knowledge of these facts will help them to unlock and play the puzzle, reach the next level and ultimately win the game by having completed all three puzzles. </string>
+                    <string key="text">Puzzle me is an iPad app where the users must learn facts about a person (in this case this person is me :-). Knowledge of these facts will help them to unlock and solve the puzzle, reach the next level and ultimately win the game by having completed the puzzles. </string>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>

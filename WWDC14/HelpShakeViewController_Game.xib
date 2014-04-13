@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="contentTextView" destination="akF-AS-Htx" id="MK7-gQ-htm"/>
                 <outlet property="contentTitleLabel" destination="VOQ-pL-QrW" id="A5k-oj-x3D"/>
+                <outlet property="dismissButton" destination="lbS-5W-FYR" id="jEF-9f-OYf"/>
                 <outlet property="puzzleMeTextView" destination="RL9-Pd-hUo" id="OG3-6K-tyv"/>
                 <outlet property="puzzleMeTitleLabel" destination="hl5-MO-BBV" id="EhI-F4-jeK"/>
                 <outlet property="shakeIcon" destination="cTo-Gp-CGz" id="l0K-pZ-vIG"/>
@@ -72,7 +73,7 @@
                     <rect key="frame" x="209" y="550" width="122" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                     <state key="normal" title="Thanks!">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

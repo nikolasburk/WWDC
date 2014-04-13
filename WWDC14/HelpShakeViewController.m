@@ -24,6 +24,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *contentTitleLabel;
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView;
 
+@property (weak, nonatomic) IBOutlet UIButton *dismissButton;
+
+
 @end
 
 @implementation HelpShakeViewController
@@ -60,6 +63,7 @@
 {
     [super viewDidLoad];
 	AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    self.dismissButton.layer.cornerRadius = 5.0;
 }
 
 - (void)viewDidAppear:(BOOL)animated

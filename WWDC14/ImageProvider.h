@@ -20,6 +20,6 @@
 + (ImageProvider *)imageProviderSharedInstance;
 
 - (NSArray *)randomMemeImages:(NSInteger)numberOfRandomImages;
-- (UIImage *)randomImage;
+- (UIImage *)randomMemeImage;
 
 @end
