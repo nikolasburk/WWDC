@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "QuestionReader.h"
 #import "GameViewController.h"
+#import "StoryBuilder.h"
 
 #define QUIZ_PUZZLE_TAB_INDEX 0
 #define TIMELINE_CANVAS_TAB_INDEX 1
@@ -29,6 +30,8 @@
     
     GameViewController *gameViewController = [root.viewControllers firstObject];
     root.delegate = gameViewController;
+    
+    [StoryBuilder storyBuilderSharedInstance];
     
     return YES;
 }

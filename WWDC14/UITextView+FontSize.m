@@ -10,12 +10,12 @@
 
 @implementation UITextView (FontSize)
 
--(CGSize) sizeForString:(NSString *)string withWidth:(CGFloat)width
-{
-    
-    CGSize size = [string sizeWithFont:[UIFont boldSystemFontOfSize:16] constrainedToSize:CGSizeMake(width, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping];
-    
-    return size;
-}
+//-(CGSize) sizeForString:(NSString *)string withWidth:(CGFloat)width
+//{
+//    
+//    CGSize size = [string sizeWithFont:[UIFont boldSystemFontOfSize:16] constrainedToSize:CGSizeMake(width, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping];
+//    
+//    return size;
+//}
 
 @end

@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="995" y="-409"/>
         </scene>
-        <!--Rotation Tab Bar Controller - Puzzle-->
+        <!--Tab Bar Controller - Puzzle-->
         <scene sceneID="eFw-zl-AV5">
             <objects>
-                <tabBarController title="Puzzle" definesPresentationContext="YES" id="SjM-wI-kN1" customClass="RotationTabBarController" sceneMemberID="viewController">
+                <tabBarController title="Puzzle" definesPresentationContext="YES" id="SjM-wI-kN1" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="n5C-kh-IRf">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>

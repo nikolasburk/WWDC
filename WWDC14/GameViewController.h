@@ -11,8 +11,9 @@
 #import "Game.h"
 #import "QuestionViewControllerTypes.h"
 #import "HelpShakeViewController.h"
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface GameViewController : UIViewController <PuzzleGameGridViewDelegate, QuestionViewControllerDelegate, UIAlertViewDelegate, UITabBarControllerDelegate, HelpShake>
+@interface GameViewController : UIViewController <PuzzleGameGridViewDelegate, QuestionViewControllerDelegate, UIAlertViewDelegate, UITabBarControllerDelegate, HelpShake, MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, strong) Game *game;
 

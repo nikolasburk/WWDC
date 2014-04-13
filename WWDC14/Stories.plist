@@ -351,11 +351,11 @@ Place of birth: Hamburg</string>
 			<key>year</key>
 			<integer>2014</integer>
 			<key>month</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>paragraphs</key>
 		<array>
-			<string>In March 2014 I ordered a new MacBook to replace my old MacBook Air that I had been using for 3 years. The new MacBook is fantastic and I just love working with it!</string>
+			<string>In March 2014, I ordered a new MacBook to replace my old MacBook Air that I had been using for 3 years. The new MacBook is fantastic and I just love working with it!</string>
 			<string>Here are the specs:
 Processor: 2,8 GHz Intel Core i7
 Memory: 16 GB 1600 MHz DDR3

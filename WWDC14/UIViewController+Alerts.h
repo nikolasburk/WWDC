@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (Alerts)
-
 - (void)showAlertWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle;
 @end

@@ -10,18 +10,27 @@
 
 @implementation NSMutableArray (Util)
 
-static int counter = 0;
-
 - (void)shuffle
 {
-    if ([self count] < 2)
+    NSUInteger count = [self count];
+    for (NSUInteger i = 0; i < count; ++i)
     {
-        NSLog(@"DEBUG | %s | Can't shuffle array with %d items", __func__, [self count]);
-        return;
+        // Select a random element between i and end of array to swap with.
+        NSInteger nElements = count - i;
+        NSInteger n = arc4random_uniform(nElements) + i;
+        [self exchangeObjectAtIndex:i withObjectAtIndex:n];
     }
-    [self shuffleIsShuffled:NO];
-    counter = 0;
+
 }
+
+//- (void)shuffle
+//{
+//    if ([self count] < 2)
+//    {
+//        return;
+//    }
+//    [self shuffleIsShuffled:NO];
+//}
 
 - (void)shuffleIsShuffled:(BOOL)isShuffled
 {
@@ -31,7 +40,6 @@ static int counter = 0;
     }
     else
     {
-        NSLog(@"DEBUG | %s | Counter: %d", __func__, counter++);
         NSMutableArray *copy = [[NSMutableArray alloc] initWithArray:self];
         
         BOOL seeded = NO;

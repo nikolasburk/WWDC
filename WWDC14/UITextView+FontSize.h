@@ -10,6 +10,6 @@
 
 @interface UITextView (FontSize)
 
--(CGSize) sizeForString:(NSString *)string withWidth:(CGFloat)width;
+//-(CGSize) sizeForString:(NSString *)string withWidth:(CGFloat)width;
 
 @end

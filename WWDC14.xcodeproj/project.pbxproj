@@ -18,6 +18,7 @@
 		552AFECE18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552AFECD18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib */; };
 		552AFED318F9B52000EA626E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552AFED218F9B52000EA626E /* QuartzCore.framework */; };
 		552D04DA18FA8B940080A7DE /* UITextView+FontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D04D918FA8B940080A7DE /* UITextView+FontSize.m */; };
+		552D04DC18FAD8960080A7DE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552D04DB18FAD8960080A7DE /* MessageUI.framework */; };
 		554F837418F89D0B00EFA004 /* RotationTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554F837318F89D0B00EFA004 /* RotationTabBarController.m */; };
 		555F5D6818EF02D2000950CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5D6718EF02D2000950CA /* Foundation.framework */; };
 		555F5D6A18EF02D2000950CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5D6918EF02D2000950CA /* CoreGraphics.framework */; };
@@ -99,6 +100,7 @@
 		552AFED218F9B52000EA626E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		552D04D818FA8B940080A7DE /* UITextView+FontSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+FontSize.h"; sourceTree = "<group>"; };
 		552D04D918FA8B940080A7DE /* UITextView+FontSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+FontSize.m"; sourceTree = "<group>"; };
+		552D04DB18FAD8960080A7DE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		554F837218F89D0B00EFA004 /* RotationTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationTabBarController.h; sourceTree = "<group>"; };
 		554F837318F89D0B00EFA004 /* RotationTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationTabBarController.m; sourceTree = "<group>"; };
 		555F5D6418EF02D1000950CA /* Puzzle Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puzzle Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552D04DC18FAD8960080A7DE /* MessageUI.framework in Frameworks */,
 				552AFED318F9B52000EA626E /* QuartzCore.framework in Frameworks */,
 				555F5DE018F3D70D000950CA /* MapKit.framework in Frameworks */,
 				555F5D6A18EF02D2000950CA /* CoreGraphics.framework in Frameworks */,
@@ -254,6 +257,7 @@
 		555F5D6618EF02D1000950CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				552D04DB18FAD8960080A7DE /* MessageUI.framework */,
 				552AFED218F9B52000EA626E /* QuartzCore.framework */,
 				555F5DDF18F3D70D000950CA /* MapKit.framework */,
 				555F5D6718EF02D2000950CA /* Foundation.framework */,

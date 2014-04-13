@@ -44,11 +44,6 @@
     NSLog(@"DEBUG | %s | View: %@ (bounds: width = %f; height = %f)", __func__, self.view, self.view.bounds.size.width, self.view.bounds.size.height);
 }
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
-{
-    NSLog(@"DEBUG | %s | View: %@ (bounds: width = %f; height = %f)", __func__, self.view, self.view.bounds.size.width, self.view.bounds.size.height);
-}
-
 - (void)setGame:(Game *)game
 {
     _game = game;
@@ -236,16 +231,20 @@
     else if (puzzleSolved && self.game.currentLevel == Level_Three)
     {
         NSString *title = NSLocalizedString(@"Congratulations!", nil);
-        NSString *message = NSLocalizedString(@"Awesome, you actually made it to end even though there was not much hope left. ", nil);
-        NSString *cancelButtonTitle = NSLocalizedString(@"Bring it", nil);
-        [self showAlertWithTitle:title message:message cancelButtonTitle:cancelButtonTitle];
+        NSString *message = NSLocalizedString(@"Great job, you solved all three puzzles! Want to start a new game or maybe check out the bonus? :-)", nil);
+        NSString *newGameButtonTitle = NSLocalizedString(@"New game", nil);
+        NSString *bonusButtonTitle = NSLocalizedString(@"Bonus!", nil);
+
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:newGameButtonTitle otherButtonTitles:bonusButtonTitle, nil];
+        alert.tag = Level_Three;
+        [alert show];
     }
 }
 
- 
+
  #pragma mark - Question view controller delegate
  
- - (void)questionViewController:(QuestionViewController *)questionViewController answerWasCorrect:(BOOL)answerWasCorrect
+- (void)questionViewController:(QuestionViewController *)questionViewController answerWasCorrect:(BOOL)answerWasCorrect
  {
      QuestionView *questionView = [self.puzzleGameGridView questionViewForQuestion:questionViewController.question];
      if (answerWasCorrect)
@@ -256,9 +255,10 @@
          if ([self allQuestionsAnsweredForCurrentLevel])
          {
              NSString *title = NSLocalizedString(@"Yeah!", nil);
-             NSString *message = NSLocalizedString(@"Congratulations, you answered all questions correctly, now you can go and solve the puzzle!", nil);
+             NSString *message = NSLocalizedString(@"Congratulations, you answered all questions correctly, now you can go and solve the puzzle! Move the puzzle pieces with drag and drop:\nFirst tap and hold a puzzle piece for a moment, then start moving it to the target position in the grid.", nil);
              NSString *cancelButtonTitle = NSLocalizedString(@"Let's go", nil);
              UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self.game.currentLevel == Level_One ? self : nil cancelButtonTitle:cancelButtonTitle otherButtonTitles:nil];
+             alert.tag = self.game.currentLevel == Level_One ? Level_One : 0;
              [alert show];
              
              if (self.game.currentLevel != Level_One)
@@ -288,11 +288,52 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    NSString *title = NSLocalizedString(@"Oh actually....", nil);
-    NSString *message = NSLocalizedString(@"Sorry, this was just the first level. There is no puzzle here yet... Just proceed with the next level.", nil);
-    self.nextLevelButton.enabled = YES;
-    NSString *cancelButtonTitle = NSLocalizedString(@"Yeah, next level!", nil);
-    [self showAlertWithTitle:title message:message cancelButtonTitle:cancelButtonTitle];
+    if (alertView.tag == Level_One)
+    {
+        NSString *title = NSLocalizedString(@"Oh actually....", nil);
+        NSString *message = NSLocalizedString(@"Sorry, this was just the first level. There is no puzzle here yet... Just proceed with the next level.", nil);
+        self.nextLevelButton.enabled = YES;
+        NSString *cancelButtonTitle = NSLocalizedString(@"Yeah, next level!", nil);
+        [self showAlertWithTitle:title message:message cancelButtonTitle:cancelButtonTitle];
+    }
+    else if (alertView.tag == Level_Three)
+    {
+        if (buttonIndex == 0)
+        {
+            NSLog(@"DEBUG | %s | No bonus", __func__);
+            self.nextLevelButton.enabled = NO;
+        }
+        else
+        {
+            [self showBonus];
+        }
+    }
+}
+
+#pragma mark - Bonus
+
+- (void)showBonus
+{
+    if ([MFMailComposeViewController canSendMail])
+    {
+        MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
+        controller.mailComposeDelegate = self;
+        [controller setSubject:@"Your WWDC 2014 Ticket"];
+        [controller setToRecipients:@[@"nikolas.burk@gmail.com"]];
+        [controller setMessageBody:@"...so? :-)" isHTML:NO];
+        if (controller) [self presentViewController:controller animated:YES completion:nil];
+    }
+    else
+    {
+        NSString *title = @"Ouch!";
+        NSString *message = @"Sorry, you need to be able to send emails to check the bonus!";
+        [self showAlertWithTitle:title message:message cancelButtonTitle:nil];
+    }
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error;
+{
+    [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 
@@ -300,7 +341,7 @@
 
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
-    if (UIInterfaceOrientationIsPortrait([[UIDevice currentDevice] orientation]))
+    if (UIInterfaceOrientationIsPortrait([[UIDevice currentDevice] orientation]) || UIInterfaceOrientationPortrait == [[UIApplication sharedApplication] statusBarOrientation]) //     if (UIInterfaceOrientationIsPortrait([[UIDevice currentDevice] orientation]) || self.view.bounds.size.width < self.view.bounds.size.height)
     {
         NSString *title = NSLocalizedString(@"Info", nil);
         NSString *message = NSLocalizedString(@"The time line canvas can only be used in landscape orientation, please turn your device and reopen the canvas again.", nil);

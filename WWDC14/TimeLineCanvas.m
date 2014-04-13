@@ -63,8 +63,6 @@
     }
 }
 
-static int counter = 0;
-
 - (void)addStoryThumbnailToCanvasForStory:(Story *)story
 {
     CGFloat x = [self xForYear:story.year month:story.month];
@@ -76,7 +74,7 @@ static int counter = 0;
     if (!self.storyThumbnails) self.storyThumbnails = [[NSMutableArray alloc] init];
     [self.storyThumbnails addObject:storyThumbnail];
     [self addSubview:storyThumbnail];
-    NSLog(@"DEBUG | %s | Added thumbail for story: %@ (%d)", __func__, storyThumbnail.story, counter++);
+    NSLog(@"DEBUG | %s | Added thumbail for story: %@", __func__, storyThumbnail.story);
 }
 
 - (void)storyThumbnailTapped:(UITapGestureRecognizer *)tap

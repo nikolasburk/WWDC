@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIImage+Split.h"
 
-#define NUMBER_OF_MEMES 16
+#define NUMBER_OF_MEMES 15
 
 
 @interface ImageProvider : NSObject
