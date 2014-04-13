@@ -92,8 +92,17 @@
     UIView *categoryTopView = [[UIView alloc] initWithFrame:self.bounds];
     categoryTopView.backgroundColor = [UIColor whiteColor];
     
-    CGFloat x = self.bounds.size.width / 10.0;
-    self.categoryLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, 0.0, self.bounds.size.width - 2.0 *x, self.bounds.size.height / 2.0)];
+    CGFloat half = self.frame.size.width / 2.0;
+    
+    CGFloat xCutPortion = 10.0;
+    CGFloat yCutPortion = 10.0;
+
+    CGFloat x = self.bounds.size.width / xCutPortion;
+    CGFloat y = self.frame.size.height / yCutPortion;
+    CGFloat height = half - y;
+    CGFloat width = self.bounds.size.width - 2.0 * x;
+    
+    self.categoryLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, y, width, height)];
     self.categoryLabel.adjustsFontSizeToFitWidth = YES;
     self.categoryLabel.font = [UIFont systemFontOfSize:50.0];
     self.categoryLabel.textColor = [UIColor whiteColor];
@@ -101,15 +110,18 @@
     self.categoryLabel.text = [self.question questionCategoryString];
     self.categoryLabel.backgroundColor = [self.question categoryColor];
     [categoryTopView addSubview:self.categoryLabel];
+    
+    self.categoryLabel.layer.cornerRadius = 5.0;
+    self.categoryLabel.layer.masksToBounds = YES;
 
-    CGFloat cutPortion = 2.5;
-    CGFloat half = self.frame.size.width / 2.0;
-    CGFloat y = half + self.frame.size.height / cutPortion;
-    CGFloat height = half - 2.0 * self.frame.size.height / cutPortion;
-    CGFloat width = height;
+    yCutPortion = 2.5;
+    
+    x = 0.0;
+    y = half + self.frame.size.height / yCutPortion;
+    height = half - 2.0 * self.frame.size.height / yCutPortion;
+    width = height;
 
-    self.triesLeftLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, y, width, height)];
-
+    self.triesLeftLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, y, width, height)];
     self.triesLeftLabel.center = CGPointMake(self.bounds.size.width / 2.0, self.triesLeftLabel.center.y);
     self.triesLeftLabel.adjustsFontSizeToFitWidth = YES;
     self.triesLeftLabel.tag = TRIES_LEFT_LABEL_TAG;
