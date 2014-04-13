@@ -49,7 +49,9 @@
     [self.firstImageView addDecorativeFrameWithWidth:1.0 color:[UIColor blackColor]];
     self.firstTextView.text = self.story.paragraphs[0];
     self.firstTextView.font = [UIFont systemFontOfSize:22.0];
-    self.firstTextView.textAlignment = NSTextAlignmentCenter;
+    self.firstTextView.textAlignment = NSTextAlignmentLeft;
+    self.firstTextView.showsVerticalScrollIndicator = YES;
+//    self.firstTextView
     
     if ([self.story.images count] > 1 && [self.story.paragraphs count] > 1)
     {
@@ -57,7 +59,8 @@
         [self.secondImageView addDecorativeFrameWithWidth:1.0 color:[UIColor blackColor]];
         self.secondTextView.text = self.story.paragraphs[1];
         self.secondTextView.font = [UIFont systemFontOfSize:22.0];
-        self.secondTextView.textAlignment = NSTextAlignmentCenter;
+        self.secondTextView.textAlignment = NSTextAlignmentRight;
+        self.secondTextView.showsVerticalScrollIndicator = YES;
     }
     else
     {
@@ -71,7 +74,8 @@
         [self.thirdImageView addDecorativeFrameWithWidth:1.0 color:[UIColor blackColor]];
         self.thirdTextView.text = self.story.paragraphs[2];
         self.thirdTextView.font = [UIFont systemFontOfSize:22.0];
-        self.thirdTextView.textAlignment = NSTextAlignmentCenter;
+        self.thirdTextView.textAlignment = NSTextAlignmentLeft;
+        self.thirdTextView.showsVerticalScrollIndicator = YES;
     }
     else
     {

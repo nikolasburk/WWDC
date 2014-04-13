@@ -17,6 +17,7 @@
 		552AFECC18F9908C00EA626E /* HelpShakeViewController_Questions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552AFECB18F9908C00EA626E /* HelpShakeViewController_Questions.xib */; };
 		552AFECE18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552AFECD18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib */; };
 		552AFED318F9B52000EA626E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552AFED218F9B52000EA626E /* QuartzCore.framework */; };
+		552D04DA18FA8B940080A7DE /* UITextView+FontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D04D918FA8B940080A7DE /* UITextView+FontSize.m */; };
 		554F837418F89D0B00EFA004 /* RotationTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554F837318F89D0B00EFA004 /* RotationTabBarController.m */; };
 		555F5D6818EF02D2000950CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5D6718EF02D2000950CA /* Foundation.framework */; };
 		555F5D6A18EF02D2000950CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5D6918EF02D2000950CA /* CoreGraphics.framework */; };
@@ -96,6 +97,8 @@
 		552AFECB18F9908C00EA626E /* HelpShakeViewController_Questions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpShakeViewController_Questions.xib; sourceTree = "<group>"; };
 		552AFECD18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpShakeViewController_TimeLineCanvas.xib; sourceTree = "<group>"; };
 		552AFED218F9B52000EA626E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		552D04D818FA8B940080A7DE /* UITextView+FontSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+FontSize.h"; sourceTree = "<group>"; };
+		552D04D918FA8B940080A7DE /* UITextView+FontSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+FontSize.m"; sourceTree = "<group>"; };
 		554F837218F89D0B00EFA004 /* RotationTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationTabBarController.h; sourceTree = "<group>"; };
 		554F837318F89D0B00EFA004 /* RotationTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationTabBarController.m; sourceTree = "<group>"; };
 		555F5D6418EF02D1000950CA /* Puzzle Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puzzle Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -370,6 +373,8 @@
 				554F837318F89D0B00EFA004 /* RotationTabBarController.m */,
 				552AFEB818F9245800EA626E /* UIView+Decoration.h */,
 				552AFEB918F9245800EA626E /* UIView+Decoration.m */,
+				552D04D818FA8B940080A7DE /* UITextView+FontSize.h */,
+				552D04D918FA8B940080A7DE /* UITextView+FontSize.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -620,6 +625,7 @@
 				55E00A9218F4628D007E97A6 /* ImageProvider.m in Sources */,
 				555F5DCA18EFF06D000950CA /* LocationQuestionViewController.m in Sources */,
 				555F5DC718EFF044000950CA /* MultipleChoiceQuestionViewController.m in Sources */,
+				552D04DA18FA8B940080A7DE /* UITextView+FontSize.m in Sources */,
 				555F5DB918EFE097000950CA /* PuzzleGameGridView.m in Sources */,
 				552AFEC518F9877C00EA626E /* UIViewController+FrustrationShake.m in Sources */,
 				552AFEC918F9885200EA626E /* HelpShakeViewController.m in Sources */,

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
+    
+    <!-- OK -->
     <dict>
 		<key>category</key>
 		<string>Education</string>
@@ -17,8 +19,9 @@
 			<string>2007</string>
 			<string>2005</string>
 		</array>
-
    	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>category</key>
 		<string>Personal</string>
@@ -36,13 +39,15 @@
 			<real>10.0014</real>
 		</dict>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>category</key>
 		<string>Education</string>
 		<key>type</key>
 		<string>L</string>
 		<key>question</key>
-		<string>Where did I spend one semester abroad during my Bachelor studies?</string>
+		<string>In which city did I spend one semester abroad during my Bachelor studies?</string>
 		<key>answer</key>
 		<string>Seoul</string>
         <key>coordinates</key>
@@ -53,13 +58,15 @@
 			<real>126.9780</real>
 		</dict>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>category</key>
 		<string>Education</string>
 		<key>type</key>
 		<string>L</string>
 		<key>question</key>
-		<string>Where did I spend one semester abroad during my Master studies?</string>
+		<string>In which city did I spend one semester abroad during my Master studies?</string>
 		<key>answer</key>
 		<string>Amsterdam</string>
         <key>coordinates</key>
@@ -70,22 +77,26 @@
 			<real>4.8922</real>
 		</dict>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>category</key>
 		<string>iOS</string>
 		<key>type</key>
 		<string>MC</string>
 		<key>question</key>
-		<string>What was my very first app that I uploaded to the Apple App Store about?</string>
+		<string>What was the very first app that I uploaded to the Apple App Store about?</string>
 		<key>options</key>
 		<array>
-			<string>A debt manager to remember what amounts of money have been lent or borrowed</string>
-			<string>A very expensive app with limited availability for very rich people</string>
-			<string>An app that would help you to pick a good restaurant</string>
+			<string>An app to manage network cameras</string>
+			<string>Trick question: I never uploaded an app to the store</string>
+			<string>A meme generator</string>
 		</array>
 		<key>answer</key>
-		<string>An app to manage network cameras</string>
+		<string>A debt manager</string>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>category</key>
 		<string>iOS</string>
@@ -95,45 +106,51 @@
 		<string>For what kind of treatments does my doctor want an iPad app?</string>
 		<key>options</key>
 		<array>
-			<string>X Ray</string>
-			<string>Mouth surgery</string>
+			<string>X-Ray</string>
+			<string>Ultrasound</string>
 			<string>Amputations</string>
 		</array>
 		<key>answer</key>
 		<string>Botox</string>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>category</key>
 		<string>Personal</string>
 		<key>type</key>
 		<string>MC</string>
 		<key>question</key>
-		<string>Which one of these are my three favorite podcasts?</string>
+		<string>Which one of these is my favorite iOS podcast?</string>
 		<key>options</key>
 		<array>
-			<string>ATP</string>
+			<string>Core Intuition</string>
 			<string>iPhreaks</string>
 			<string>iDeveloper Life</string>
 		</array>
 		<key>answer</key>
-		<string>NSBrief, Core Intuition</string>
+		<string>NSBrief</string>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>category</key>
 		<string>iOS</string>
 		<key>type</key>
 		<string>MC</string>
 		<key>question</key>
-		<string>What was the most challenging feature I ever implemented? </string>
+		<string>What was the most challenging feature I ever implemented in an iOS app?</string>
 		<key>options</key>
 		<array>
-			<string>A SQL-lite database </string>
-			<string>A core data layer</string>
-			<string>A multi view</string>
+			<string>A SQL-lite database</string>
+			<string>A core data database</string>
+			<string>A grid view with a drag and drop function</string>
 		</array>
 		<key>answer</key>
 		<string>A network sniffer to detect online cameras</string>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>question</key>
 		<string>What is the &apos;Specialization Track&apos; that I chose for my Master program?</string>
@@ -145,11 +162,13 @@
 		<array>
 			<string>Information Technology</string>
 			<string>Enterprise Software</string>
-			<string>E-Commerce</string>
+			<string>Computer Science</string>
 		</array>
 		<key>answer</key>
 		<string>System Design &amp; Development</string>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>question</key>
 		<string>What is special about the way an alarm is set in the &apos;Traffic Alarm&apos; app that I am currently working on?</string>
@@ -159,29 +178,33 @@
 		<string>MC</string>
 		<key>options</key>
 		<array>
-			<string>Alarm time is set by the user directly</string>
+			<string>The alarm sound of the app is the sound of a car</string>
 			<string>Alarm time is set randomly by the app</string>
-			<string>Alarm time is set exactly 12 h after the actual alarm</string>
+			<string>The app can be used to warn car drivers of traffic jams</string>
 		</array>
 		<key>answer</key>
-		<string>Alarm time is calcualted according to current traffic information</string>
+		<string>Alarm time is set according to current traffic information</string>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>question</key>
-		<string>Which conference or congress did I attend in February 2014? </string>
+		<string>Which conference or congress did I attend in February 2014?</string>
 		<key>category</key>
 		<string>Professional</string>
 		<key>type</key>
 		<string>MC</string>
 		<key>options</key>
 		<array>
-			<string>NSConference @</string>
+			<string>NSConference @Leicester</string>
 			<string>UIKonf @Berlin</string>
-			<string>CocoaConf @</string>
+			<string>CocoaConf @Washington DC</string>
 		</array>
 		<key>answer</key>
 		<string>Mobile World Congress @Barcelona</string>
 	</dict>
+    
+    <!-- OK -->
     <dict>
 		<key>question</key>
 		<string>Where was the Mobile World Congress that I attented 2014? </string>
@@ -199,13 +222,15 @@
 			<real>2.1833</real>
 		</dict>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>category</key>
 		<string>Education</string>
 		<key>type</key>
 		<string>MC</string>
 		<key>question</key>
-		<string>In cooperation with which company did I write my Bachelor thesis?</string>
+		<string>At which company did I write my Bachelor thesis?</string>
 		<key>options</key>
 		<array>
 			<string>Cameramanager</string>
@@ -215,6 +240,8 @@
 		<key>answer</key>
 		<string>SAP</string>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>category</key>
 		<string>Personal</string>
@@ -232,6 +259,8 @@
 			<real>3.0800</real>
 		</dict>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>category</key>
 		<string>Professional</string>
@@ -243,12 +272,14 @@
 		<array>
 			<string>SAP</string>
 			<string>IBM</string>
-			<string>Axis</string>
+			<string>Sony</string>
 		</array>
 		<key>answer</key>
 		<string>Panasonic</string>
 	</dict>
-	<dict>
+	
+    <!-- OK -->
+    <dict>
 		<key>question</key>
 		<string>What was the name of the start-up that I was working on with friends in the last semester of my Bachelor studies?</string>
 		<key>category</key>
@@ -264,6 +295,8 @@
 		<key>answer</key>
 		<string>LetsMapp</string>
 	</dict>
+    
+    <!-- OK -->
 	<dict>
 		<key>question</key>
 		<string>In what kind of organization did I work between my high school graduation and studies?</string>
@@ -273,12 +306,122 @@
 		<string>MC</string>
 		<key>options</key>
 		<array>
-			<string>Senior living house</string>
-			<string>Sports club</string>
-			<string>Company</string>
+			<string>A nursing home</string>
+			<string>A soccer club</string>
+			<string>A children's home'</string>
 		</array>
 		<key>answer</key>
-		<string>Kindergarden</string>
+		<string>A kindergarden</string>
 	</dict>
+    
+    <!-- OK -->
+	<dict>
+		<key>question</key>
+		<string>In which year was I born?</string>
+		<key>category</key>
+		<string>Personal</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>options</key>
+		<array>
+			<string>1986</string>
+			<string>1988</string>
+			<string>1987</string>
+		</array>
+		<key>answer</key>
+		<string>1989</string>
+	</dict>
+    
+    <!-- OK -->
+	<dict>
+		<key>category</key>
+		<string>Education</string>
+		<key>type</key>
+		<string>L</string>
+		<key>question</key>
+		<string>In which city is my home university?</string>
+		<key>answer</key>
+		<string>Mannheim</string>
+        <key>coordinates</key>
+		<dict>
+			<key>latitude</key>
+			<real>49.4889</real>
+			<key>longitude</key>
+			<real>8.4692</real>
+		</dict>
+	</dict>
+    
+    <!-- OK -->
+	<dict>
+		<key>question</key>
+		<string>What kind of software did we have to implement for the group project of my Software Engineering class during the fourth semester of my Bachelor studies?</string>
+		<key>category</key>
+		<string>Education</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>options</key>
+		<array>
+			<string>A chess game</string>
+			<string>A recipe book</string>
+			<string>A debt manager</string>
+		</array>
+		<key>answer</key>
+		<string>A bank depot management system</string>
+	</dict>
+    
+    <!-- OK -->
+	<dict>
+		<key>question</key>
+		<string>What kind of software did we build for the one-year team project of my Master program?</string>
+		<key>category</key>
+		<string>Education</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>options</key>
+		<array>
+			<string>A depot management system</string>
+			<string>An iPhone app to manage network cameras</string>
+			<string>A debt manager</string>
+		</array>
+		<key>answer</key>
+		<string>An agent-based patient scheduling system</string>
+	</dict>
+    
+    <!-- OK -->
+	<dict>
+		<key>question</key>
+		<string>At which chair did I work as a student assistant during my Bachelor studies?</string>
+		<key>category</key>
+		<string>Education</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>options</key>
+		<array>
+			<string>Chair of Enterprise Systems</string>
+			<string>Chair of Software Engineering</string>
+			<string>Chair of Information Systems</string>
+		</array>
+		<key>answer</key>
+		<string>Chair of Artificial Intelligence</string>
+	</dict>
+    
+    <!-- OK -->
+	<dict>
+		<key>question</key>
+		<string>What are the specs of the MacBook Pro Retina that I bought in March 2014?</string>
+		<key>category</key>
+		<string>Education</string>
+		<key>type</key>
+		<string>MC</string>
+		<key>options</key>
+		<array>
+			<string>250 GB Flash, Intel Core i7, 16 GB RAM</string>
+			<string>Trick question: I bought a MacBook Air</string>
+			<string>500 GB Flash, Intel Core i5, 16 GB RAM</string>
+		</array>
+		<key>answer</key>
+		<string>500 GB Flash, Intel Core i7, 16 GB RAM</string>
+	</dict>
+    
 </array>
 </plist>
