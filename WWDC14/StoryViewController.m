@@ -24,6 +24,9 @@
 @property (weak, nonatomic) IBOutlet UITextView *secondTextView;
 @property (weak, nonatomic) IBOutlet UITextView *thirdTextView;
 
+@property (weak, nonatomic) IBOutlet UIButton *dismissButton;
+
+
 @end
 
 @implementation StoryViewController
@@ -42,6 +45,8 @@
 {
     [super viewDidLoad];
     
+    self.dismissButton.layer.cornerRadius = 5.0;
+    
     self.titleLabel.text = self.story.title;
     self.timeLabel.text = [NSString stringWithFormat:@"%@ %d", [self.story monthName], self.story.year];
 
@@ -51,7 +56,6 @@
     self.firstTextView.font = [UIFont systemFontOfSize:22.0];
     self.firstTextView.textAlignment = NSTextAlignmentLeft;
     self.firstTextView.showsVerticalScrollIndicator = YES;
-//    self.firstTextView
     
     if ([self.story.images count] > 1 && [self.story.paragraphs count] > 1)
     {
