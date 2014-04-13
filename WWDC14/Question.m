@@ -7,6 +7,7 @@
 //
 
 #import "Question.h"
+#import "Colors.h"
 
 //@class LocationQuestion, MultipleChoiceQuestion;
 
@@ -80,7 +81,7 @@ const NSInteger NUMBER_OF_GUESSES = 3;
             questionCategoryString = NSLocalizedString(@"Education", nil);
             break;
         case QC_Professional:
-            questionCategoryString = NSLocalizedString(@"Professional experience", nil);
+            questionCategoryString = NSLocalizedString(@"Professional", nil);
             break;
         case QC_iOS:
             questionCategoryString = NSLocalizedString(@"iOS", nil);
@@ -95,6 +96,49 @@ const NSInteger NUMBER_OF_GUESSES = 3;
 {
     [NSException raise:@" - (NSString *)instructionTextString has to be implemented in subclass" format:nil];
     return @"";
+}
+
+- (UIColor *)categoryColor
+{
+    UIColor *questionCategoryColor;
+    switch (self.questionCategory)
+    {
+        case QC_Personal:
+            questionCategoryColor = OCEAN_BLUE;
+            break;
+        case QC_Education:
+            questionCategoryColor = [UIColor purpleColor];
+            break;
+        case QC_Professional:
+            questionCategoryColor = GREENISH_BLUE;
+            break;
+        case QC_iOS:
+            questionCategoryColor = BLUE_GRAY;
+            break;
+        default:
+            break;
+    }
+    return questionCategoryColor;
+}
+
+- (UIColor *)currentStatusColor
+{
+    UIColor *currentStatusColor = nil;
+    switch (self.triesLeft)
+    {
+        case 3:
+            currentStatusColor = DARK_GREEN;
+            break;
+        case 2:
+            currentStatusColor = RUBBER_DUCKY_YELLOW;
+            break;
+        case 1:
+            currentStatusColor = FIREBRICK;
+            break;
+        default:
+            break;
+    }
+    return  currentStatusColor;
 }
 
 - (NSString *)description

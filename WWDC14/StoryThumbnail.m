@@ -7,6 +7,8 @@
 //
 
 #import "StoryThumbnail.h"
+#import "UIView+Decoration.h"
+#import "Colors.h"
 
 @interface StoryThumbnail ()
 
@@ -33,24 +35,25 @@
 - (void)buildFrameView
 {
     const CGFloat frameWidth = 2.5;
-    
-    UIView *topLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.bounds.size.width, frameWidth)];
-    topLine.backgroundColor = [UIColor redColor];
-    UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, self.bounds.size.height-frameWidth, self.bounds.size.width, frameWidth)];
-    bottomLine.backgroundColor = [UIColor redColor];
-    UIView *leftLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, frameWidth, self.bounds.size.height)];
-    leftLine.backgroundColor = [UIColor redColor];
-    UIView *rightLine = [[UIView alloc] initWithFrame:CGRectMake(self.bounds.size.width-frameWidth, 0.0, frameWidth, self.bounds.size.height)];
-    rightLine.backgroundColor = [UIColor redColor];
-    
-    UIView *frameView = [[UIView alloc] initWithFrame:self.bounds];
-    frameView.backgroundColor = [UIColor clearColor];
-    [frameView addSubview:topLine];
-    [frameView addSubview:bottomLine];
-    [frameView addSubview:leftLine];
-    [frameView addSubview:rightLine];
-    
-    [self addSubview:frameView];
+
+    [self addDecorativeFrameWithWidth:frameWidth color:DARK_GREEN];
+//    UIView *topLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.bounds.size.width, frameWidth)];
+//    topLine.backgroundColor = [UIColor redColor];
+//    UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, self.bounds.size.height-frameWidth, self.bounds.size.width, frameWidth)];
+//    bottomLine.backgroundColor = [UIColor redColor];
+//    UIView *leftLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, frameWidth, self.bounds.size.height)];
+//    leftLine.backgroundColor = [UIColor redColor];
+//    UIView *rightLine = [[UIView alloc] initWithFrame:CGRectMake(self.bounds.size.width-frameWidth, 0.0, frameWidth, self.bounds.size.height)];
+//    rightLine.backgroundColor = [UIColor redColor];
+//    
+//    UIView *frameView = [[UIView alloc] initWithFrame:self.bounds];
+//    frameView.backgroundColor = [UIColor clearColor];
+//    [frameView addSubview:topLine];
+//    [frameView addSubview:bottomLine];
+//    [frameView addSubview:leftLine];
+//    [frameView addSubview:rightLine];
+//    
+//    [self addSubview:frameView];
 }
 
 

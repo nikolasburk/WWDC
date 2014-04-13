@@ -9,10 +9,15 @@
 #import "QuestionView.h"
 #import <CoreGraphics/CoreGraphics.h>
 #import "math.h"
+#import "UIView+Decoration.h"
+#import "CategoryView.h"
 
 #define TRIES_LEFT_LABEL_TAG 42
 
 @interface QuestionView ()
+
+@property (nonatomic, strong) UILabel *categoryLabel;
+@property (nonatomic, strong) UILabel *triesLeftLabel;
 
 @property (nonatomic, strong) UIView *categoryTopView;
 @property (nonatomic, assign) UIView *questionViewFrame;
@@ -72,38 +77,14 @@
     if (_categoryOnTop)
     {
         NSLog(@"DEBUG | %s | Question: %@", __func__, self.question);
-        UILabel *triesLeftLabel;
-        for (UIView *subiew in self.categoryTopView.subviews)
-        {
-            if (subiew.tag == TRIES_LEFT_LABEL_TAG)
-            {
-                triesLeftLabel = (UILabel *)subiew;
-                break;
-            }
-        }
-        triesLeftLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Tries left: %d", nil), self.question.triesLeft];
+        self.triesLeftLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%d", nil), self.question.triesLeft];
+        self.triesLeftLabel.backgroundColor = [self.question currentStatusColor];
     }
 }
 
 - (void)buildFrameView
 {
-    UIView *topLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.bounds.size.width, 1.0)];
-    topLine.backgroundColor = [UIColor lightGrayColor];
-    UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, self.bounds.size.height-1.0, self.bounds.size.width, 1.0)];
-    bottomLine.backgroundColor = [UIColor lightGrayColor];
-    UIView *leftLine = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 1.0, self.bounds.size.height)];
-    leftLine.backgroundColor = [UIColor lightGrayColor];
-    UIView *rightLine = [[UIView alloc] initWithFrame:CGRectMake(self.bounds.size.width-1.0, 0.0, 1.0, self.bounds.size.height)];
-    rightLine.backgroundColor = [UIColor lightGrayColor];
-    
-    UIView *frameView = [[UIView alloc] initWithFrame:self.bounds];
-    frameView.backgroundColor = [UIColor clearColor];
-    [frameView addSubview:topLine];
-    [frameView addSubview:bottomLine];
-    [frameView addSubview:leftLine];
-    [frameView addSubview:rightLine];
-    
-    [self addSubview:frameView];
+    [self addDecorativeFrameWithWidth:1.0 color:[UIColor blackColor]];
 }
 
 - (UIView *)categoryTopViewForCurrentQuestion
@@ -111,24 +92,36 @@
     UIView *categoryTopView = [[UIView alloc] initWithFrame:self.bounds];
     categoryTopView.backgroundColor = [UIColor whiteColor];
     
-    UILabel *label;
+    CGFloat x = self.bounds.size.width / 10.0;
+    self.categoryLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, 0.0, self.bounds.size.width - 2.0 *x, self.bounds.size.height / 2.0)];
+    self.categoryLabel.adjustsFontSizeToFitWidth = YES;
+    self.categoryLabel.font = [UIFont systemFontOfSize:50.0];
+    self.categoryLabel.textColor = [UIColor whiteColor];
+    self.categoryLabel.textAlignment = NSTextAlignmentCenter;
+    self.categoryLabel.text = [self.question questionCategoryString];
+    self.categoryLabel.backgroundColor = [self.question categoryColor];
+    [categoryTopView addSubview:self.categoryLabel];
+
+    CGFloat cutPortion = 2.5;
+    CGFloat half = self.frame.size.width / 2.0;
+    CGFloat y = half + self.frame.size.height / cutPortion;
+    CGFloat height = half - 2.0 * self.frame.size.height / cutPortion;
+    CGFloat width = height;
+
+    self.triesLeftLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, y, width, height)];
+
+    self.triesLeftLabel.center = CGPointMake(self.bounds.size.width / 2.0, self.triesLeftLabel.center.y);
+    self.triesLeftLabel.adjustsFontSizeToFitWidth = YES;
+    self.triesLeftLabel.tag = TRIES_LEFT_LABEL_TAG;
+    self.triesLeftLabel.backgroundColor = [self.question currentStatusColor];
+    self.triesLeftLabel.font = [UIFont boldSystemFontOfSize:50.0];
+    self.triesLeftLabel.textAlignment = NSTextAlignmentCenter;
+    self.triesLeftLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%d", nil), self.question.triesLeft];
+    self.triesLeftLabel.textColor = [UIColor whiteColor];
+    [categoryTopView addSubview:self.triesLeftLabel];
     
-    label = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, self.bounds.size.width, self.bounds.size.height / 2.0)];
-    label.backgroundColor = [UIColor clearColor];
-    label.adjustsFontSizeToFitWidth = YES;
-    label.font = [UIFont systemFontOfSize:50.0];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.text = [self.question questionCategoryString];
-    [categoryTopView addSubview:label];
-    
-    label = [[UILabel alloc] initWithFrame:CGRectMake(0.0, self.bounds.size.height / 2.0, self.bounds.size.width, self.bounds.size.height / 2.0)];
-    label.tag = TRIES_LEFT_LABEL_TAG;
-    label.backgroundColor = [UIColor clearColor];
-    label.adjustsFontSizeToFitWidth = YES;
-    label.font = [UIFont systemFontOfSize:35.0];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.text = [NSString stringWithFormat:NSLocalizedString(@"Tries left: %d", nil), self.question.triesLeft];
-    [categoryTopView addSubview:label];
+    self.triesLeftLabel.layer.cornerRadius = 5.0;
+    self.triesLeftLabel.layer.masksToBounds = YES;
     
     return categoryTopView;
 }

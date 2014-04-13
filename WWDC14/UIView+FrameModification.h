@@ -22,6 +22,10 @@
 - (void)setWidth:(CGFloat)width;
 - (void)setHeight:(CGFloat)height;
 
+// Modify the view's size
+- (void)enlargeViewWithXDelta:(CGFloat)xDelta;
+- (void)enlargeViewWithYDelta:(CGFloat)yDelta;
+
 
 
 @end

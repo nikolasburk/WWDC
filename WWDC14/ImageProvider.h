@@ -16,9 +16,10 @@
 
 @property (nonatomic, strong) NSArray *memes;
 
++ (UIImage *)cropCenteredSquareFromImage:(UIImage *)image;
 + (ImageProvider *)imageProviderSharedInstance;
 
 - (NSArray *)randomMemeImages:(NSInteger)numberOfRandomImages;
-- (UIImage *)randomImage;
+- (UIImage *)randomMemeImage;
 
 @end

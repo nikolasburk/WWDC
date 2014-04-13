@@ -13,6 +13,9 @@
 @protocol PuzzleGameGridViewDelegate <NSObject, GridViewDelegate>
 
 - (void)puzzleGameGridView:(PuzzleGameGridView *)puzzleGameGridView didSelectViewAtIndex:(NSInteger)index;
+
+@optional
+
 - (void)puzzleGameGridView:(PuzzleGameGridView *)puzzleGameGridView didEnterPuzzleMode:(BOOL)puzzleMode;
 - (void)puzzleGameGridViewPuzzleSolved:(PuzzleGameGridView *)puzzleGameGridView;
 

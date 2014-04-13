@@ -64,4 +64,19 @@
     self.frame = newFrame;
 }
 
+
+#pragma mark - Modify view's size
+
+- (void)enlargeViewWithXDelta:(CGFloat)xDelta
+{
+    CGRect newFrame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width + xDelta, self.frame.size.height);
+    self.frame = newFrame;
+}
+
+- (void)enlargeViewWithYDelta:(CGFloat)yDelta
+{
+    CGRect newFrame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height + yDelta);
+    self.frame = newFrame;
+}
+
 @end

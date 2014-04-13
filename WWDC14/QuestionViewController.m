@@ -8,17 +8,21 @@
 
 #import "QuestionViewController.h"
 #import "ReplyReader.h"
+#import "Colors.h"
+
+#define HELP_SHAKE_NIBNAME_SUFFIX @"Questions"
 
 @interface QuestionViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
 @property (weak, nonatomic) IBOutlet UITextView *questionTextView;
 @property (weak, nonatomic) IBOutlet UITextView *instructionsTextView;
-@property (weak, nonatomic) IBOutlet UIButton *hiddenBackButton;
 @property (weak, nonatomic) IBOutlet UILabel *triesLeftLabel;
 
-
 - (IBAction)cancelButtonPressed;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+
+- (IBAction)helpShakeButtonPressed;
 
 @end
 
@@ -38,10 +42,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.hiddenBackButton.hidden = YES;
     self.categoryLabel.text = [self.question questionCategoryString];
+    self.categoryLabel.backgroundColor = [self.question categoryColor];
+    self.categoryLabel.textColor = [UIColor whiteColor];
+    
     self.questionTextView.text = self.question.questionString;
-    self.triesLeftLabel.text = [NSString stringWithFormat:@"%d", self.question.triesLeft];
+    
+    self.triesLeftLabel.layer.cornerRadius = 2.5;
+    [self updateTriesLeft];
+    
+    self.backButton.layer.cornerRadius = 5.0;
+    self.backButton.backgroundColor = [UIColor darkGrayColor];
+
+    self.view.backgroundColor = SNOW_2;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -54,7 +67,7 @@
 {
     NSLog(@"DEBUG | %s | Answer: %@", __func__, answer);
     BOOL answerCorrect = [self.question answer:answer];
-    self.triesLeftLabel.text = [NSString stringWithFormat:@"%d", self.question.triesLeft];
+    [self updateTriesLeft];
     if (self.question.triesLeft == 0)
     {
         [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
@@ -74,7 +87,6 @@
 - (void)questionWasAnsweredCorrectly:(BOOL)questionWasAnsweredCorrectly
 {
     NSString *instructionMessage = [[ReplyReader replyReaderSharedInstance] randomReply:questionWasAnsweredCorrectly];
-    self.hiddenBackButton.hidden = !questionWasAnsweredCorrectly;
     [self setInstructionMessage:instructionMessage answerCorrect:questionWasAnsweredCorrectly];
 }
 
@@ -88,6 +100,12 @@
     }
 }
 
+- (void)updateTriesLeft
+{
+    self.triesLeftLabel.text = [NSString stringWithFormat:@"%d", self.question.triesLeft];
+    self.triesLeftLabel.backgroundColor = [self.question currentStatusColor];
+}
+
 - (void)setInstructionMessage:(NSString *)instructionMessage
 {
     self.instructionsTextView.text = instructionMessage;
@@ -99,7 +117,7 @@
 {
     self.instructionsTextView.hidden = YES;
     
-    UIColor *textColor = answerCorrect ? [UIColor greenColor] : [UIColor redColor];
+    UIColor *textColor = answerCorrect ? DARK_GREEN : FIREBRICK;
     CGFloat duration = answerCorrect ? 1.0 : 2.5;
     
     self.instructionsTextView.textColor = textColor;
@@ -111,6 +129,24 @@
 }
 
 
+#pragma mark - Help shake
 
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        NSLog(@"DEBUG | %s | Got shaked", __func__);
+        [HelpShakeViewController openHelpShakeViewControllerWithViewController:self];
+    }
+}
 
+- (NSString *)nibNameSuffix
+{
+    return HELP_SHAKE_NIBNAME_SUFFIX;
+}
+
+- (IBAction)helpShakeButtonPressed
+{
+    [HelpShakeViewController showHelpShakeInfo];
+}
 @end

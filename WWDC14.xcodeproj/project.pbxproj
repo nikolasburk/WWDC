@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552AFEB718F922BB00EA626E /* CategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 552AFEB618F922BB00EA626E /* CategoryView.m */; };
+		552AFEBA18F9245800EA626E /* UIView+Decoration.m in Sources */ = {isa = PBXBuildFile; fileRef = 552AFEB918F9245800EA626E /* UIView+Decoration.m */; };
+		552AFEC318F9877C00EA626E /* FrustrationShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552AFEBE18F9877C00EA626E /* FrustrationShakeViewController.xib */; };
+		552AFEC418F9877C00EA626E /* Graphic_PhoneShake.png in Resources */ = {isa = PBXBuildFile; fileRef = 552AFEBF18F9877C00EA626E /* Graphic_PhoneShake.png */; };
+		552AFEC518F9877C00EA626E /* UIViewController+FrustrationShake.m in Sources */ = {isa = PBXBuildFile; fileRef = 552AFEC118F9877C00EA626E /* UIViewController+FrustrationShake.m */; };
+		552AFEC918F9885200EA626E /* HelpShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552AFEC718F9885200EA626E /* HelpShakeViewController.m */; };
+		552AFECA18F9885200EA626E /* HelpShakeViewController_Game.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552AFEC818F9885200EA626E /* HelpShakeViewController_Game.xib */; };
+		552AFECC18F9908C00EA626E /* HelpShakeViewController_Questions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552AFECB18F9908C00EA626E /* HelpShakeViewController_Questions.xib */; };
+		552AFECE18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552AFECD18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib */; };
+		552AFED318F9B52000EA626E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552AFED218F9B52000EA626E /* QuartzCore.framework */; };
+		554F837418F89D0B00EFA004 /* RotationTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554F837318F89D0B00EFA004 /* RotationTabBarController.m */; };
 		555F5D6818EF02D2000950CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5D6718EF02D2000950CA /* Foundation.framework */; };
 		555F5D6A18EF02D2000950CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5D6918EF02D2000950CA /* CoreGraphics.framework */; };
 		555F5D6C18EF02D2000950CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5D6B18EF02D2000950CA /* UIKit.framework */; };
@@ -21,7 +32,6 @@
 		555F5D9118EF02D2000950CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 555F5D8F18EF02D2000950CA /* InfoPlist.strings */; };
 		555F5D9318EF02D2000950CA /* WWDC14Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5D9218EF02D2000950CA /* WWDC14Tests.m */; };
 		555F5DA818EF172A000950CA /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DA718EF172A000950CA /* GridView.m */; };
-		555F5DAA18EF1A33000950CA /* multiViewHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 555F5DA918EF1A33000950CA /* multiViewHolder.png */; };
 		555F5DB018EF1CE4000950CA /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DAF18EF1CE4000950CA /* Game.m */; };
 		555F5DB318EF1D11000950CA /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DB218EF1D11000950CA /* Question.m */; };
 		555F5DB618EF1E6C000950CA /* MultipleChoiceQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DB518EF1E6C000950CA /* MultipleChoiceQuestion.m */; };
@@ -38,6 +48,7 @@
 		555F5DD718F33CD2000950CA /* NSArray+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DD618F33CD2000950CA /* NSArray+Util.m */; };
 		555F5DDC18F356B3000950CA /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DDB18F356B3000950CA /* QuestionView.m */; };
 		555F5DE018F3D70D000950CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555F5DDF18F3D70D000950CA /* MapKit.framework */; };
+		55C7A1CE18F81B960077BBF0 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C7A1CD18F81B960077BBF0 /* UIImage+Crop.m */; };
 		55E00A8518F44095007E97A6 /* NegativeReplies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55E00A8418F44095007E97A6 /* NegativeReplies.plist */; };
 		55E00A8718F4449A007E97A6 /* PositiveReplies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55E00A8618F4449A007E97A6 /* PositiveReplies.plist */; };
 		55E00A8A18F44727007E97A6 /* ReplyReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E00A8918F44727007E97A6 /* ReplyReader.m */; };
@@ -56,6 +67,8 @@
 		55EE1C0A18F5A9C600B8A737 /* Stories.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EE1C0918F5A9C600B8A737 /* Stories.xcassets */; };
 		55EE1C0C18F5AC6A00B8A737 /* Stories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55EE1C0B18F5AC6A00B8A737 /* Stories.plist */; };
 		55EE1C0F18F5AEAE00B8A737 /* StoryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EE1C0E18F5AEAE00B8A737 /* StoryBuilder.m */; };
+		55EE1C1518F5EA6800B8A737 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EE1C1418F5EA6800B8A737 /* StoryViewController.m */; };
+		55EE1C1718F5EAA200B8A737 /* StoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55EE1C1618F5EAA200B8A737 /* StoryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +82,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		552AFEB518F922BB00EA626E /* CategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryView.h; sourceTree = "<group>"; };
+		552AFEB618F922BB00EA626E /* CategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryView.m; sourceTree = "<group>"; };
+		552AFEB818F9245800EA626E /* UIView+Decoration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Decoration.h"; sourceTree = "<group>"; };
+		552AFEB918F9245800EA626E /* UIView+Decoration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Decoration.m"; sourceTree = "<group>"; };
+		552AFEBE18F9877C00EA626E /* FrustrationShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FrustrationShakeViewController.xib; sourceTree = "<group>"; };
+		552AFEBF18F9877C00EA626E /* Graphic_PhoneShake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graphic_PhoneShake.png; sourceTree = "<group>"; };
+		552AFEC018F9877C00EA626E /* UIViewController+FrustrationShake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FrustrationShake.h"; sourceTree = "<group>"; };
+		552AFEC118F9877C00EA626E /* UIViewController+FrustrationShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FrustrationShake.m"; sourceTree = "<group>"; };
+		552AFEC618F9885200EA626E /* HelpShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpShakeViewController.h; sourceTree = "<group>"; };
+		552AFEC718F9885200EA626E /* HelpShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpShakeViewController.m; sourceTree = "<group>"; };
+		552AFEC818F9885200EA626E /* HelpShakeViewController_Game.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpShakeViewController_Game.xib; sourceTree = "<group>"; };
+		552AFECB18F9908C00EA626E /* HelpShakeViewController_Questions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpShakeViewController_Questions.xib; sourceTree = "<group>"; };
+		552AFECD18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpShakeViewController_TimeLineCanvas.xib; sourceTree = "<group>"; };
+		552AFED218F9B52000EA626E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		554F837218F89D0B00EFA004 /* RotationTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationTabBarController.h; sourceTree = "<group>"; };
+		554F837318F89D0B00EFA004 /* RotationTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationTabBarController.m; sourceTree = "<group>"; };
 		555F5D6418EF02D1000950CA /* Puzzle Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puzzle Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		555F5D6718EF02D2000950CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		555F5D6918EF02D2000950CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,7 +118,6 @@
 		555F5DA218EF12DD000950CA /* GridViewSelection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridViewSelection.h; sourceTree = "<group>"; };
 		555F5DA618EF172A000950CA /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
 		555F5DA718EF172A000950CA /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
-		555F5DA918EF1A33000950CA /* multiViewHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = multiViewHolder.png; path = ../multiViewHolder.png; sourceTree = "<group>"; };
 		555F5DAE18EF1CE4000950CA /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		555F5DAF18EF1CE4000950CA /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		555F5DB118EF1D11000950CA /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
@@ -120,6 +148,8 @@
 		555F5DDB18F356B3000950CA /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionView.m; sourceTree = "<group>"; };
 		555F5DDE18F3CBAB000950CA /* QuestionViewControllerTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionViewControllerTypes.h; sourceTree = "<group>"; };
 		555F5DDF18F3D70D000950CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		55C7A1CC18F81B960077BBF0 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		55C7A1CD18F81B960077BBF0 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
 		55E00A8418F44095007E97A6 /* NegativeReplies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NegativeReplies.plist; sourceTree = "<group>"; };
 		55E00A8618F4449A007E97A6 /* PositiveReplies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PositiveReplies.plist; sourceTree = "<group>"; };
 		55E00A8818F44727007E97A6 /* ReplyReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyReader.h; sourceTree = "<group>"; };
@@ -152,6 +182,9 @@
 		55EE1C0B18F5AC6A00B8A737 /* Stories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stories.plist; sourceTree = "<group>"; };
 		55EE1C0D18F5AEAE00B8A737 /* StoryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryBuilder.h; sourceTree = "<group>"; };
 		55EE1C0E18F5AEAE00B8A737 /* StoryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBuilder.m; sourceTree = "<group>"; };
+		55EE1C1318F5EA6800B8A737 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		55EE1C1418F5EA6800B8A737 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		55EE1C1618F5EAA200B8A737 /* StoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552AFED318F9B52000EA626E /* QuartzCore.framework in Frameworks */,
 				555F5DE018F3D70D000950CA /* MapKit.framework in Frameworks */,
 				555F5D6A18EF02D2000950CA /* CoreGraphics.framework in Frameworks */,
 				555F5D6C18EF02D2000950CA /* UIKit.framework in Frameworks */,
@@ -179,6 +213,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552AFEBB18F9874300EA626E /* Help shake */ = {
+			isa = PBXGroup;
+			children = (
+				552AFEBE18F9877C00EA626E /* FrustrationShakeViewController.xib */,
+				552AFEBF18F9877C00EA626E /* Graphic_PhoneShake.png */,
+				552AFEC018F9877C00EA626E /* UIViewController+FrustrationShake.h */,
+				552AFEC118F9877C00EA626E /* UIViewController+FrustrationShake.m */,
+				552AFEC618F9885200EA626E /* HelpShakeViewController.h */,
+				552AFEC718F9885200EA626E /* HelpShakeViewController.m */,
+				552AFEC818F9885200EA626E /* HelpShakeViewController_Game.xib */,
+				552AFECB18F9908C00EA626E /* HelpShakeViewController_Questions.xib */,
+				552AFECD18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib */,
+			);
+			name = "Help shake";
+			sourceTree = "<group>";
+		};
 		555F5D5B18EF02D1000950CA = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +251,7 @@
 		555F5D6618EF02D1000950CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				552AFED218F9B52000EA626E /* QuartzCore.framework */,
 				555F5DDF18F3D70D000950CA /* MapKit.framework */,
 				555F5D6718EF02D2000950CA /* Foundation.framework */,
 				555F5D6918EF02D2000950CA /* CoreGraphics.framework */,
@@ -220,12 +271,11 @@
 				555F5DAC18EF1CBF000950CA /* UI */,
 				555F5DAD18EF1CCE000950CA /* Model */,
 				555F5DCF18EFF8E8000950CA /* Content provider */,
+				552AFEBB18F9874300EA626E /* Help shake */,
 				555F5DD418F33CAB000950CA /* Util */,
 				555F5D7F18EF02D2000950CA /* Images.xcassets */,
-				55E00A9A18F46E6A007E97A6 /* PuzzleBackgrounds.xcassets */,
-				55EE1C0918F5A9C600B8A737 /* Stories.xcassets */,
+				55C7A1CF18F870C60077BBF0 /* Content */,
 				555F5D6E18EF02D2000950CA /* Supporting Files */,
-				555F5DA918EF1A33000950CA /* multiViewHolder.png */,
 			);
 			path = WWDC14;
 			sourceTree = "<group>";
@@ -237,10 +287,6 @@
 				555F5D7018EF02D2000950CA /* InfoPlist.strings */,
 				555F5D7318EF02D2000950CA /* main.m */,
 				555F5D7518EF02D2000950CA /* WWDC14-Prefix.pch */,
-				555F5DCD18EFF78B000950CA /* Questions.plist */,
-				55E00A8418F44095007E97A6 /* NegativeReplies.plist */,
-				55E00A8618F4449A007E97A6 /* PositiveReplies.plist */,
-				55EE1C0B18F5AC6A00B8A737 /* Stories.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -275,6 +321,7 @@
 		555F5DAC18EF1CBF000950CA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				55EE1C0518F5974500B8A737 /* Colors.h */,
 				55EE1C0118F596F400B8A737 /* Time line */,
 				555F5DD918F35698000950CA /* QuestionView */,
 				555F5DD818F3568B000950CA /* Grid */,
@@ -317,7 +364,12 @@
 				555F5DD618F33CD2000950CA /* NSArray+Util.m */,
 				55E00A9318F46704007E97A6 /* UIImage+Split.h */,
 				55E00A9418F46704007E97A6 /* UIImage+Split.m */,
-				55EE1C0518F5974500B8A737 /* Colors.h */,
+				55C7A1CC18F81B960077BBF0 /* UIImage+Crop.h */,
+				55C7A1CD18F81B960077BBF0 /* UIImage+Crop.m */,
+				554F837218F89D0B00EFA004 /* RotationTabBarController.h */,
+				554F837318F89D0B00EFA004 /* RotationTabBarController.m */,
+				552AFEB818F9245800EA626E /* UIView+Decoration.h */,
+				552AFEB918F9245800EA626E /* UIView+Decoration.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -341,6 +393,8 @@
 				555F5DDB18F356B3000950CA /* QuestionView.m */,
 				55E00A9C18F485F3007E97A6 /* PuzzlePiece.h */,
 				55E00A9D18F485F3007E97A6 /* PuzzlePiece.m */,
+				552AFEB518F922BB00EA626E /* CategoryView.h */,
+				552AFEB618F922BB00EA626E /* CategoryView.m */,
 			);
 			name = QuestionView;
 			sourceTree = "<group>";
@@ -361,6 +415,19 @@
 				55E00AA018F49E8C007E97A6 /* MapAnnotation.m */,
 			);
 			name = QuestionViewControllers;
+			sourceTree = "<group>";
+		};
+		55C7A1CF18F870C60077BBF0 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				555F5DCD18EFF78B000950CA /* Questions.plist */,
+				55E00A8418F44095007E97A6 /* NegativeReplies.plist */,
+				55E00A8618F4449A007E97A6 /* PositiveReplies.plist */,
+				55EE1C0B18F5AC6A00B8A737 /* Stories.plist */,
+				55E00A9A18F46E6A007E97A6 /* PuzzleBackgrounds.xcassets */,
+				55EE1C0918F5A9C600B8A737 /* Stories.xcassets */,
+			);
+			name = Content;
 			sourceTree = "<group>";
 		};
 		55EE1BF718F583A200B8A737 /* Game */ = {
@@ -393,8 +460,9 @@
 			children = (
 				55EE1BF118F581CF00B8A737 /* TimeLineCanvasViewController.h */,
 				55EE1BF218F581CF00B8A737 /* TimeLineCanvasViewController.m */,
-				55EE1BF418F582FB00B8A737 /* TimeLineCanvas.h */,
-				55EE1BF518F582FB00B8A737 /* TimeLineCanvas.m */,
+				55EE1C1318F5EA6800B8A737 /* StoryViewController.h */,
+				55EE1C1418F5EA6800B8A737 /* StoryViewController.m */,
+				55EE1C1618F5EAA200B8A737 /* StoryViewController.xib */,
 			);
 			name = "Time line canvas";
 			sourceTree = "<group>";
@@ -412,6 +480,8 @@
 		55EE1C0118F596F400B8A737 /* Time line */ = {
 			isa = PBXGroup;
 			children = (
+				55EE1BF418F582FB00B8A737 /* TimeLineCanvas.h */,
+				55EE1BF518F582FB00B8A737 /* TimeLineCanvas.m */,
 				55EE1BFC18F585D000B8A737 /* TimeLineView.h */,
 				55EE1BFD18F585D000B8A737 /* TimeLineView.m */,
 				55EE1C0218F5970B00B8A737 /* StoryThumbnail.h */,
@@ -497,15 +567,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				55EE1C0C18F5AC6A00B8A737 /* Stories.plist in Resources */,
+				55EE1C1718F5EAA200B8A737 /* StoryViewController.xib in Resources */,
+				552AFECA18F9885200EA626E /* HelpShakeViewController_Game.xib in Resources */,
 				555F5D8018EF02D2000950CA /* Images.xcassets in Resources */,
+				552AFECC18F9908C00EA626E /* HelpShakeViewController_Questions.xib in Resources */,
 				555F5DCC18EFF3D5000950CA /* MultipleChoiceQuestionViewController.xib in Resources */,
 				555F5D7218EF02D2000950CA /* InfoPlist.strings in Resources */,
+				552AFEC318F9877C00EA626E /* FrustrationShakeViewController.xib in Resources */,
+				552AFEC418F9877C00EA626E /* Graphic_PhoneShake.png in Resources */,
 				55E00A8718F4449A007E97A6 /* PositiveReplies.plist in Resources */,
 				55EE1C0A18F5A9C600B8A737 /* Stories.xcassets in Resources */,
 				55E00A8518F44095007E97A6 /* NegativeReplies.plist in Resources */,
+				552AFECE18F9A94B00EA626E /* HelpShakeViewController_TimeLineCanvas.xib in Resources */,
 				55E00A9B18F46E6A007E97A6 /* PuzzleBackgrounds.xcassets in Resources */,
 				555F5DCE18EFF78B000950CA /* Questions.plist in Resources */,
-				555F5DAA18EF1A33000950CA /* multiViewHolder.png in Resources */,
 				555F5D7B18EF02D2000950CA /* Main.storyboard in Resources */,
 				555F5DC418EFEDE8000950CA /* LocationQuestionViewController.xib in Resources */,
 			);
@@ -538,14 +613,19 @@
 				55E00AA118F49E8C007E97A6 /* MapAnnotation.m in Sources */,
 				555F5DB318EF1D11000950CA /* Question.m in Sources */,
 				555F5DC218EFEC40000950CA /* QuestionViewController.m in Sources */,
+				552AFEBA18F9245800EA626E /* UIView+Decoration.m in Sources */,
 				55E00A9E18F485F3007E97A6 /* PuzzlePiece.m in Sources */,
+				554F837418F89D0B00EFA004 /* RotationTabBarController.m in Sources */,
 				55EE1C0F18F5AEAE00B8A737 /* StoryBuilder.m in Sources */,
 				55E00A9218F4628D007E97A6 /* ImageProvider.m in Sources */,
 				555F5DCA18EFF06D000950CA /* LocationQuestionViewController.m in Sources */,
 				555F5DC718EFF044000950CA /* MultipleChoiceQuestionViewController.m in Sources */,
 				555F5DB918EFE097000950CA /* PuzzleGameGridView.m in Sources */,
+				552AFEC518F9877C00EA626E /* UIViewController+FrustrationShake.m in Sources */,
+				552AFEC918F9885200EA626E /* HelpShakeViewController.m in Sources */,
 				555F5DD718F33CD2000950CA /* NSArray+Util.m in Sources */,
 				55EE1C0818F5A07A00B8A737 /* UIView+FrameModification.m in Sources */,
+				552AFEB718F922BB00EA626E /* CategoryView.m in Sources */,
 				555F5DDC18F356B3000950CA /* QuestionView.m in Sources */,
 				555F5D7818EF02D2000950CA /* AppDelegate.m in Sources */,
 				55E00A8D18F458F0007E97A6 /* UIViewController+Alerts.m in Sources */,
@@ -553,7 +633,9 @@
 				555F5DBC18EFE6A2000950CA /* LocationQuestion.m in Sources */,
 				55E00A9518F46704007E97A6 /* UIImage+Split.m in Sources */,
 				555F5D7418EF02D2000950CA /* main.m in Sources */,
+				55C7A1CE18F81B960077BBF0 /* UIImage+Crop.m in Sources */,
 				55EE1BF318F581CF00B8A737 /* TimeLineCanvasViewController.m in Sources */,
+				55EE1C1518F5EA6800B8A737 /* StoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

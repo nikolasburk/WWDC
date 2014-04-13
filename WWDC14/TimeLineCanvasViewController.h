@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TimeLineCanvas.h"
+#import "HelpShakeViewController.h"
 
-@interface TimeLineCanvasViewController : UIViewController <TimeLineCanvasDelegate>
+@interface TimeLineCanvasViewController : UIViewController <TimeLineCanvasDelegate, HelpShake>
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil stories:(NSArray *)stories bundle:(NSBundle *)nibBundleOrNil;

@@ -30,7 +30,7 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7me-ds-giI">
                                 <rect key="frame" x="497" y="20" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="4">
+                                <state key="normal" title="2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -40,7 +40,7 @@
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtp-1d-3Io">
                                 <rect key="frame" x="551" y="20" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="9">
+                                <state key="normal" title="3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -57,8 +57,8 @@
                                     <action selector="levelButtonPressed:" destination="VJD-xU-73a" eventType="touchUpInside" id="76E-NF-hfd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgX-L0-9w6">
-                                <rect key="frame" x="20" y="65" width="168" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgX-L0-9w6">
+                                <rect key="frame" x="755" y="20" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="New game">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,8 +67,8 @@
                                     <action selector="newGameButtonPressed" destination="VJD-xU-73a" eventType="touchUpInside" id="vPD-pq-LFK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-Nx-2x2">
-                                <rect key="frame" x="20" y="103" width="168" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-Nx-2x2">
+                                <rect key="frame" x="196" y="20" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next level">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,17 +77,38 @@
                                     <action selector="nextLevelButtonPressed" destination="VJD-xU-73a" eventType="touchUpInside" id="OLY-Df-Xw2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arh-M1-jAg">
+                                <rect key="frame" x="20" y="20" width="43" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="Gpp-Bb-dfb"/>
+                                    <constraint firstAttribute="height" constant="50" id="bed-mO-zUx"/>
+                                </constraints>
+                                <state key="normal" image="Graphic_PhoneShake.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="helpShakeButtonPressed" destination="VJD-xU-73a" eventType="touchUpInside" id="yeo-8Y-j0G"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Mtp-1d-3Io" firstAttribute="leading" secondItem="7me-ds-giI" secondAttribute="trailing" constant="24" id="4cr-rU-Gu6"/>
-                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="0NY-oo-yeu" secondAttribute="bottom" constant="17" id="5xl-Y3-Es8"/>
-                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="7me-ds-giI" secondAttribute="bottom" constant="17" id="Btl-DL-pvX"/>
-                            <constraint firstItem="7me-ds-giI" firstAttribute="leading" secondItem="0NY-oo-yeu" secondAttribute="trailing" constant="24" id="OcH-eS-HIR"/>
-                            <constraint firstAttribute="centerX" secondItem="7me-ds-giI" secondAttribute="centerX" id="ZNc-nR-J42"/>
-                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="Mtp-1d-3Io" secondAttribute="bottom" constant="17" id="mNB-Om-Rb8"/>
-                            <constraint firstAttribute="centerY" secondItem="Xgx-k4-BIA" secondAttribute="centerY" constant="0.5" id="sU5-vW-D76"/>
-                            <constraint firstAttribute="centerX" secondItem="Xgx-k4-BIA" secondAttribute="centerX" constant="-0.5" id="yY9-l6-7N7"/>
+                            <constraint firstAttribute="centerX" secondItem="Xgx-k4-BIA" secondAttribute="centerX" constant="-0.5" id="5eO-JX-Gxc"/>
+                            <constraint firstItem="xgX-L0-9w6" firstAttribute="leading" secondItem="7me-ds-giI" secondAttribute="trailing" constant="228" id="6Mu-3l-Ynh"/>
+                            <constraint firstAttribute="centerY" secondItem="7me-ds-giI" secondAttribute="centerY" constant="349" id="9Qr-Hw-tlR"/>
+                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="7me-ds-giI" secondAttribute="bottom" constant="17" id="F1F-7s-A9W"/>
+                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="xgX-L0-9w6" secondAttribute="bottom" constant="17" id="GSE-vb-gaP"/>
+                            <constraint firstItem="7me-ds-giI" firstAttribute="leading" secondItem="0NY-oo-yeu" secondAttribute="trailing" constant="24" id="Ien-dC-WuM"/>
+                            <constraint firstItem="arh-M1-jAg" firstAttribute="leading" secondItem="HH0-8r-hfd" secondAttribute="leading" constant="20" id="Lz6-cJ-Xyc"/>
+                            <constraint firstItem="7me-ds-giI" firstAttribute="baseline" secondItem="Mtp-1d-3Io" secondAttribute="baseline" id="MOz-AK-Rbu"/>
+                            <constraint firstItem="arh-M1-jAg" firstAttribute="top" secondItem="4MS-db-gL1" secondAttribute="bottom" id="c56-em-KUM"/>
+                            <constraint firstItem="Xgx-k4-BIA" firstAttribute="top" secondItem="5zO-Nx-2x2" secondAttribute="bottom" constant="17" id="ieT-Ji-HIA"/>
+                            <constraint firstItem="Mtp-1d-3Io" firstAttribute="leading" secondItem="7me-ds-giI" secondAttribute="trailing" constant="24" id="ktI-Iu-sdZ"/>
+                            <constraint firstItem="7me-ds-giI" firstAttribute="leading" secondItem="5zO-Nx-2x2" secondAttribute="trailing" constant="233" id="mYc-X4-Iwu"/>
+                            <constraint firstAttribute="centerY" secondItem="Xgx-k4-BIA" secondAttribute="centerY" constant="0.5" id="tcp-Kj-ou8"/>
+                            <constraint firstAttribute="centerX" secondItem="7me-ds-giI" secondAttribute="centerX" id="voA-VZ-aA5"/>
+                            <constraint firstItem="0NY-oo-yeu" firstAttribute="baseline" secondItem="7me-ds-giI" secondAttribute="baseline" id="wPS-D0-nil"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -105,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="995" y="-409"/>
         </scene>
-        <!--Tab Bar Controller - Puzzle-->
+        <!--Rotation Tab Bar Controller - Puzzle-->
         <scene sceneID="eFw-zl-AV5">
             <objects>
-                <tabBarController title="Puzzle" definesPresentationContext="YES" id="SjM-wI-kN1" sceneMemberID="viewController">
+                <tabBarController title="Puzzle" definesPresentationContext="YES" id="SjM-wI-kN1" customClass="RotationTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="n5C-kh-IRf">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -135,7 +156,23 @@
                     <view key="view" contentMode="scaleToFill" id="OkG-14-LDX" customClass="TimeLineCanvas">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.19999999999999968" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fb_profile" translatesAutoresizingMaskIntoConstraints="NO" id="kNZ-i7-5jy">
+                                <rect key="frame" x="212" y="10" width="600" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lie-zs-I3m">
+                                <rect key="frame" x="12" y="10" width="43" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Graphic_PhoneShake.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="helpShakeButtonPressed" destination="7ip-Dy-7eK" eventType="touchUpInside" id="Px5-pm-ZGc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="wpL-RK-NpB"/>
@@ -146,6 +183,10 @@
             <point key="canvasLocation" x="1334" y="626"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Graphic_PhoneShake.png" width="85" height="100"/>
+        <image name="fb_profile" width="720" height="720"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

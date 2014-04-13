@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "Question.h"
+#import "HelpShakeViewController.h"
+
+#define BUTTON_CORNER_RADIUS 5.0
+
 
 @class QuestionViewController;
 
@@ -18,7 +22,7 @@
 
 @end
 
-@interface QuestionViewController : UIViewController
+@interface QuestionViewController : UIViewController <HelpShake>
 
 @property (nonatomic, strong, readonly) Question *question;
 @property (nonatomic, strong) id<QuestionViewControllerDelegate>delegate;

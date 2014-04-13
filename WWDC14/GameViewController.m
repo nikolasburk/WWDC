@@ -10,18 +10,25 @@
 #import "QuestionReader.h"
 #import "QuestionView.h"
 #import "UIViewController+Alerts.h"
+#import "UIViewController+FrustrationShake.h"
+#import <QuartzCore/QuartzCore.h>
+#import "Colors.h"
+
+#define HELP_SHAKE_NIBNAME_SUFFIX @"Game"
 
 @interface GameViewController ()
 @property (weak, nonatomic) IBOutlet PuzzleGameGridView *puzzleGameGridView;
 @property (nonatomic, assign) BOOL puzzleMode;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *gridPatternButtons;
+
 @property (weak, nonatomic) IBOutlet UIButton *nextLevelButton;
 - (IBAction)nextLevelButtonPressed;
 
 @property (nonatomic, assign) NSInteger currentlySelectedQuestionIndex;
 
 - (IBAction)levelButtonPressed:(id)sender;
+- (IBAction)helpShakeButtonPressed;
 
 @end
 
@@ -35,7 +42,6 @@
     [self newGame];
     
     NSLog(@"DEBUG | %s | View: %@ (bounds: width = %f; height = %f)", __func__, self.view, self.view.bounds.size.width, self.view.bounds.size.height);
-
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
@@ -64,6 +70,16 @@
     self.game = newGame;
     [self updateUIForCurrentLevel];
 }
+
+//- (void)setupButtons
+//{
+//    self.startNewGameButton.backgroundColor = SNOW_4;
+//    self.startNewGameButton.layer.cornerRadius = 2.5;
+//    [self.startNewGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    self.nextLevelButton.backgroundColor = SNOW_4;
+//    self.nextLevelButton.layer.cornerRadius = 2.5;
+//    [self.nextLevelButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//}
 
 - (void)updateUIForCurrentLevel
 {
@@ -147,6 +163,23 @@
     }
     
     return allQuestionsAnsweredForCurrentLevel;
+}
+
+
+#pragma mark - Help shake
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        NSLog(@"DEBUG | %s | Got shaked", __func__);
+        [HelpShakeViewController openHelpShakeViewControllerWithViewController:self];
+    }
+}
+
+- (NSString *)nibNameSuffix
+{
+    return HELP_SHAKE_NIBNAME_SUFFIX;
 }
 
 
@@ -263,6 +296,22 @@
 }
 
 
+#pragma mark - Tab bar controller delegate
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    if (UIInterfaceOrientationIsPortrait([[UIDevice currentDevice] orientation]))
+    {
+        NSString *title = NSLocalizedString(@"Info", nil);
+        NSString *message = NSLocalizedString(@"The time line canvas can only be used in landscape orientation, please turn your device and reopen the canvas again.", nil);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil, nil];
+        [alert show];
+        return NO;
+    }
+    return YES;
+}
+
+
 #pragma mark - Actions
 
 - (IBAction)newGameButtonPressed
@@ -277,12 +326,16 @@
     self.nextLevelButton.enabled = NO;
 }
 
-
 - (IBAction)levelButtonPressed:(UIButton *)sender
 {
     if (sender.tag < self.game.currentLevel)
     {
         
     }
+}
+
+- (IBAction)helpShakeButtonPressed
+{
+    [HelpShakeViewController showHelpShakeInfo];
 }
 @end

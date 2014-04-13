@@ -57,17 +57,18 @@
 - (void)setStories:(NSArray *)stories
 {
     _stories = stories;
-    
     for (Story *story in _stories)
     {
         [self addStoryThumbnailToCanvasForStory:story];
     }
 }
 
+static int counter = 0;
+
 - (void)addStoryThumbnailToCanvasForStory:(Story *)story
 {
     CGFloat x = [self xForYear:story.year month:story.month];
-    CGFloat y =  [self yForThumbnailWithX:x];
+    CGFloat y =  [self yForThumbnailWithX:x]; // ERROR with 20th story
     CGRect frame = CGRectMake(x, y, STORY_THUMBNAIL_EDGE, STORY_THUMBNAIL_EDGE);
     StoryThumbnail *storyThumbnail = [[StoryThumbnail alloc] initWithFrame:frame story:story];
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(storyThumbnailTapped:)];
@@ -75,7 +76,7 @@
     if (!self.storyThumbnails) self.storyThumbnails = [[NSMutableArray alloc] init];
     [self.storyThumbnails addObject:storyThumbnail];
     [self addSubview:storyThumbnail];
-    NSLog(@"DEBUG | %s | Added thumbail: %@", __func__, storyThumbnail);
+    NSLog(@"DEBUG | %s | Added thumbail for story: %@ (%d)", __func__, storyThumbnail.story, counter++);
 }
 
 - (void)storyThumbnailTapped:(UITapGestureRecognizer *)tap
@@ -99,10 +100,10 @@
     for (int i = self.timeLineView.startYear-1; i < self.timeLineView.endYear + 2; i++)
     {
         NSInteger factorX = i > self.timeLineView.skip.location ? i - self.timeLineView.startYear - self.timeLineView.skip.length :i - self.timeLineView.startYear ;
-        x = self.timeLineView.intervalSize * factorX;
+        x = self.timeLineView.intervalSize * factorX + self.timeLineView.intervalSize;
         if (i == year)
         {
-            x += self.timeLineView.intervalSize/(CGFloat)month; // add the distance for the month
+            x += 1.0 - self.timeLineView.intervalSize/(CGFloat)month; // add the distance for the month
             x -= STORY_THUMBNAIL_EDGE/2.0; // center
             break;
         }
@@ -110,11 +111,12 @@
     return x;
 }
 
+const CGFloat MIN_DISTANCE_FROM_TOP_FOR_STORYTHUMBNAILS = 0.0;
 
 - (CGFloat)yForThumbnailWithX:(CGFloat)x
 {
     const CGFloat yMax = self.timeLineView.frame.origin.y - STORY_THUMBNAIL_EDGE - DEFAULT_MARGIN;
-    const CGFloat yMin = self.frame.size.height / 4.0;
+    const CGFloat yMin = MIN_DISTANCE_FROM_TOP_FOR_STORYTHUMBNAILS != 0.0 ? self.frame.size.height / MIN_DISTANCE_FROM_TOP_FOR_STORYTHUMBNAILS : 0.0;
     
     CGFloat y = [self randomCGFloatWithMin:yMin max:yMax];
     while ([self requestedY:y interfersWithExistingThumbnailAtX:x])
